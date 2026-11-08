@@ -1,0 +1,11 @@
+$ python benchmarks/benchmark.py
+Linux-6.18.57-x86_64-with-glibc2.41 3.12.14
+python: 0.017080s 585486 records/s Python_peak=3465377 bytes
+fallback: 0.069316s 144267 records/s Python_peak=4813204 bytes
+native: 0.048002s 208327 records/s Python_peak=5281592 bytes
+native_single: 0.064393s 155297 records/s Python_peak=5151715 bytes
+native_dict: 0.077190s 129550 records/s Python_peak=8492576 bytes
+native_metrics_off: 0.045252s 220983 records/s
+native_predecoded: 0.064646s 154688 records/s
+
+EXIT_CODE=0

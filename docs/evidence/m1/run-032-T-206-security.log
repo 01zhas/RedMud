@@ -1,0 +1,6 @@
+$ REDMUD_CARGO_AUDIT=/tmp/redmud-security-tools/bin/cargo-audit REDMUD_PIP_AUDIT_PYTHON=/tmp/redmud-pip-audit/bin/python REDMUD_SECURITY_OUTPUT=docs/evidence/m1/security bash scripts/security.sh
+2026-11-07T09:43:54Z
+cargo-audit-audit 0.22.2
+pip-audit 2.10.1
+
+EXIT_CODE=1

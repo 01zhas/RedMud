@@ -1,0 +1,102 @@
+$ python -m unittest tests.test_errors -v
+test_ac107_custom_parser_is_callback (tests.test_errors.TestErrors.test_ac107_custom_parser_is_callback) ... ok
+test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) ... 
+  test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) (code='invalid_json') ... FAIL
+  test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) (code='invalid_input') ... FAIL
+  test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) (code='null_value') ... FAIL
+  test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) (code='overflow') ... FAIL
+test_ac107_python_stages_and_safe_exception (tests.test_errors.TestErrors.test_ac107_python_stages_and_safe_exception) ... FAIL
+
+======================================================================
+FAIL: test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) (code='invalid_json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_errors.py", line 20, in test_ac107_native_classification_and_redaction
+    self.assertEqual((r.status,r.errors[0].code,r.errors[0].stage),(status,code,stage))
+AssertionError: Tuples differ: ('rejected', 'invalid_json', 'parse') != ('error', 'invalid_json', 'parse')
+
+First differing element 0:
+'rejected'
+'error'
+
+- ('rejected', 'invalid_json', 'parse')
+?    ^^^^^^^
+
++ ('error', 'invalid_json', 'parse')
+?   + ^^^
+
+
+======================================================================
+FAIL: test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) (code='invalid_input')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_errors.py", line 20, in test_ac107_native_classification_and_redaction
+    self.assertEqual((r.status,r.errors[0].code,r.errors[0].stage),(status,code,stage))
+AssertionError: Tuples differ: ('rejected', 'invalid_input', 'parse') != ('error', 'invalid_input', 'parse')
+
+First differing element 0:
+'rejected'
+'error'
+
+- ('rejected', 'invalid_input', 'parse')
+?    ^^^^^^^
+
++ ('error', 'invalid_input', 'parse')
+?   + ^^^
+
+
+======================================================================
+FAIL: test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) (code='null_value')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_errors.py", line 20, in test_ac107_native_classification_and_redaction
+    self.assertEqual((r.status,r.errors[0].code,r.errors[0].stage),(status,code,stage))
+AssertionError: Tuples differ: ('rejected', 'null_value', 'transform') != ('error', 'null_value', 'transform')
+
+First differing element 0:
+'rejected'
+'error'
+
+- ('rejected', 'null_value', 'transform')
+?    ^^^^^^^
+
++ ('error', 'null_value', 'transform')
+?   + ^^^
+
+
+======================================================================
+FAIL: test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) (code='overflow')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_errors.py", line 20, in test_ac107_native_classification_and_redaction
+    self.assertEqual((r.status,r.errors[0].code,r.errors[0].stage),(status,code,stage))
+AssertionError: Tuples differ: ('rejected', 'overflow', 'transform') != ('error', 'overflow', 'transform')
+
+First differing element 0:
+'rejected'
+'error'
+
+- ('rejected', 'overflow', 'transform')
+?    ^^^^^^^
+
++ ('error', 'overflow', 'transform')
+?   + ^^^
+
+
+======================================================================
+FAIL: test_ac107_python_stages_and_safe_exception (tests.test_errors.TestErrors.test_ac107_python_stages_and_safe_exception)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_errors.py", line 37, in test_ac107_python_stages_and_safe_exception
+    self.assertEqual(r.errors[0].code,'invalid_json' if hook=='parse' else 'callback_error')
+AssertionError: 'callback_error' != 'invalid_json'
+- callback_error
++ invalid_json
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+FAILED (failures=5)
+
+EXIT_CODE=1

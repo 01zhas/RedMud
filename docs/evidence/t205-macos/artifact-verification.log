@@ -1,0 +1,8 @@
+UTC: 2026-11-08T02:48:21.929725+00:00
+CWD: /Users/im01zhas/Documents/ChatGPT/RedMud
+COMMAND: ["python", "docs/evidence/t205-macos/verify_artifacts.py"]
+PASS: three local macOS Python versions, six independent installs recorded.
+PASS: wheel Python modules and sdist build inputs match current source; notices retained; no Requires-Dist; native Mach-O arm64.
+PASS: original source unchanged except explicitly allowed progress documentation.
+
+EXIT: 0

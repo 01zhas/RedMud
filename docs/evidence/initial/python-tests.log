@@ -1,0 +1,49 @@
+$ python -m unittest discover -s tests -v
+test_example_cart_malformed_json (test_examples.TestExamples.test_example_cart_malformed_json) ... ok
+test_sources_produce_compatible_results (test_examples.TestExamples.test_sources_produce_compatible_results) ... ok
+test_arithmetic_inputs (test_native.TestNative.test_arithmetic_inputs) ... ok
+test_condition_and_snapshot (test_native.TestNative.test_condition_and_snapshot) ... ok
+test_nested (test_native.TestNative.test_nested) ... ok
+test_overflow (test_native.TestNative.test_overflow) ... ok
+test_policies (test_native.TestNative.test_policies) ... ok
+test_stream_and_metrics (test_native.TestNative.test_stream_and_metrics) ... ok
+test_bad_rule_name_rejected (test_quality.TestQuality.test_bad_rule_name_rejected) ... ok
+test_decimal_profile_is_descriptive_not_exact (test_quality.TestQuality.test_decimal_profile_is_descriptive_not_exact) ... ok
+test_invalid_paths_rejected (test_quality.TestQuality.test_invalid_paths_rejected) ... ok
+test_paths_support_mappings_and_dataclasses (test_quality.TestQuality.test_paths_support_mappings_and_dataclasses) ... ok
+test_profile_none_missing_and_types (test_quality.TestQuality.test_profile_none_missing_and_types) ... ok
+test_batch_fallback_to_scalar (test_runtime.TestRuntime.test_batch_fallback_to_scalar) ... ok
+test_batch_mismatch_fallback_disabled (test_runtime.TestRuntime.test_batch_mismatch_fallback_disabled) ... ok
+test_batch_mismatch_fallback_enabled (test_runtime.TestRuntime.test_batch_mismatch_fallback_enabled) ... ok
+test_batch_vectorized_preserves_order_after_reject (test_runtime.TestRuntime.test_batch_vectorized_preserves_order_after_reject) ... ok
+test_default_batch_sequence_has_no_custom_batch (test_runtime.TestRuntime.test_default_batch_sequence_has_no_custom_batch) ... ok
+test_elapsed_time_includes_calculation (test_runtime.TestRuntime.test_elapsed_time_includes_calculation) ... ok
+test_empty_batch_and_empty_iterator (test_runtime.TestRuntime.test_empty_batch_and_empty_iterator) ... ok
+test_fail_fast (test_runtime.TestRuntime.test_fail_fast) ... ok
+test_field_sampling (test_runtime.TestRuntime.test_field_sampling) ... ok
+test_input_rules_duplicate_name (test_runtime.TestRuntime.test_input_rules_duplicate_name) ... ok
+test_invalid_prometheus_prefix (test_runtime.TestRuntime.test_invalid_prometheus_prefix) ... ok
+test_iterator_lazy_and_bounded (test_runtime.TestRuntime.test_iterator_lazy_and_bounded) ... ok
+test_json_and_identity_input (test_runtime.TestRuntime.test_json_and_identity_input) ... ok
+test_many_mixed_records_never_drop_or_reorder (test_runtime.TestRuntime.test_many_mixed_records_never_drop_or_reorder) ... ok
+test_nested_custom_parser (test_runtime.TestRuntime.test_nested_custom_parser) ... ok
+test_none_as_successful_value (test_runtime.TestRuntime.test_none_as_successful_value) ... ok
+test_one_engine_monotonic_index_across_calls (test_runtime.TestRuntime.test_one_engine_monotonic_index_across_calls) ... ok
+test_opt_in_error_message (test_runtime.TestRuntime.test_opt_in_error_message) ... ok
+test_output_quality_profiles (test_runtime.TestRuntime.test_output_quality_profiles) ... ok
+test_output_rule_exception_isolated (test_runtime.TestRuntime.test_output_rule_exception_isolated) ... ok
+test_output_warning_is_success (test_runtime.TestRuntime.test_output_warning_is_success) ... ok
+test_parse_failure_is_isolated (test_runtime.TestRuntime.test_parse_failure_is_isolated) ... ok
+test_profile_reports_and_bounded_input (test_runtime.TestRuntime.test_profile_reports_and_bounded_input) ... ok
+test_prometheus_metrics (test_runtime.TestRuntime.test_prometheus_metrics) ... ok
+test_rule_exception_isolated (test_runtime.TestRuntime.test_rule_exception_isolated) ... ok
+test_rule_warning_and_reject_and_output (test_runtime.TestRuntime.test_rule_warning_and_reject_and_output) ... ok
+test_settings_validation (test_runtime.TestRuntime.test_settings_validation) ... ok
+test_transform_failure_is_isolated (test_runtime.TestRuntime.test_transform_failure_is_isolated) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 0.015s
+
+OK
+
+EXIT_CODE=0

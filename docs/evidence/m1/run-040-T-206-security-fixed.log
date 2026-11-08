@@ -1,0 +1,11 @@
+$ REDMUD_CARGO_AUDIT=/tmp/redmud-security-tools/bin/cargo-audit REDMUD_PIP_AUDIT_PYTHON=/tmp/redmud-pip-audit/bin/python REDMUD_SECURITY_OUTPUT=docs/evidence/m1/security bash scripts/security.sh
+2026-11-07T09:46:07Z
+cargo-audit-audit 0.22.2
+pip-audit 2.10.1
+WARNING:pip_audit._cli:--no-deps is supported, but users are encouraged to fully hash their pinned dependencies
+WARNING:pip_audit._cli:Consider using a tool like `pip-compile`: https://pip-tools.readthedocs.io/en/latest/#using-hashes
+No known vulnerabilities found
+PASS: audited Cargo.lock and pinned Python build/dev tools; no findings or skipped packages.
+Scope: dated advisory databases; not a proof of absence of unknown vulnerabilities.
+
+EXIT_CODE=0

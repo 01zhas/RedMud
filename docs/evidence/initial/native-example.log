@@ -1,0 +1,4 @@
+$ python examples/native_cart.py
+{'cart_id': 5001, 'cart_total': 3500, 'orders': [{'items': [{'price': 1000, 'quantity': 2, 'total': 2000}, {'price': 500, 'quantity': 3, 'total': 1500}], 'order_total': 3500}]}
+
+EXIT_CODE=0

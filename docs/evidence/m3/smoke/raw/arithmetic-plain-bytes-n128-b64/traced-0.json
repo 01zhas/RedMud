@@ -1,0 +1,1 @@
+{"phase": "traced", "setup_ns": 1882, "warmup_records": 128, "call_ns": null, "wall_ns": 9907367, "batch_ns": null, "counts": {"ok": 128, "rejected": 0, "error": 0}, "digest": "3f7b5c89671646e55d2dfba3e957c8160eee2ba3cf86f02edafdb53b1da6a20a", "rss_before_bytes": 18694144, "rss_peak_bytes": 18694144, "python_traced_peak_bytes": 41267, "affinity": [0]}

@@ -1,0 +1,92 @@
+[
+  {
+    "check": "rust-test",
+    "command": ". \"$HOME/.cargo/env\"; cargo test --workspace --locked",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/rust-test.log"
+  },
+  {
+    "check": "rust-format",
+    "command": ". \"$HOME/.cargo/env\"; cargo fmt --all -- --check",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/rust-format.log"
+  },
+  {
+    "check": "rust-clippy",
+    "command": ". \"$HOME/.cargo/env\"; cargo clippy --workspace --all-targets --locked -- -D warnings",
+    "exit_code": 1,
+    "log": "docs/evidence/initial/rust-clippy.log"
+  },
+  {
+    "check": "python-tests",
+    "command": "python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/python-tests.log"
+  },
+  {
+    "check": "benchmark",
+    "command": "python benchmarks/benchmark.py",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/benchmark.log"
+  },
+  {
+    "check": "native-example",
+    "command": "python examples/native_cart.py",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/native-example.log"
+  },
+  {
+    "check": "python-example",
+    "command": "python examples/cart.py",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/python-example.log"
+  },
+  {
+    "check": "profile-example",
+    "command": "python examples/cpu_profiling.py",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/profile-example.log"
+  },
+  {
+    "check": "source-example",
+    "command": "python examples/source_sink_agnostic.py",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/source-example.log"
+  },
+  {
+    "check": "environment",
+    "command": ". \"$HOME/.cargo/env\"; date -u +%FT%TZ; uname -a; rustc -Vv; cargo -V; python -V; maturin --version; lscpu; python -m pip show redmud",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/environment.log"
+  },
+  {
+    "check": "python-static",
+    "command": "python -m ruff check python tests examples benchmarks",
+    "exit_code": 1,
+    "log": "docs/evidence/initial/python-static.log"
+  },
+  {
+    "check": "build-wheel",
+    "command": ". \"$HOME/.cargo/env\"; maturin build --release --locked --out /tmp/redmud-audit-dist",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/build-wheel.log"
+  },
+  {
+    "check": "build-sdist",
+    "command": ". \"$HOME/.cargo/env\"; maturin sdist --locked --out /tmp/redmud-audit-dist",
+    "exit_code": 2,
+    "log": "docs/evidence/initial/build-sdist.log"
+  },
+  {
+    "check": "clean-install",
+    "command": "python -m venv /tmp/redmud-audit-venv && /tmp/redmud-audit-venv/bin/python -m pip install --no-deps /tmp/redmud-audit-dist/redmud-0.2.0-cp312-cp312-manylinux_2_34_x86_64.whl && /tmp/redmud-audit-venv/bin/python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/clean-install.log"
+  },
+  {
+    "check": "build-sdist-rerun",
+    "command": ". \"$HOME/.cargo/env\"; maturin sdist --out /tmp/redmud-audit-dist",
+    "exit_code": 0,
+    "log": "docs/evidence/initial/build-sdist-rerun.log"
+  }
+]

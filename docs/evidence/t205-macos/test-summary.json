@@ -1,0 +1,26 @@
+[
+  {
+    "python_tag": "311",
+    "rust_passed": 10,
+    "rust_ignored": 1,
+    "python_passed_per_suite": 80,
+    "python_skipped_per_suite": 1,
+    "clean_install_suites": 2
+  },
+  {
+    "python_tag": "312",
+    "rust_passed": 10,
+    "rust_ignored": 1,
+    "python_passed_per_suite": 80,
+    "python_skipped_per_suite": 1,
+    "clean_install_suites": 2
+  },
+  {
+    "python_tag": "313",
+    "rust_passed": 10,
+    "rust_ignored": 1,
+    "python_passed_per_suite": 80,
+    "python_skipped_per_suite": 1,
+    "clean_install_suites": 2
+  }
+]

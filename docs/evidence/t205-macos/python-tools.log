@@ -1,0 +1,19 @@
+UTC: 2026-11-08T02:44:41.296306+00:00
+CWD: /Users/im01zhas/Documents/ChatGPT/RedMud
+COMMAND: ["target/t205-tools/python/bin/python", "-m", "pip", "install", "-r", "requirements-dev.txt"]
+Collecting maturin==1.16.0 (from -r requirements-dev.txt (line 2))
+  Downloading maturin-1.16.0-py3-none-macosx_10_12_universal2.macosx_10_12_x86_64.macosx_11_0_arm64.whl.metadata (17 kB)
+Collecting ruff==0.17.4 (from -r requirements-dev.txt (line 3))
+  Downloading ruff-0.17.4-py3-none-macosx_11_0_arm64.whl.metadata (20 kB)
+Downloading maturin-1.16.0-py3-none-macosx_10_12_universal2.macosx_10_12_x86_64.macosx_11_0_arm64.whl (19.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.8/19.8 MB 1.6 MB/s  0:00:12
+Downloading ruff-0.17.4-py3-none-macosx_11_0_arm64.whl (9.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.4/9.4 MB 2.0 MB/s  0:00:04
+Installing collected packages: ruff, maturin
+
+Successfully installed maturin-1.16.0 ruff-0.17.4
+
+[notice] A new release of pip is available: 26.1 -> 26.3
+[notice] To update, run: /Users/im01zhas/Documents/ChatGPT/RedMud/target/t205-tools/python/bin/python -m pip install --upgrade pip
+
+EXIT: 0

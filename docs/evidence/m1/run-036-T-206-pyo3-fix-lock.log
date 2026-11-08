@@ -1,0 +1,16 @@
+$ cargo update -p pyo3 --precise 0.29.0
+    Updating crates.io index
+    Removing autocfg v1.5.1
+    Removing cfg-if v1.0.5
+    Removing indoc v2.0.8
+    Removing memoffset v0.9.1
+    Updating pyo3 v0.23.5 -> v0.29.3
+    Updating pyo3-build-config v0.23.5 -> v0.29.3
+    Updating pyo3-ffi v0.23.5 -> v0.29.3
+    Updating pyo3-macros v0.23.5 -> v0.29.3
+    Updating pyo3-macros-backend v0.23.5 -> v0.29.3
+    Removing rustversion v1.0.23
+    Updating target-lexicon v0.12.16 -> v0.13.5
+    Removing unindent v0.2.4
+
+EXIT_CODE=0

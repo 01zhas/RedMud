@@ -1,0 +1,5 @@
+$ python docs/evidence/m2/ci-config-check.py
+PASS: YAML parsed; six platform/Python jobs, read-only permissions, exact upstream commit pins, package/security commands present.
+NOT RUN: GitHub runner execution; local YAML checks do not establish platform support.
+
+EXIT_CODE=0

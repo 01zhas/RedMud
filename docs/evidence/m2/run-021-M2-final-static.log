@@ -1,0 +1,6 @@
+$ bash -n scripts/check.sh && python -m ruff check --select E9,F63,F7,F82 scripts/package_check.py && python -m compileall -q scripts/package_check.py && python docs/evidence/m2/ci-config-check.py
+All checks passed!
+PASS: YAML parsed; six platform/Python jobs, read-only permissions, exact upstream commit pins, package/security commands present.
+NOT RUN: GitHub runner execution; local YAML checks do not establish platform support.
+
+EXIT_CODE=0

@@ -1,0 +1,11 @@
+$ python docs/evidence/m1/safety-check.py
+depth 64 outcome ok
+ 
+depth 256 outcome ok
+ 
+depth 1000 outcome ok
+ 
+PASS: bounded subprocess fixtures terminate without process abort; no application unsafe block.
+NOT VERIFIED: specified depth-64 rejection boundary, unbounded-stream memory, fuzzing, advisory/platform gates (M2).
+
+EXIT_CODE=0

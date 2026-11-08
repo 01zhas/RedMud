@@ -1,0 +1,4 @@
+$ python -m ruff check python tests examples benchmarks
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No module named ruff
+
+EXIT_CODE=1

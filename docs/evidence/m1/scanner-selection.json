@@ -1,0 +1,17 @@
+{
+  "cargo-audit": {
+    "version": "0.22.2",
+    "license": "Apache-2.0 OR MIT",
+    "source": "cargo info and downloaded source (runs 022/024)",
+    "scope": "Cargo.lock vulnerabilities and advisories",
+    "installation": "standalone tool, no application dependency"
+  },
+  "pip-audit": {
+    "version": "2.10.1",
+    "license_expression": null,
+    "license": "Apache-2.0 (wheel LICENSE and classifier verified)",
+    "wheel_sha256": "99ef3f600a317c1945f1e89e227ef26e1c2d618429b8bd3fa6f4f7c440c4611a",
+    "scope": "pinned Python build/dev requirements; runtime dependency list separately verified empty",
+    "installation": "isolated scanner venv, no application dependency"
+  }
+}

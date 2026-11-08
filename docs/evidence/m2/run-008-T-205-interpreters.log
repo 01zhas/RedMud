@@ -1,0 +1,10 @@
+$ uv python install 3.11 3.13
+Downloading cpython-3.11.17-linux-x86_64-gnu (download) (29.1MiB)
+Downloading cpython-3.13.17-linux-x86_64-gnu (download) (33.7MiB)
+ Downloaded cpython-3.11.17-linux-x86_64-gnu (download)
+ Downloaded cpython-3.13.17-linux-x86_64-gnu (download)
+Installed 2 versions in 1.17s
+ + cpython-3.11.17-linux-x86_64-gnu (python3.11)
+ + cpython-3.13.17-linux-x86_64-gnu (python3.13)
+
+EXIT_CODE=0

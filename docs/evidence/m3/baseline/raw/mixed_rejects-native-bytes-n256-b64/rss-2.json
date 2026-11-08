@@ -1,0 +1,1 @@
+{"phase": "rss", "setup_ns": 795308, "warmup_records": 256, "call_ns": null, "wall_ns": 3486186, "batch_ns": null, "counts": {"ok": 199, "rejected": 33, "error": 24}, "digest": "bd5fdededf26110267b5ae79c78d8ed783aa27136cca9cbf3cacd56a9b95e9bd", "rss_before_bytes": 18800640, "rss_peak_bytes": 18800640, "python_traced_peak_bytes": null, "affinity": [0]}

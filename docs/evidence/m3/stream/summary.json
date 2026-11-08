@@ -1,0 +1,142 @@
+[
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "runtime",
+      "input": "bytes",
+      "records": 2000,
+      "batch_size": 64,
+      "passes": [
+        "rss",
+        "traced"
+      ],
+      "tcore_source": null,
+      "cpu": 0
+    },
+    "process_samples": 0,
+    "call_seconds_median": null,
+    "records_per_second": null,
+    "call_seconds_min": null,
+    "call_seconds_max": null,
+    "relative_time_range": null,
+    "batch_p50_ms": null,
+    "batch_p95_ms": null,
+    "batch_latency_samples": 0,
+    "rss_process_samples": 3,
+    "rss_peak_bytes_median": 18554880,
+    "rss_peak_bytes_min": 18554880,
+    "rss_peak_bytes_max": 18554880,
+    "python_traced_peak_bytes": 52620,
+    "counts": {
+      "ok": 2000,
+      "rejected": 0,
+      "error": 0
+    },
+    "digest": "ee45eb37445f80674e84796d58f8b0961e8dc85b728924191633a17efcaf8da1"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "native",
+      "input": "bytes",
+      "records": 2000,
+      "batch_size": 64,
+      "passes": [
+        "rss",
+        "traced"
+      ],
+      "tcore_source": null,
+      "cpu": 0
+    },
+    "process_samples": 0,
+    "call_seconds_median": null,
+    "records_per_second": null,
+    "call_seconds_min": null,
+    "call_seconds_max": null,
+    "relative_time_range": null,
+    "batch_p50_ms": null,
+    "batch_p95_ms": null,
+    "batch_latency_samples": 0,
+    "rss_process_samples": 3,
+    "rss_peak_bytes_median": 18554880,
+    "rss_peak_bytes_min": 18554880,
+    "rss_peak_bytes_max": 18554880,
+    "python_traced_peak_bytes": 45188,
+    "counts": {
+      "ok": 2000,
+      "rejected": 0,
+      "error": 0
+    },
+    "digest": "ee45eb37445f80674e84796d58f8b0961e8dc85b728924191633a17efcaf8da1"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "runtime",
+      "input": "bytes",
+      "records": 100000,
+      "batch_size": 64,
+      "passes": [
+        "rss",
+        "traced"
+      ],
+      "tcore_source": null,
+      "cpu": 0
+    },
+    "process_samples": 0,
+    "call_seconds_median": null,
+    "records_per_second": null,
+    "call_seconds_min": null,
+    "call_seconds_max": null,
+    "relative_time_range": null,
+    "batch_p50_ms": null,
+    "batch_p95_ms": null,
+    "batch_latency_samples": 0,
+    "rss_process_samples": 3,
+    "rss_peak_bytes_median": 18554880,
+    "rss_peak_bytes_min": 18554880,
+    "rss_peak_bytes_max": 18554880,
+    "python_traced_peak_bytes": 52788,
+    "counts": {
+      "ok": 100000,
+      "rejected": 0,
+      "error": 0
+    },
+    "digest": "044ba4bc5097ab658100db12e810f765124b4948a3bc499f7a7ad310b5efd4b8"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "native",
+      "input": "bytes",
+      "records": 100000,
+      "batch_size": 64,
+      "passes": [
+        "rss",
+        "traced"
+      ],
+      "tcore_source": null,
+      "cpu": 0
+    },
+    "process_samples": 0,
+    "call_seconds_median": null,
+    "records_per_second": null,
+    "call_seconds_min": null,
+    "call_seconds_max": null,
+    "relative_time_range": null,
+    "batch_p50_ms": null,
+    "batch_p95_ms": null,
+    "batch_latency_samples": 0,
+    "rss_process_samples": 3,
+    "rss_peak_bytes_median": 18554880,
+    "rss_peak_bytes_min": 18554880,
+    "rss_peak_bytes_max": 18554880,
+    "python_traced_peak_bytes": 44981,
+    "counts": {
+      "ok": 100000,
+      "rejected": 0,
+      "error": 0
+    },
+    "digest": "044ba4bc5097ab658100db12e810f765124b4948a3bc499f7a7ad310b5efd4b8"
+  }
+]

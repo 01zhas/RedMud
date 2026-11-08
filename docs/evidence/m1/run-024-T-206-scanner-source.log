@@ -1,0 +1,39 @@
+$ rg -n "license|rust-version" /home/agent/.cargo/registry/src/index.crates.io-*/cargo-audit-0.22.2/Cargo.toml && rg -n "json|database|deny|ignore" /home/agent/.cargo/registry/src/index.crates.io-*/cargo-audit-0.22.2/src/commands/audit.rs
+14:rust-version = "1.88"
+35:license = "Apache-2.0 OR MIT"
+84:    /// Filesystem path to the advisory database git repository
+88:        help = "advisory database git repo path (default: ~/.cargo/advisory-db)"
+95:        long = "deny",
+98:    deny: Vec<DenyOption>,
+108:    /// Advisory IDs to ignore
+110:        long = "ignore",
+112:        help = "Advisory id to ignore (can be specified multiple times)"
+114:    ignore: Vec<String>,
+120:    /// Skip fetching the advisory database git repository
+128:    /// Allow stale advisory databases that haven't been recently updated
+129:    #[arg(long = "stale", help = "allow stale database")]
+146:    /// URL to the advisory database git repository
+147:    #[arg(short = 'u', long = "url", help = "URL for advisory database git repo")]
+162:        help = "Output format: terminal, json, or sarif"
+167:    #[arg(long = "json", help = "Output report in JSON format")]
+168:    output_json: bool,
+215:            config.database.path = Some(db.into());
+218:        for advisory_id in &self.ignore {
+219:            config.advisories.ignore.push(
+226:        config.database.fetch &= !self.no_fetch;
+227:        config.database.stale |= self.stale;
+238:            config.database.url = Some(url.clone())
+241:        for kind in &self.deny {
+243:                config.output.deny = DenyOption::all();
+245:                config.output.deny.push(*kind);
+254:        // Handle output format (--json flag takes precedence for backward compatibility)
+255:        if self.output_json {
+318:    /// Ensure that when the database fetch option is false in the config file
+324:        assert!(config.database.fetch);
+329:        assert!(overridden_config.database.fetch);
+334:        config.database.fetch = false;
+336:        assert!(!overridden_config.database.fetch);
+338:        config.database.fetch = true;
+341:        assert!(!overridden_config.database.fetch);
+
+EXIT_CODE=0

@@ -1,0 +1,11 @@
+$ python -m pip download --no-deps --dest /tmp/redmud-scanner-download pip-audit==2.10.1
+Collecting pip-audit==2.10.1
+  Downloading pip_audit-2.10.1-py3-none-any.whl.metadata (28 kB)
+Downloading pip_audit-2.10.1-py3-none-any.whl (62 kB)
+Saved /tmp/redmud-scanner-download/pip_audit-2.10.1-py3-none-any.whl
+Successfully downloaded pip-audit
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+
+EXIT_CODE=0

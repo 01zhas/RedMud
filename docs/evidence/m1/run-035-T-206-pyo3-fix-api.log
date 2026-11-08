@@ -1,0 +1,6 @@
+$ rg -n "^license|rust-version" /home/agent/.cargo/registry/src/index.crates.io-*/pyo3-0.29.0/Cargo.toml && rg -n "pub fn detach|allow_threads" /home/agent/.cargo/registry/src/index.crates.io-*/pyo3-0.29.0/src/marker.rs
+14:rust-version = "1.83"
+50:license = "MIT OR Apache-2.0"
+561:    pub fn detach<T, F>(self, f: F) -> T
+
+EXIT_CODE=0

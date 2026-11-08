@@ -1,0 +1,115 @@
+$ bash scripts/check.sh
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
+All checks passed!
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running unittests src/lib.rs (target/debug/deps/redmud_core-9244ea1c648f9a14)
+
+running 7 tests
+test expression_contract_tests::failure_order_paths_and_lazy_branches ... ok
+test json::tests::integral_tokens_are_never_floats ... ok
+test prepare::tests::definitions_are_validated ... ok
+test schema::tests::schemas_are_checked_once ... ok
+test tests::overflow_and_isolation ... ok
+test validation_tests::nested_and_empty_sum ... ok
+test validation_tests::schema_edges ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/_native-8a0d580b9dbf53ab)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests redmud_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+📦 Including license file `LICENSE`
+🍹 Building a mixed python/rust project
+🐍 Found CPython 3.12 at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3
+🔗 Found pyo3 bindings
+    Finished `release` profile [optimized] target(s) in 0.01s
+📦 Built wheel for CPython 3.12 to target/m1-wheels/redmud-0.2.0-cp312-cp312-manylinux_2_34_x86_64.whl
+Defaulting to user installation because normal site-packages is not writeable
+Processing ./target/m1-wheels/redmud-0.2.0-cp312-cp312-manylinux_2_34_x86_64.whl
+Installing collected packages: redmud
+  Attempting uninstall: redmud
+    Found existing installation: redmud 0.2.0
+    Uninstalling redmud-0.2.0:
+      Successfully uninstalled redmud-0.2.0
+Successfully installed redmud-0.2.0
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+/home/agent/.local/lib/python3.12/site-packages/redmud/__init__.py
+/home/agent/.local/lib/python3.12/site-packages/redmud/_native.cpython-312-x86_64-linux-gnu.so
+test_example_cart_malformed_json (test_examples.TestExamples.test_example_cart_malformed_json) ... ok
+test_sources_produce_compatible_results (test_examples.TestExamples.test_sources_produce_compatible_results) ... ok
+test_ac104_arithmetic_and_order (test_expressions.TestExpressions.test_ac104_arithmetic_and_order) ... ok
+test_ac104_nested_collection_errors (test_expressions.TestExpressions.test_ac104_nested_collection_errors) ... ok
+test_ac104_paths_and_laziness (test_expressions.TestExpressions.test_ac104_paths_and_laziness) ... ok
+test_ac104_structural_equality (test_expressions.TestExpressions.test_ac104_structural_equality) ... ok
+test_ac103_exact_integer_domain (test_inputs.TestInputs.test_ac103_exact_integer_domain) ... ok
+test_ac103_invalid_literals_are_config_errors (test_inputs.TestInputs.test_ac103_invalid_literals_are_config_errors) ... ok
+test_ac103_reject_unsupported_without_mutation (test_inputs.TestInputs.test_ac103_reject_unsupported_without_mutation) ... ok
+test_arithmetic_inputs (test_native.TestNative.test_arithmetic_inputs) ... ok
+test_condition_and_snapshot (test_native.TestNative.test_condition_and_snapshot) ... ok
+test_nested (test_native.TestNative.test_nested) ... ok
+test_overflow (test_native.TestNative.test_overflow) ... ok
+test_policies (test_native.TestNative.test_policies) ... ok
+test_stream_and_metrics (test_native.TestNative.test_stream_and_metrics) ... ok
+test_ac105_mixed_batches_account_before_raise (test_policies.TestPolicies.test_ac105_mixed_batches_account_before_raise) ... ok
+test_ac105_scalar_and_iter_policies (test_policies.TestPolicies.test_ac105_scalar_and_iter_policies) ... ok
+test_ac105_source_failure_and_bad_sizes (test_policies.TestPolicies.test_ac105_source_failure_and_bad_sizes) ... ok
+test_ac101_cached_independent_builders (test_prepare.TestPrepare.test_ac101_cached_independent_builders) ... ok
+test_ac101_invalid_definitions (test_prepare.TestPrepare.test_ac101_invalid_definitions) ... ok
+test_ac101_prepare_before_consumption (test_prepare.TestPrepare.test_ac101_prepare_before_consumption) ... ok
+test_ac106_arguments_and_no_retention (test_profiling.TestProfiling.test_ac106_arguments_and_no_retention) ... ok
+test_ac106_cleanup_and_existing_trace (test_profiling.TestProfiling.test_ac106_cleanup_and_existing_trace) ... ok
+test_ac106_input_count_and_bounded_sample (test_profiling.TestProfiling.test_ac106_input_count_and_bounded_sample) ... ok
+test_bad_rule_name_rejected (test_quality.TestQuality.test_bad_rule_name_rejected) ... ok
+test_decimal_profile_is_descriptive_not_exact (test_quality.TestQuality.test_decimal_profile_is_descriptive_not_exact) ... ok
+test_invalid_paths_rejected (test_quality.TestQuality.test_invalid_paths_rejected) ... ok
+test_paths_support_mappings_and_dataclasses (test_quality.TestQuality.test_paths_support_mappings_and_dataclasses) ... ok
+test_profile_none_missing_and_types (test_quality.TestQuality.test_profile_none_missing_and_types) ... ok
+test_batch_fallback_to_scalar (test_runtime.TestRuntime.test_batch_fallback_to_scalar) ... ok
+test_batch_mismatch_fallback_disabled (test_runtime.TestRuntime.test_batch_mismatch_fallback_disabled) ... ok
+test_batch_mismatch_fallback_enabled (test_runtime.TestRuntime.test_batch_mismatch_fallback_enabled) ... ok
+test_batch_vectorized_preserves_order_after_reject (test_runtime.TestRuntime.test_batch_vectorized_preserves_order_after_reject) ... ok
+test_default_batch_sequence_has_no_custom_batch (test_runtime.TestRuntime.test_default_batch_sequence_has_no_custom_batch) ... ok
+test_elapsed_time_includes_calculation (test_runtime.TestRuntime.test_elapsed_time_includes_calculation) ... ok
+test_empty_batch_and_empty_iterator (test_runtime.TestRuntime.test_empty_batch_and_empty_iterator) ... ok
+test_fail_fast (test_runtime.TestRuntime.test_fail_fast) ... ok
+test_field_sampling (test_runtime.TestRuntime.test_field_sampling) ... ok
+test_input_rules_duplicate_name (test_runtime.TestRuntime.test_input_rules_duplicate_name) ... ok
+test_invalid_prometheus_prefix (test_runtime.TestRuntime.test_invalid_prometheus_prefix) ... ok
+test_iterator_lazy_and_bounded (test_runtime.TestRuntime.test_iterator_lazy_and_bounded) ... ok
+test_json_and_identity_input (test_runtime.TestRuntime.test_json_and_identity_input) ... ok
+test_many_mixed_records_never_drop_or_reorder (test_runtime.TestRuntime.test_many_mixed_records_never_drop_or_reorder) ... ok
+test_nested_custom_parser (test_runtime.TestRuntime.test_nested_custom_parser) ... ok
+test_none_as_successful_value (test_runtime.TestRuntime.test_none_as_successful_value) ... ok
+test_one_engine_monotonic_index_across_calls (test_runtime.TestRuntime.test_one_engine_monotonic_index_across_calls) ... ok
+test_opt_in_error_message (test_runtime.TestRuntime.test_opt_in_error_message) ... ok
+test_output_quality_profiles (test_runtime.TestRuntime.test_output_quality_profiles) ... ok
+test_output_rule_exception_isolated (test_runtime.TestRuntime.test_output_rule_exception_isolated) ... ok
+test_output_warning_is_success (test_runtime.TestRuntime.test_output_warning_is_success) ... ok
+test_parse_failure_is_isolated (test_runtime.TestRuntime.test_parse_failure_is_isolated) ... ok
+test_profile_reports_and_bounded_input (test_runtime.TestRuntime.test_profile_reports_and_bounded_input) ... ok
+test_prometheus_metrics (test_runtime.TestRuntime.test_prometheus_metrics) ... ok
+test_rule_exception_isolated (test_runtime.TestRuntime.test_rule_exception_isolated) ... ok
+test_rule_warning_and_reject_and_output (test_runtime.TestRuntime.test_rule_warning_and_reject_and_output) ... ok
+test_settings_validation (test_runtime.TestRuntime.test_settings_validation) ... ok
+test_transform_failure_is_isolated (test_runtime.TestRuntime.test_transform_failure_is_isolated) ... ok
+test_ac102_bounds_and_allowed (test_schema.TestSchema.test_ac102_bounds_and_allowed) ... ok
+test_ac102_invalid_schema_configuration (test_schema.TestSchema.test_ac102_invalid_schema_configuration) ... ok
+test_ac102_valid_nested_schema (test_schema.TestSchema.test_ac102_valid_nested_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 60 tests in 0.030s
+
+OK
+
+EXIT_CODE=0

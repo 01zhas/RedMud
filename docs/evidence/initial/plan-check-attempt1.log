@@ -1,0 +1,4 @@
+Command: python docs/evidence/initial/plan-check.py
+Exit code: 1
+AssertionError: ('SPEC.md', 'T-110')
+Dangling task reference corrected to existing depth task T-202; no product code changed.

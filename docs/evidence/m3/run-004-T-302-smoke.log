@@ -1,0 +1,16 @@
+$ python -m benchmarks.run --profile smoke --repeat 2 --rss-repeat 1 --pin-cpu --output docs/evidence/m3/smoke
+1/12 arithmetic-plain-bytes-n128-b64: 177499.8179933507 records/s
+2/12 arithmetic-native-bytes-n128-b64: 181882.2539758324 records/s
+3/12 nested_json-plain-bytes-n128-b64: 113324.88118594488 records/s
+4/12 nested_json-native-bytes-n128-b64: 103529.46505193056 records/s
+5/12 nested_sums-plain-bytes-n128-b64: 36471.72009892384 records/s
+6/12 nested_sums-native-bytes-n128-b64: 28319.658588815928 records/s
+7/12 multiple_derives-plain-bytes-n128-b64: 133042.1650117815 records/s
+8/12 multiple_derives-native-bytes-n128-b64: 115326.3284601953 records/s
+9/12 validation_heavy-plain-bytes-n128-b64: 110299.7568235049 records/s
+10/12 validation_heavy-native-bytes-n128-b64: 122385.56232819411 records/s
+11/12 mixed_rejects-plain-bytes-n128-b64: 195578.10136446284 records/s
+12/12 mixed_rejects-native-bytes-n128-b64: 181607.0378402383 records/s
+Measured data: /workspace/redmud/docs/evidence/m3/smoke
+
+EXIT_CODE=0

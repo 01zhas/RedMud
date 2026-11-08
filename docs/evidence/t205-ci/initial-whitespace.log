@@ -1,0 +1,541 @@
+docs/evidence/initial/environment.log:60: trailing whitespace.
++Home-page: 
+docs/evidence/initial/environment.log:61: trailing whitespace.
++Author: 
+docs/evidence/initial/environment.log:62: trailing whitespace.
++Author-email: 
+docs/evidence/initial/environment.log:65: trailing whitespace.
++Requires: 
+docs/evidence/initial/environment.log:66: trailing whitespace.
++Required-by: 
+docs/evidence/m1/pip-audit-metadata.txt:683: new blank line at EOF.
+docs/evidence/m1/run-002-T-101-before.log:3: trailing whitespace.
++test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) ... 
+docs/evidence/m1/run-004-T-102-before.log:3: trailing whitespace.
++test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) ... 
+docs/evidence/m1/run-010-T-105-before.log:2: trailing whitespace.
++test_ac105_mixed_batches_account_before_raise (tests.test_policies.TestPolicies.test_ac105_mixed_batches_account_before_raise) ... 
+docs/evidence/m1/run-014-T-107-before.log:3: trailing whitespace.
++test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) ... 
+docs/evidence/m1/run-018-M1-safety.log:3: trailing whitespace.
++ 
+docs/evidence/m1/run-018-M1-safety.log:5: trailing whitespace.
++ 
+docs/evidence/m1/run-018-M1-safety.log:7: trailing whitespace.
++ 
+docs/evidence/m1/run-031-T-206-rust-scanner-cli.log:13: trailing whitespace.
++          
+docs/evidence/m2/checkout-action-yml.txt:1: trailing whitespace.
++name: 'Checkout'
+docs/evidence/m2/checkout-action-yml.txt:2: trailing whitespace.
++description: 'Checkout a Git repository at a particular version'
+docs/evidence/m2/checkout-action-yml.txt:3: trailing whitespace.
++inputs:
+docs/evidence/m2/checkout-action-yml.txt:4: trailing whitespace.
++  repository:
+docs/evidence/m2/checkout-action-yml.txt:5: trailing whitespace.
++    description: 'Repository name with owner. For example, actions/checkout'
+docs/evidence/m2/checkout-action-yml.txt:6: trailing whitespace.
++    default: ${{ github.repository }}
+docs/evidence/m2/checkout-action-yml.txt:7: trailing whitespace.
++  ref:
+docs/evidence/m2/checkout-action-yml.txt:8: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:9: trailing whitespace.
++      The branch, tag or SHA to checkout. When checking out the repository that
+docs/evidence/m2/checkout-action-yml.txt:10: trailing whitespace.
++      triggered a workflow, this defaults to the reference or SHA for that
+docs/evidence/m2/checkout-action-yml.txt:11: trailing whitespace.
++      event.  Otherwise, uses the default branch.
+docs/evidence/m2/checkout-action-yml.txt:12: trailing whitespace.
++  token:
+docs/evidence/m2/checkout-action-yml.txt:13: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:14: trailing whitespace.
++      Personal access token (PAT) used to fetch the repository. The PAT is configured
+docs/evidence/m2/checkout-action-yml.txt:15: trailing whitespace.
++      with the local git config, which enables your scripts to run authenticated git
+docs/evidence/m2/checkout-action-yml.txt:16: trailing whitespace.
++      commands. The post-job step removes the PAT.
+docs/evidence/m2/checkout-action-yml.txt:17: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:18: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:19: trailing whitespace.
++      We recommend using a service account with the least permissions necessary.
+docs/evidence/m2/checkout-action-yml.txt:20: trailing whitespace.
++      Also when generating a new PAT, select the least scopes necessary.
+docs/evidence/m2/checkout-action-yml.txt:21: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:22: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:23: trailing whitespace.
++      [Learn more about creating and using encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
+docs/evidence/m2/checkout-action-yml.txt:24: trailing whitespace.
++    default: ${{ github.token }}
+docs/evidence/m2/checkout-action-yml.txt:25: trailing whitespace.
++  ssh-key:
+docs/evidence/m2/checkout-action-yml.txt:26: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:27: trailing whitespace.
++      SSH key used to fetch the repository. The SSH key is configured with the local
+docs/evidence/m2/checkout-action-yml.txt:28: trailing whitespace.
++      git config, which enables your scripts to run authenticated git commands.
+docs/evidence/m2/checkout-action-yml.txt:29: trailing whitespace.
++      The post-job step removes the SSH key.
+docs/evidence/m2/checkout-action-yml.txt:30: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:31: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:32: trailing whitespace.
++      We recommend using a service account with the least permissions necessary.
+docs/evidence/m2/checkout-action-yml.txt:33: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:34: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:35: trailing whitespace.
++      [Learn more about creating and using
+docs/evidence/m2/checkout-action-yml.txt:36: trailing whitespace.
++      encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
+docs/evidence/m2/checkout-action-yml.txt:37: trailing whitespace.
++  ssh-known-hosts:
+docs/evidence/m2/checkout-action-yml.txt:38: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:39: trailing whitespace.
++      Known hosts in addition to the user and global host key database. The public
+docs/evidence/m2/checkout-action-yml.txt:40: trailing whitespace.
++      SSH keys for a host may be obtained using the utility `ssh-keyscan`. For example,
+docs/evidence/m2/checkout-action-yml.txt:41: trailing whitespace.
++      `ssh-keyscan github.com`. The public key for github.com is always implicitly added.
+docs/evidence/m2/checkout-action-yml.txt:42: trailing whitespace.
++  ssh-strict:
+docs/evidence/m2/checkout-action-yml.txt:43: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:44: trailing whitespace.
++      Whether to perform strict host key checking. When true, adds the options `StrictHostKeyChecking=yes`
+docs/evidence/m2/checkout-action-yml.txt:45: trailing whitespace.
++      and `CheckHostIP=no` to the SSH command line. Use the input `ssh-known-hosts` to
+docs/evidence/m2/checkout-action-yml.txt:46: trailing whitespace.
++      configure additional hosts.
+docs/evidence/m2/checkout-action-yml.txt:47: trailing whitespace.
++    default: true
+docs/evidence/m2/checkout-action-yml.txt:48: trailing whitespace.
++  ssh-user:
+docs/evidence/m2/checkout-action-yml.txt:49: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:50: trailing whitespace.
++      The user to use when connecting to the remote SSH host. By default 'git' is used.
+docs/evidence/m2/checkout-action-yml.txt:51: trailing whitespace.
++    default: git
+docs/evidence/m2/checkout-action-yml.txt:52: trailing whitespace.
++  persist-credentials:
+docs/evidence/m2/checkout-action-yml.txt:53: trailing whitespace.
++    description: 'Whether to configure the token or SSH key with the local git config'
+docs/evidence/m2/checkout-action-yml.txt:54: trailing whitespace.
++    default: true
+docs/evidence/m2/checkout-action-yml.txt:55: trailing whitespace.
++  path:
+docs/evidence/m2/checkout-action-yml.txt:56: trailing whitespace.
++    description: 'Relative path under $GITHUB_WORKSPACE to place the repository'
+docs/evidence/m2/checkout-action-yml.txt:57: trailing whitespace.
++  clean:
+docs/evidence/m2/checkout-action-yml.txt:58: trailing whitespace.
++    description: 'Whether to execute `git clean -ffdx && git reset --hard HEAD` before fetching'
+docs/evidence/m2/checkout-action-yml.txt:59: trailing whitespace.
++    default: true
+docs/evidence/m2/checkout-action-yml.txt:60: trailing whitespace.
++  filter:
+docs/evidence/m2/checkout-action-yml.txt:61: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:62: trailing whitespace.
++      Partially clone against a given filter.
+docs/evidence/m2/checkout-action-yml.txt:63: trailing whitespace.
++      Overrides sparse-checkout if set.
+docs/evidence/m2/checkout-action-yml.txt:64: trailing whitespace.
++    default: null
+docs/evidence/m2/checkout-action-yml.txt:65: trailing whitespace.
++  sparse-checkout:
+docs/evidence/m2/checkout-action-yml.txt:66: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:67: trailing whitespace.
++      Do a sparse checkout on given patterns.
+docs/evidence/m2/checkout-action-yml.txt:68: trailing whitespace.
++      Each pattern should be separated with new lines.
+docs/evidence/m2/checkout-action-yml.txt:69: trailing whitespace.
++    default: null
+docs/evidence/m2/checkout-action-yml.txt:70: trailing whitespace.
++  sparse-checkout-cone-mode:
+docs/evidence/m2/checkout-action-yml.txt:71: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:72: trailing whitespace.
++      Specifies whether to use cone-mode when doing a sparse checkout.
+docs/evidence/m2/checkout-action-yml.txt:73: trailing whitespace.
++    default: true
+docs/evidence/m2/checkout-action-yml.txt:74: trailing whitespace.
++  fetch-depth:
+docs/evidence/m2/checkout-action-yml.txt:75: trailing whitespace.
++    description: 'Number of commits to fetch. 0 indicates all history for all branches and tags.'
+docs/evidence/m2/checkout-action-yml.txt:76: trailing whitespace.
++    default: 1
+docs/evidence/m2/checkout-action-yml.txt:77: trailing whitespace.
++  fetch-tags:
+docs/evidence/m2/checkout-action-yml.txt:78: trailing whitespace.
++    description: 'Whether to fetch tags, even if fetch-depth > 0.'
+docs/evidence/m2/checkout-action-yml.txt:79: trailing whitespace.
++    default: false
+docs/evidence/m2/checkout-action-yml.txt:80: trailing whitespace.
++  show-progress:
+docs/evidence/m2/checkout-action-yml.txt:81: trailing whitespace.
++    description: 'Whether to show progress status output when fetching.'
+docs/evidence/m2/checkout-action-yml.txt:82: trailing whitespace.
++    default: true
+docs/evidence/m2/checkout-action-yml.txt:83: trailing whitespace.
++  lfs:
+docs/evidence/m2/checkout-action-yml.txt:84: trailing whitespace.
++    description: 'Whether to download Git-LFS files'
+docs/evidence/m2/checkout-action-yml.txt:85: trailing whitespace.
++    default: false
+docs/evidence/m2/checkout-action-yml.txt:86: trailing whitespace.
++  submodules:
+docs/evidence/m2/checkout-action-yml.txt:87: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:88: trailing whitespace.
++      Whether to checkout submodules: `true` to checkout submodules or `recursive` to
+docs/evidence/m2/checkout-action-yml.txt:89: trailing whitespace.
++      recursively checkout submodules.
+docs/evidence/m2/checkout-action-yml.txt:90: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:91: trailing whitespace.
++
+docs/evidence/m2/checkout-action-yml.txt:92: trailing whitespace.
++      When the `ssh-key` input is not provided, SSH URLs beginning with `git@github.com:` are
+docs/evidence/m2/checkout-action-yml.txt:93: trailing whitespace.
++      converted to HTTPS.
+docs/evidence/m2/checkout-action-yml.txt:94: trailing whitespace.
++    default: false
+docs/evidence/m2/checkout-action-yml.txt:95: trailing whitespace.
++  set-safe-directory:
+docs/evidence/m2/checkout-action-yml.txt:96: trailing whitespace.
++    description: Add repository path as safe.directory for Git global config by running `git config --global --add safe.directory <path>`
+docs/evidence/m2/checkout-action-yml.txt:97: trailing whitespace.
++    default: true
+docs/evidence/m2/checkout-action-yml.txt:98: trailing whitespace.
++  github-server-url:
+docs/evidence/m2/checkout-action-yml.txt:99: trailing whitespace.
++    description: The base URL for the GitHub instance that you are trying to clone from, will use environment defaults to fetch from the same instance that the workflow is running from unless specified. Example URLs are https://github.com or https://my-ghes-server.example.com
+docs/evidence/m2/checkout-action-yml.txt:100: trailing whitespace.
++    required: false
+docs/evidence/m2/checkout-action-yml.txt:101: trailing whitespace.
++  allow-unsafe-pr-checkout:
+docs/evidence/m2/checkout-action-yml.txt:102: trailing whitespace.
++    description: >
+docs/evidence/m2/checkout-action-yml.txt:103: trailing whitespace.
++      Required to check out fork pull request code from a workflow triggered by
+docs/evidence/m2/checkout-action-yml.txt:104: trailing whitespace.
++      `pull_request_target` or `workflow_run`. These workflows run with the
+docs/evidence/m2/checkout-action-yml.txt:105: trailing whitespace.
++      base repository's GITHUB_TOKEN, secrets, default-branch cache scope, and
+docs/evidence/m2/checkout-action-yml.txt:106: trailing whitespace.
++      runner access; fetching and executing a fork's code in that trusted
+docs/evidence/m2/checkout-action-yml.txt:107: trailing whitespace.
++      context commonly leads to "pwn request" vulnerabilities. Set to `true`
+docs/evidence/m2/checkout-action-yml.txt:108: trailing whitespace.
++      only after reviewing the risks at https://gh.io/securely-using-pull_request_target.
+docs/evidence/m2/checkout-action-yml.txt:109: trailing whitespace.
++    default: false
+docs/evidence/m2/checkout-action-yml.txt:110: trailing whitespace.
++outputs:
+docs/evidence/m2/checkout-action-yml.txt:111: trailing whitespace.
++  ref:
+docs/evidence/m2/checkout-action-yml.txt:112: trailing whitespace.
++    description: 'The branch, tag or SHA that was checked out'
+docs/evidence/m2/checkout-action-yml.txt:113: trailing whitespace.
++  commit:
+docs/evidence/m2/checkout-action-yml.txt:114: trailing whitespace.
++    description: 'The commit SHA that was checked out'
+docs/evidence/m2/checkout-action-yml.txt:115: trailing whitespace.
++runs:
+docs/evidence/m2/checkout-action-yml.txt:116: trailing whitespace.
++  using: node24
+docs/evidence/m2/checkout-action-yml.txt:117: trailing whitespace.
++  main: dist/index.js
+docs/evidence/m2/checkout-action-yml.txt:118: trailing whitespace.
++  post: dist/index.js
+docs/evidence/m2/hosted-runner-reference.txt:33: trailing whitespace.
++})(); Skip to main content Skip to content GitHub   Docs Search or ask Copilot / Menu Collapse sidebar Expand sidebar Home GitHub Actions Reference Runners GitHub-hosted runners GitHub Actions Get started Quickstart Understand GitHub Actions Continuous integration Continuous deployment Actions vs Apps Concepts Workflows and actions Workflows Variables Contexts Expressions Reusing workflow configurations Custom actions Deployment environments Concurrency Workflow artifacts Dependency caching Notifications for workflow runs Runners GitHub-hosted runners Larger runners Self-hosted runners Private networking Runner groups Runner scale sets Actions Runner Controller Support for ARC Security Secrets GITHUB_TOKEN OpenID Connect Artifact attestations Script injections Dependency lockfiles Compromised runners Kubernetes admissions controller Metrics Billing and usage Policies How-tos Write workflows Use workflow templates Choose when workflows run Trigger a workflow Control jobs with conditions Control workflow concurrency Choose where workflows run Choose the runner for a job Run jobs in a container Choose what workflows do Use jobs Find and customize actions Use GitHub CLI Add scripts Use secrets Use variables Pass job outputs Set default values for jobs Deploy to environment Run job variations Reuse automations Reuse workflows Create workflow templates Share across private repositories Share with your organization Secure your work Lock workflow dependencies Use artifact attestations Use artifact attestations Increase security rating Enforce artifact attestations Verify attestations offline Manage attestations Security harden deployments OIDC in AWS OIDC in Azure OIDC in Docker OIDC in Google Cloud Platform OIDC in HashiCorp Vault OIDC in JFrog OIDC in Octopus Deploy OIDC in PyPI OIDC in cloud providers OIDC with reusable workflows Deploy Configure and manage deployments Control deployments View deployment history Manage environments Review deployments Create custom protection rules Configure custom protection rules Deploy to third-party platforms Node.js to Azure App Service Python to Azure App Service Java to Azure App Service .NET to Azure App Service PHP to Azure App Service Docker to Azure App Service Azure Static Web App Azure Kubernetes Service Amazon Elastic Container Service Google Kubernetes Engine Sign Xcode applications Create and publish actions Manage custom actions Create a CLI action Set exit codes Publish in GitHub Marketplace Release and maintain actions Use immutable releases Manage workflow runs Manually run a workflow Re-run workflows and jobs Cancel a workflow run Disable and enable workflows Skip workflow runs Delete a workflow run Download workflow artifacts Remove workflow artifacts Manage caches Approve runs from forks Manage runners GitHub-hosted runners Use GitHub-hosted runners Customize runners View current jobs Connect to a private network Connect with OIDC Connect with WireGuard Self-hosted runners Add runners Run scripts Customize containers Configure the application Apply labels Use in a workflow Manage access Monitor and troubleshoot Remove runners Larger runners Manage larger runners Control access Use larger runners Use custom images Actions Runner Controller Authenticate to the API Deploy runner scale sets Use ARC in a workflow Use proxy servers Monitor workflows Use the visualization graph View workflow run history View job execution time Add a status badge Use workflow run logs View job condition logs Enable debug logging Troubleshoot workflows Administer Control workflow execution Enforce workflow lockfiles View metrics Get support Reference Workflows and actions Workflow syntax Events that trigger workflows Workflow commands Variables Expressions Contexts Deployments and environments Dependency caching Reusing workflow configurations Metadata syntax Workflow cancellation Dockerfile support Runners GitHub-hosted runners Larger runners Self-hosted runners Security Secure use Securely using pull_request_target Secrets OIDC Limits GitHub Actions Importer Supplemental arguments and settings Custom transformers Tutorials Create an example workflow Build and test code Go Java with Ant Java with Gradle Java with Maven .NET Node.js PowerShell Python Ruby Rust Swift Xamarin apps Authenticate with GITHUB_TOKEN Migrate to GitHub runners Create actions Create a JavaScript action Create a composite action Publish packages Publish Docker images Publish Java packages with Gradle Publish Java packages with Maven Publish Node.js packages Manage your work Add labels to issues Close inactive issues Add comments with labels Schedule issue creation Store and share data Use containerized services Create a Docker container action Use Docker service containers Create PostgreSQL service containers Create Redis service containers Migrate to GitHub Actions Automated migrations Use GitHub Actions Importer Azure DevOps migration Bamboo migration Bitbucket Pipelines migration CircleCI migration GitLab migration Jenkins migration Travis CI migration Manual migrations Migrate from Azure Pipelines Migrate from CircleCI Migrate from GitLab CI/CD Migrate from Jenkins Migrate from Travis CI Actions Runner Controller Get started Troubleshoot Develop agentic workflows In this article GitHub-hosted runners reference Find information about GitHub-hosted runners, including their specifications and customization options. Copy markdown In this article Supported runners and hardware resources Administrative privileges IP addresses Communication requirements for GitHub-hosted runners File systems Supported runners and hardware resources 
+docs/evidence/m2/hosted-runner-reference.txt:34: trailing whitespace.
++ Ranges of GitHub-hosted runners are available for use in public and private repositories. 
+docs/evidence/m2/hosted-runner-reference.txt:35: trailing whitespace.
++ For lists of available runners, see: 
+docs/evidence/m2/hosted-runner-reference.txt:36: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:37: trailing whitespace.
++ Standard runners for  public  repositories 
+docs/evidence/m2/hosted-runner-reference.txt:38: trailing whitespace.
++ Standard runners for  private  repositories 
+docs/evidence/m2/hosted-runner-reference.txt:39: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:40: trailing whitespace.
++ GitHub-hosted Linux runners support hardware acceleration for Android SDK tools, which makes running Android tests much faster and consumes fewer minutes. For more information on Android hardware acceleration, see  Configure hardware acceleration for the Android Emulator  in the Android Developers documentation. 
+docs/evidence/m2/hosted-runner-reference.txt:41: trailing whitespace.
++ Note 
+docs/evidence/m2/hosted-runner-reference.txt:42: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:43: trailing whitespace.
++The  -latest  runner images are the latest stable images that GitHub provides, and might not be the most recent version of the operating system available from the operating system vendor. 
+docs/evidence/m2/hosted-runner-reference.txt:44: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:45: trailing whitespace.
++ Warning 
+docs/evidence/m2/hosted-runner-reference.txt:46: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:47: trailing whitespace.
++Beta and Deprecated Images are provided "as-is", "with all faults" and "as available" and are excluded from the service level agreement and warranty. Beta Images may not be covered by customer support. 
+docs/evidence/m2/hosted-runner-reference.txt:48: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:49: trailing whitespace.
++ Standard GitHub-hosted runners for public repositories 
+docs/evidence/m2/hosted-runner-reference.txt:50: trailing whitespace.
++ For public repositories, jobs using the workflow labels shown in the table below will run with the associated specifications. With the exception of single-CPU runners, each GitHub-hosted runner is a new virtual machine (VM) hosted by GitHub. Single-CPU runners are hosted in a container on a shared VM—see  GitHub-hosted runners reference . Use of the standard GitHub-hosted runners is free and unlimited on public repositories. 
+docs/evidence/m2/hosted-runner-reference.txt:52: trailing whitespace.
++ Virtual machine / container Processor (CPU) Memory (RAM) Storage (SSD) Architecture Workflow label Linux 1 5 GB 14 GB  x64  
+docs/evidence/m2/hosted-runner-reference.txt:53: trailing whitespace.
++             ubuntu-slim 
+docs/evidence/m2/hosted-runner-reference.txt:54: trailing whitespace.
++           Linux 4 16 GB 14 GB  x64  
+docs/evidence/m2/hosted-runner-reference.txt:58: trailing whitespace.
++         ubuntu-26.04 
+docs/evidence/m2/hosted-runner-reference.txt:59: trailing whitespace.
++       Windows 4 16 GB 14 GB  x64  
+docs/evidence/m2/hosted-runner-reference.txt:63: trailing whitespace.
++         windows-2022 
+docs/evidence/m2/hosted-runner-reference.txt:64: trailing whitespace.
++       Linux 4 16 GB 14 GB  arm64  
+docs/evidence/m2/hosted-runner-reference.txt:67: trailing whitespace.
++         ubuntu-26.04-arm 
+docs/evidence/m2/hosted-runner-reference.txt:68: trailing whitespace.
++       Windows 4 16 GB 14 GB arm64 
+docs/evidence/m2/hosted-runner-reference.txt:70: trailing whitespace.
++         windows-11-vs2026-arm 
+docs/evidence/m2/hosted-runner-reference.txt:71: trailing whitespace.
++       macOS 4 14 GB 14 GB  Intel  
+docs/evidence/m2/hosted-runner-reference.txt:73: trailing whitespace.
++         macos-26-intel 
+docs/evidence/m2/hosted-runner-reference.txt:74: trailing whitespace.
++       macOS 3 (M1) 7 GB 14 GB  arm64  
+docs/evidence/m2/hosted-runner-reference.txt:78: trailing whitespace.
++         xcode-27 
+docs/evidence/m2/hosted-runner-reference.txt:79: trailing whitespace.
++       
+docs/evidence/m2/hosted-runner-reference.txt:80: trailing whitespace.
++ Standard GitHub-hosted runners for  private repositories 
+docs/evidence/m2/hosted-runner-reference.txt:81: trailing whitespace.
++ For  private repositories, jobs using the workflow labels shown in the table below will run on virtual machines with the associated specifications. These runners draw from your GitHub account's included compute usage, and are then charged at the per-minute rates. See  Actions runner pricing . 
+docs/evidence/m2/hosted-runner-reference.txt:82: trailing whitespace.
++ Virtual Machine Processor (CPU) Memory (RAM) Storage (SSD) Architecture Workflow label Linux 1 5 GB 14 GB  x64  
+docs/evidence/m2/hosted-runner-reference.txt:83: trailing whitespace.
++             ubuntu-slim 
+docs/evidence/m2/hosted-runner-reference.txt:84: trailing whitespace.
++           Linux 2 8 GB 14 GB  x64  
+docs/evidence/m2/hosted-runner-reference.txt:88: trailing whitespace.
++         ubuntu-26.04 
+docs/evidence/m2/hosted-runner-reference.txt:89: trailing whitespace.
++       Windows 2 8 GB 14 GB  x64  
+docs/evidence/m2/hosted-runner-reference.txt:92: trailing whitespace.
++         windows-2022 
+docs/evidence/m2/hosted-runner-reference.txt:93: trailing whitespace.
++       Linux 2 8 GB 14 GB  arm64  
+docs/evidence/m2/hosted-runner-reference.txt:96: trailing whitespace.
++         ubuntu-26.04-arm 
+docs/evidence/m2/hosted-runner-reference.txt:97: trailing whitespace.
++       Windows 2 8 GB 14 GB  arm64  
+docs/evidence/m2/hosted-runner-reference.txt:99: trailing whitespace.
++         windows-11-vs2026-arm 
+docs/evidence/m2/hosted-runner-reference.txt:100: trailing whitespace.
++       macOS 4 14 GB 14 GB  Intel  
+docs/evidence/m2/hosted-runner-reference.txt:102: trailing whitespace.
++         macos-26-intel 
+docs/evidence/m2/hosted-runner-reference.txt:103: trailing whitespace.
++       macOS 3 (M1) 7 GB 14 GB  arm64  
+docs/evidence/m2/hosted-runner-reference.txt:107: trailing whitespace.
++         xcode-27 
+docs/evidence/m2/hosted-runner-reference.txt:108: trailing whitespace.
++       
+docs/evidence/m2/hosted-runner-reference.txt:109: trailing whitespace.
++ Workflow logs list the runner used to run a job. For more information, see  Viewing workflow run history . 
+docs/evidence/m2/hosted-runner-reference.txt:110: trailing whitespace.
++ Limitations for arm64 macOS runners 
+docs/evidence/m2/hosted-runner-reference.txt:111: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:112: trailing whitespace.
++ All actions provided by GitHub are compatible with arm64 GitHub-hosted runners. However, community actions may not be compatible with arm64 and need to be manually installed at runtime. 
+docs/evidence/m2/hosted-runner-reference.txt:113: trailing whitespace.
++ Nested-virtualization is not supported due to the limitation of Apple's Virtualization Framework. 
+docs/evidence/m2/hosted-runner-reference.txt:114: trailing whitespace.
++ Networking capabilities such as Azure private networking and assigning static IPs are not currently available for macOS larger runners. 
+docs/evidence/m2/hosted-runner-reference.txt:115: trailing whitespace.
++ The arm64 macOS runners do not have a static UUID/UDID assigned to them because Apple does not support this feature. However, Intel MacOS runners are assigned a static UDID, specifically  4203018E-580F-C1B5-9525-B745CECA79EB . If you are building and signing on the same host you plan to test the build on, you can sign with a  development provisioning profile . If you do require a static UDID, you can use Intel runners and add their UDID to your Apple Developer account. 
+docs/evidence/m2/hosted-runner-reference.txt:116: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:117: trailing whitespace.
++ Single-CPU runners 
+docs/evidence/m2/hosted-runner-reference.txt:118: trailing whitespace.
++ Single-CPU GitHub-hosted runners are available in both public and private repositories. These runners—specified using the workflow label  ubuntu-slim —offer a lower-cost option for running lightweight operations. This type of runner is optimized for automation tasks, issue operations and short-running jobs. They are not suitable for typical heavyweight CI/CD builds. 
+docs/evidence/m2/hosted-runner-reference.txt:119: trailing whitespace.
++ ubuntu-slim  runners execute Actions workflows in Ubuntu Linux, inside a container rather than a full VM instance. When the job begins, GitHub automatically provisions a new container for that job. All steps in the job execute in the container, allowing the steps in that job to share information using the runner's file system. When the job has finished, the container is automatically decommissioned. Each container provides hypervisor level 2 isolation. 
+docs/evidence/m2/hosted-runner-reference.txt:120: trailing whitespace.
++ Note 
+docs/evidence/m2/hosted-runner-reference.txt:121: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:122: trailing whitespace.
++The container for  ubuntu-slim  runners runs in unprivileged mode. This means that some operations requiring elevated privileges—such as mounting file systems, using Docker-in-Docker, or accessing low-level kernel features—are not supported. 
+docs/evidence/m2/hosted-runner-reference.txt:123: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:124: trailing whitespace.
++ A minimal set of tools is installed on the  ubuntu-slim  runner image, appropriate for lightweight tasks. For details on what software is installed on the  ubuntu-slim  image, see the  README file  in the  actions/runner-images  repository. 
+docs/evidence/m2/hosted-runner-reference.txt:125: trailing whitespace.
++ Usage limits 
+docs/evidence/m2/hosted-runner-reference.txt:126: trailing whitespace.
++ Single-CPU runners follow the same concurrency model as other GitHub-hosted standard runners. See  Actions limits . The concurrency for the runners is determined by your plan. 
+docs/evidence/m2/hosted-runner-reference.txt:127: trailing whitespace.
++ The job timeout for single-CPU runners is 15 minutes. If a job reaches this limit, the job is terminated and fails. 
+docs/evidence/m2/hosted-runner-reference.txt:128: trailing whitespace.
++ Larger runners 
+docs/evidence/m2/hosted-runner-reference.txt:129: trailing whitespace.
++ Larger runners are available for organizations and enterprises on GitHub Team and GitHub Enterprise Cloud plans. 
+docs/evidence/m2/hosted-runner-reference.txt:130: trailing whitespace.
++ Larger runners are managed virtual machines with more resources than  standard GitHub-hosted runners . They offer the following advanced features: 
+docs/evidence/m2/hosted-runner-reference.txt:131: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:132: trailing whitespace.
++ More RAM, CPU, and disk space 
+docs/evidence/m2/hosted-runner-reference.txt:133: trailing whitespace.
++ Static IP addresses 
+docs/evidence/m2/hosted-runner-reference.txt:134: trailing whitespace.
++ Azure private networking 
+docs/evidence/m2/hosted-runner-reference.txt:135: trailing whitespace.
++ The ability to group runners 
+docs/evidence/m2/hosted-runner-reference.txt:136: trailing whitespace.
++ Autoscaling to support concurrent workflows 
+docs/evidence/m2/hosted-runner-reference.txt:137: trailing whitespace.
++ GPU-powered runners 
+docs/evidence/m2/hosted-runner-reference.txt:138: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:139: trailing whitespace.
++ These larger runners are hosted by GitHub and have the runner application and other tools preinstalled. 
+docs/evidence/m2/hosted-runner-reference.txt:140: trailing whitespace.
++ For more information, see  Using larger runners . 
+docs/evidence/m2/hosted-runner-reference.txt:141: trailing whitespace.
++ Administrative privileges 
+docs/evidence/m2/hosted-runner-reference.txt:142: trailing whitespace.
++ The Linux and macOS virtual machines both run using passwordless  sudo . When you need to execute commands or install tools that require more privileges than the current user, you can use  sudo  without needing to provide a password. For more information, see the  Sudo Manual . 
+docs/evidence/m2/hosted-runner-reference.txt:143: trailing whitespace.
++ Windows virtual machines are configured to run as administrators with User Account Control (UAC) disabled. For more information, see  How User Account Control works  in the Windows documentation. 
+docs/evidence/m2/hosted-runner-reference.txt:144: trailing whitespace.
++ IP addresses 
+docs/evidence/m2/hosted-runner-reference.txt:145: trailing whitespace.
++ To get a list of IP address ranges that GitHub Actions uses for GitHub-hosted runners, you can use the GitHub REST API. For more information, see the  actions  key in the response of the  GET /meta  endpoint. For more information, see  REST API endpoints for meta data . 
+docs/evidence/m2/hosted-runner-reference.txt:146: trailing whitespace.
++ Eligible Linux runners use a multi-cloud compute pool, so their outbound IP addresses are not limited to Azure datacenter ranges. Keep any IP allowlists or network-based access policies used by your workflows in sync with all ranges in the  actions  array, rather than relying on cloud-provider-specific ranges. Policies that allow only Azure or Microsoft-owned ranges, including Microsoft Entra Conditional Access policies, can block connections or authentication from these runners. 
+docs/evidence/m2/hosted-runner-reference.txt:147: trailing whitespace.
++ For multi-cloud eligibility, see  Cloud hosts used by GitHub-hosted runners . macOS runners are hosted in GitHub's own macOS cloud. 
+docs/evidence/m2/hosted-runner-reference.txt:148: trailing whitespace.
++ Since there are so many IP address ranges for GitHub-hosted runners, we do not recommend that you use these as allowlists for your internal resources. Instead, we recommend you use larger runners with a static IP address range, or self-hosted runners. For more information, see  Using larger runners  or  Self-hosted runners . 
+docs/evidence/m2/hosted-runner-reference.txt:149: trailing whitespace.
++ The list of GitHub Actions IP addresses returned by the API is updated once a week. 
+docs/evidence/m2/hosted-runner-reference.txt:150: trailing whitespace.
++ Communication requirements for GitHub-hosted runners 
+docs/evidence/m2/hosted-runner-reference.txt:151: trailing whitespace.
++ A GitHub-hosted runner must establish connections to GitHub-owned endpoints to perform essential communication operations. In addition, your runner may require access to additional networks that you specify or utilize within an action. 
+docs/evidence/m2/hosted-runner-reference.txt:152: trailing whitespace.
++ To ensure proper communications for GitHub-hosted runners between networks within your configuration, ensure that the following communications are allowed. 
+docs/evidence/m2/hosted-runner-reference.txt:153: trailing whitespace.
++ Note 
+docs/evidence/m2/hosted-runner-reference.txt:154: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:155: trailing whitespace.
++Some of the domains listed are configured using  CNAME  records. Some firewalls might require you to add rules recursively for all  CNAME  records. Note that the  CNAME  records might change in the future, and that only the domains listed will remain constant. 
+docs/evidence/m2/hosted-runner-reference.txt:156: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:157: trailing whitespace.
++ Needed for essential operations: 
+docs/evidence/m2/hosted-runner-reference.txt:164: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:165: trailing whitespace.
++ Needed for downloading actions: 
+docs/evidence/m2/hosted-runner-reference.txt:168: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:169: trailing whitespace.
++ Needed for uploading/downloading job summaries, logs, workflow artifacts, and caches: 
+docs/evidence/m2/hosted-runner-reference.txt:174: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:175: trailing whitespace.
++ Needed for runner version updates: 
+docs/evidence/m2/hosted-runner-reference.txt:184: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:185: trailing whitespace.
++ Needed for retrieving OIDC tokens: 
+docs/evidence/m2/hosted-runner-reference.txt:188: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:189: trailing whitespace.
++ Needed for downloading or publishing packages or containers to GitHub Packages: 
+docs/evidence/m2/hosted-runner-reference.txt:196: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:197: trailing whitespace.
++ Needed for Git Large File Storage 
+docs/evidence/m2/hosted-runner-reference.txt:202: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:203: trailing whitespace.
++ Needed for jobs for Dependabot updates 
+docs/evidence/m2/hosted-runner-reference.txt:206: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:207: trailing whitespace.
++ Needed for downloading release assets: 
+docs/evidence/m2/hosted-runner-reference.txt:210: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:211: trailing whitespace.
++ Needed for VNet: 
+docs/evidence/m2/hosted-runner-reference.txt:216: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:217: trailing whitespace.
++ File systems 
+docs/evidence/m2/hosted-runner-reference.txt:218: trailing whitespace.
++ GitHub executes actions and shell commands in specific directories on the virtual machine. The file paths on virtual machines are not static. Use the environment variables GitHub provides to construct file paths for the  home ,  workspace , and  workflow  directories. 
+docs/evidence/m2/hosted-runner-reference.txt:244: trailing whitespace.
++ Directory Environment variable Description home HOME Contains user-related data. For example, this directory could contain credentials from a login attempt. workspace GITHUB_WORKSPACE Actions and shell commands execute in this directory. An action can modify the contents of this directory, which subsequent actions can access. workflow/ event.json GITHUB_EVENT_PATH The  POST  payload of the webhook event that triggered the workflow. GitHub rewrites this each time an action executes to isolate file content between actions. 
+docs/evidence/m2/hosted-runner-reference.txt:245: trailing whitespace.
++ For a list of the environment variables GitHub creates for each workflow, see  Store information in variables . 
+docs/evidence/m2/hosted-runner-reference.txt:246: trailing whitespace.
++ Docker container filesystem 
+docs/evidence/m2/hosted-runner-reference.txt:247: trailing whitespace.
++ Actions that run in Docker containers have static directories under the  /github  path. However, we strongly recommend using the default environment variables to construct file paths in Docker containers. 
+docs/evidence/m2/hosted-runner-reference.txt:248: trailing whitespace.
++ GitHub reserves the  /github  path prefix and creates three directories for actions. 
+docs/evidence/m2/hosted-runner-reference.txt:249: trailing whitespace.
++ 
+docs/evidence/m2/hosted-runner-reference.txt:250: trailing whitespace.
++ /github/home 
+docs/evidence/m2/hosted-runner-reference.txt:251: trailing whitespace.
++ /github/workspace  -  Note:  GitHub Actions must be run by the default Docker user (root). Ensure your Dockerfile does not set the  USER  instruction, otherwise you will not be able to access  GITHUB_WORKSPACE . 
+docs/evidence/m2/hosted-runner-reference.txt:252: trailing whitespace.
++ /github/workflow 
+docs/evidence/m2/run-003-T-202-before.log:2: trailing whitespace.
++test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) ... 
+docs/evidence/m2/run-006-T-203-before.log:2: trailing whitespace.
++test_both_modes_batch_summary_and_error_policies (tests.test_metrics_bounds.TestMetricBounds.test_both_modes_batch_summary_and_error_policies) ... 
+docs/evidence/m2/upload-artifact-action-yml.txt:65: trailing whitespace.
++      This download URL only works for requests Authenticated with GitHub. Anonymous downloads will be prompted to first login. 
+docs/evidence/m2/upload-artifact-action-yml.txt:66: trailing whitespace.
++      If an anonymous download URL is needed than a short time restricted URL can be generated using the download artifact API: https://docs.github.com/en/rest/actions/artifacts#download-an-artifact    
+docs/evidence/t205-macos/rustup-install.log:17: trailing whitespace.
++To get started you need Cargo's bin directory 
+docs/evidence/t205-macos/rustup-install.log:18: trailing whitespace.
++(/Users/im01zhas/Documents/ChatGPT/RedMud/target/t205-tools/cargo/bin) in your 
+docs/evidence/t205-macos/rustup-install.log:23: trailing whitespace.
++the corresponding env file under 
+docs/evidence/t205-macos/rustup-install.log:27: trailing whitespace.
++. "/Users/im01zhas/Documents/ChatGPT/RedMud/target/t205-tools/cargo/env"       
+docs/evidence/t205-macos/rustup-install.log:29: trailing whitespace.
++source 
+docs/evidence/t205-macos/rustup-install.log:30: trailing whitespace.
++"/Users/im01zhas/Documents/ChatGPT/RedMud/target/t205-tools/cargo/env.tcsh" # 

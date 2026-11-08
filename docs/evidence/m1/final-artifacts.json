@@ -1,0 +1,6 @@
+{
+  "target/security-wheels/redmud-0.2.0-cp312-cp312-manylinux_2_34_x86_64.whl": "a2263ed3d4ced937954aabd336670527bfe4e1a449729220a6827cb8419fb34b",
+  "target/security-wheels/redmud-0.2.0.tar.gz": "1785eb029bd76ee78dc5c2f5a3b6d5de688d2aa4d62bf82a7b96760ae3912575",
+  "Cargo.lock": "49dac455b2fc1638698888b6413f8919209ac558e27ee713c0548cd23a0c2aa8",
+  "THIRD_PARTY_NOTICES.md": "0c023170dc40efe383dbd191fa6553c75cdaf685800f6bba64b3c6d1de7dcd3c"
+}

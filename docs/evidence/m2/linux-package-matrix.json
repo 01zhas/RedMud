@@ -1,0 +1,47 @@
+[
+  {
+    "version": "3.11.17",
+    "system": "Linux",
+    "machine": "x86_64",
+    "artifacts": [
+      "target/package-check/Linux-x86_64-3.11.17/wheel/redmud-0.2.0-cp311-cp311-manylinux_2_34_x86_64.whl",
+      "target/package-check/Linux-x86_64-3.11.17/sdist/redmud-0.2.0.tar.gz"
+    ],
+    "result": "PASS: wheel and sdist installs, installed imports, full Python suite and examples",
+    "hashes": {
+      "target/package-check/Linux-x86_64-3.11.17/wheel/redmud-0.2.0-cp311-cp311-manylinux_2_34_x86_64.whl": "253ab82ecc2b6fce5adee73659ea4db2dda92853434af4ca99783463f33a0590",
+      "target/package-check/Linux-x86_64-3.11.17/sdist/redmud-0.2.0.tar.gz": "e50dd6f65b7cffdae1728775082eb46376e56f343f57141a826747e800c34ac5"
+    },
+    "verification": "Current Python module and Rust source bytes match tested wheel/sdist; docs changed after package runs."
+  },
+  {
+    "version": "3.12.14",
+    "system": "Linux",
+    "machine": "x86_64",
+    "artifacts": [
+      "target/package-check/Linux-x86_64-3.12.14/wheel/redmud-0.2.0-cp312-cp312-manylinux_2_34_x86_64.whl",
+      "target/package-check/Linux-x86_64-3.12.14/sdist/redmud-0.2.0.tar.gz"
+    ],
+    "result": "PASS: wheel and sdist installs, installed imports, full Python suite and examples",
+    "hashes": {
+      "target/package-check/Linux-x86_64-3.12.14/wheel/redmud-0.2.0-cp312-cp312-manylinux_2_34_x86_64.whl": "0f21a736dd520e0af5687fd2d9c0dcb053d27472ae9a45abee258f7719e7af84",
+      "target/package-check/Linux-x86_64-3.12.14/sdist/redmud-0.2.0.tar.gz": "e50dd6f65b7cffdae1728775082eb46376e56f343f57141a826747e800c34ac5"
+    },
+    "verification": "Current Python module and Rust source bytes match tested wheel/sdist; docs changed after package runs."
+  },
+  {
+    "version": "3.13.17",
+    "system": "Linux",
+    "machine": "x86_64",
+    "artifacts": [
+      "target/package-check/Linux-x86_64-3.13.17/wheel/redmud-0.2.0-cp313-cp313-manylinux_2_34_x86_64.whl",
+      "target/package-check/Linux-x86_64-3.13.17/sdist/redmud-0.2.0.tar.gz"
+    ],
+    "result": "PASS: wheel and sdist installs, installed imports, full Python suite and examples",
+    "hashes": {
+      "target/package-check/Linux-x86_64-3.13.17/wheel/redmud-0.2.0-cp313-cp313-manylinux_2_34_x86_64.whl": "42838dbb316e168b85d4bf67dbeda1b7402107dc0758ad0bf1f7d5ea3b50da1d",
+      "target/package-check/Linux-x86_64-3.13.17/sdist/redmud-0.2.0.tar.gz": "e50dd6f65b7cffdae1728775082eb46376e56f343f57141a826747e800c34ac5"
+    },
+    "verification": "Current Python module and Rust source bytes match tested wheel/sdist; docs changed after package runs."
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "core": {
+    "evaluate_ns": 1553887,
+    "full_ns": 4383297,
+    "parse_ns": 1152997,
+    "records": 1000,
+    "serialize_ns": 1348832
+  },
+  "binding_ns": 4145385,
+  "decode_ns": 1900517,
+  "dict_validate_encode_ns": 3803647,
+  "public_bytes_ns": 7979768,
+  "public_dict_ns": 11646743,
+  "records": 1000,
+  "compact_input_bytes": 87070,
+  "dict_encoded_bytes": 100070,
+  "parity": true
+}

@@ -1,0 +1,15 @@
+$ . "$HOME/.cargo/env"; maturin sdist --out /tmp/redmud-audit-dist
+📦 Including license file `LICENSE`
+🍹 Building a mixed python/rust project
+🔗 Found pyo3 bindings
+From `cargo package --list --allow-dirty --manifest-path /workspace/redmud/crates/redmud-core/Cargo.toml`:
+warning: manifest has no documentation, homepage or repository
+  |
+  = note: see https://doc.rust-lang.org/cargo/reference/manifest.html#package-metadata for more info
+From `cargo package --list --allow-dirty --manifest-path /workspace/redmud/crates/redmud-python/Cargo.toml`:
+warning: manifest has no documentation, homepage or repository
+  |
+  = note: see https://doc.rust-lang.org/cargo/reference/manifest.html#package-metadata for more info
+📦 Built source distribution to /tmp/redmud-audit-dist/redmud-0.2.0.tar.gz
+
+EXIT_CODE=0

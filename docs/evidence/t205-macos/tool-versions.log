@@ -1,0 +1,27 @@
+UTC: 2026-11-08T02:44:55.081827+00:00
+CWD: /Users/im01zhas/Documents/ChatGPT/RedMud
+COMMAND: ["bash", "-c", "rustc -Vv; cargo -V; rustup component list --installed; python -VV; python -m pip list; clang --version"]
+rustc 1.99.1 (58cf8f9c3 2026-10-13)
+binary: rustc
+commit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67
+commit-date: 2026-10-13
+host: aarch64-apple-darwin
+release: 1.99.1
+LLVM version: 23.1.1
+cargo 1.99.1 (5f94df478 2026-08-27)
+cargo-aarch64-apple-darwin
+clippy-aarch64-apple-darwin
+rust-std-aarch64-apple-darwin
+rustc-aarch64-apple-darwin
+rustfmt-aarch64-apple-darwin
+Python 3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]
+Package    Version
+---------- -------
+pip        26.1
+setuptools 82.0.1
+Apple clang version 21.0.0 (clang-2100.1.1.101)
+Target: arm64-apple-darwin25.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+EXIT: 0

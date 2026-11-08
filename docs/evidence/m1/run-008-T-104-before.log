@@ -1,0 +1,55 @@
+$ python -m unittest tests.test_expressions -v
+test_ac104_arithmetic_and_order (tests.test_expressions.TestExpressions.test_ac104_arithmetic_and_order) ... FAIL
+test_ac104_nested_collection_errors (tests.test_expressions.TestExpressions.test_ac104_nested_collection_errors) ... FAIL
+test_ac104_paths_and_laziness (tests.test_expressions.TestExpressions.test_ac104_paths_and_laziness) ... FAIL
+test_ac104_structural_equality (tests.test_expressions.TestExpressions.test_ac104_structural_equality) ... ok
+
+======================================================================
+FAIL: test_ac104_arithmetic_and_order (tests.test_expressions.TestExpressions.test_ac104_arithmetic_and_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_expressions.py", line 13, in test_ac104_arithmetic_and_order
+    self.assertEqual((e.code,e.path,e.stage),('overflow','v','transform'))
+AssertionError: Tuples differ: ('overflow', '', 'transform') != ('overflow', 'v', 'transform')
+
+First differing element 1:
+''
+'v'
+
+- ('overflow', '', 'transform')
++ ('overflow', 'v', 'transform')
+?               +
+
+
+======================================================================
+FAIL: test_ac104_nested_collection_errors (tests.test_expressions.TestExpressions.test_ac104_nested_collection_errors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_expressions.py", line 27, in test_ac104_nested_collection_errors
+    self.assertEqual(p.run_one({'items':value}).errors[0].code,code)
+AssertionError: 'invalid_type' != 'null_value'
+- invalid_type
++ null_value
+
+
+======================================================================
+FAIL: test_ac104_paths_and_laziness (tests.test_expressions.TestExpressions.test_ac104_paths_and_laziness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_expressions.py", line 18, in test_ac104_paths_and_laziness
+    self.assertEqual((e.code,e.path,e.stage),(code,'orders[0].x','transform'))
+AssertionError: Tuples differ: ('missing_field', 'orders[0].missing', 'validation') != ('null_value', 'orders[0].x', 'transform')
+
+First differing element 0:
+'missing_field'
+'null_value'
+
+- ('missing_field', 'orders[0].missing', 'validation')
++ ('null_value', 'orders[0].x', 'transform')
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=3)
+
+EXIT_CODE=1

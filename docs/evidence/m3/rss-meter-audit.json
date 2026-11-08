@@ -1,0 +1,10 @@
+[
+  {
+    "launcher_allocation_mib": 0,
+    "child_output": "9344\n['VmHWM:\\t    6468 kB', 'VmRSS:\\t    6468 kB']\n"
+  },
+  {
+    "launcher_allocation_mib": 64,
+    "child_output": "74880\n['VmHWM:\\t    6468 kB', 'VmRSS:\\t    6468 kB']\n"
+  }
+]

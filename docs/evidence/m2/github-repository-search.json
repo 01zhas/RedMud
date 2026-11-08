@@ -1,0 +1,18 @@
+{
+  "tools": "GitHub search_installed_repositories_v2 (read-only)",
+  "queries": [
+    "RedMud",
+    "TCore"
+  ],
+  "responses": [
+    {
+      "archive_filter_applied": true,
+      "repositories": []
+    },
+    {
+      "archive_filter_applied": true,
+      "repositories": []
+    }
+  ],
+  "scope": "No matching accessible installed repository found; this is not a claim that no such repository exists globally. No remote mutation performed."
+}

@@ -1,0 +1,5 @@
+$ GH_PROMPT_DISABLED=1 gh repo view --json nameWithOwner,url
+failed to run git: fatal: not a git repository (or any of the parent directories): .git
+
+
+EXIT_CODE=1

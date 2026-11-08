@@ -1,0 +1,4 @@
+$ python -c "from benchmarks.workloads import NAMES,verify; print(sum(verify(w,k,80,\"/workspace/original/tcore-project/src\") for w in NAMES for k in (\"bytes\",\"dict\")),\"legacy-inclusive equivalent outcomes checked\")"
+960 legacy-inclusive equivalent outcomes checked
+
+EXIT_CODE=0

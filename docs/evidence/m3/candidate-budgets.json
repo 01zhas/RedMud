@@ -1,0 +1,1202 @@
+[
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "plain",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.026095157,
+    "reference_call_seconds_median": 0.026424835,
+    "reference_call_seconds_max": 0.027651991,
+    "reference_batch_p95_ms": 5.661847,
+    "reference_batch_max_ms": 5.67791,
+    "reference_rss_bytes_min": 17203200,
+    "reference_rss_bytes_median": 17207296,
+    "reference_rss_bytes_max": 17207296,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "plain",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.017055366,
+    "reference_call_seconds_median": 0.017189034,
+    "reference_call_seconds_max": 0.017716044,
+    "reference_batch_p95_ms": 3.589117,
+    "reference_batch_max_ms": 4.019956,
+    "reference_rss_bytes_min": 17149952,
+    "reference_rss_bytes_median": 17154048,
+    "reference_rss_bytes_max": 17154048,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "runtime",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.044846693,
+    "reference_call_seconds_median": 0.045347304,
+    "reference_call_seconds_max": 0.046549687,
+    "reference_batch_p95_ms": 9.238572,
+    "reference_batch_max_ms": 10.126347,
+    "reference_rss_bytes_min": 17604608,
+    "reference_rss_bytes_median": 17604608,
+    "reference_rss_bytes_max": 17604608,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "runtime",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.036681138,
+    "reference_call_seconds_median": 0.039435356,
+    "reference_call_seconds_max": 0.041750123,
+    "reference_batch_p95_ms": 9.133978,
+    "reference_batch_max_ms": 10.427192,
+    "reference_rss_bytes_min": 17342464,
+    "reference_rss_bytes_median": 17350656,
+    "reference_rss_bytes_max": 17350656,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.026517724,
+    "reference_call_seconds_median": 0.02659621,
+    "reference_call_seconds_max": 0.028087948,
+    "reference_batch_p95_ms": 5.675545,
+    "reference_batch_max_ms": 5.70527,
+    "reference_rss_bytes_min": 18288640,
+    "reference_rss_bytes_median": 18292736,
+    "reference_rss_bytes_max": 18309120,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "native",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.040028026,
+    "reference_call_seconds_median": 0.040502942,
+    "reference_call_seconds_max": 0.041787894,
+    "reference_batch_p95_ms": 8.465204,
+    "reference_batch_max_ms": 8.515469,
+    "reference_rss_bytes_min": 18456576,
+    "reference_rss_bytes_median": 18513920,
+    "reference_rss_bytes_max": 18522112,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "tcore",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.033892243,
+    "reference_call_seconds_median": 0.034762544,
+    "reference_call_seconds_max": 0.03507039,
+    "reference_batch_p95_ms": 7.359755,
+    "reference_batch_max_ms": 7.769584,
+    "reference_rss_bytes_min": 17584128,
+    "reference_rss_bytes_median": 17584128,
+    "reference_rss_bytes_max": 17584128,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "tcore",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.02482302,
+    "reference_call_seconds_median": 0.026186252,
+    "reference_call_seconds_max": 0.028469863,
+    "reference_batch_p95_ms": 6.375122,
+    "reference_batch_max_ms": 7.849134,
+    "reference_rss_bytes_min": 17358848,
+    "reference_rss_bytes_median": 17362944,
+    "reference_rss_bytes_max": 17362944,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "native",
+      "input": "bytes",
+      "records": 256,
+      "batch_size": 64
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.00133651,
+    "reference_call_seconds_median": 0.001385242,
+    "reference_call_seconds_max": 0.001630406,
+    "reference_batch_p95_ms": 0.409967,
+    "reference_batch_max_ms": 0.570035,
+    "reference_rss_bytes_min": 17608704,
+    "reference_rss_bytes_median": 17620992,
+    "reference_rss_bytes_max": 17641472,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_json",
+      "engine": "plain",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.045173317,
+    "reference_call_seconds_median": 0.045614861,
+    "reference_call_seconds_max": 0.046175202,
+    "reference_batch_p95_ms": 9.63027,
+    "reference_batch_max_ms": 9.964735,
+    "reference_rss_bytes_min": 18853888,
+    "reference_rss_bytes_median": 18907136,
+    "reference_rss_bytes_max": 18919424,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_json",
+      "engine": "plain",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.032635509,
+    "reference_call_seconds_median": 0.033675539,
+    "reference_call_seconds_max": 0.034363498,
+    "reference_batch_p95_ms": 7.181361,
+    "reference_batch_max_ms": 7.354337,
+    "reference_rss_bytes_min": 17965056,
+    "reference_rss_bytes_median": 17969152,
+    "reference_rss_bytes_max": 17969152,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_json",
+      "engine": "runtime",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.065635538,
+    "reference_call_seconds_median": 0.066568909,
+    "reference_call_seconds_max": 0.068012578,
+    "reference_batch_p95_ms": 14.295082,
+    "reference_batch_max_ms": 14.605231,
+    "reference_rss_bytes_min": 18919424,
+    "reference_rss_bytes_median": 18923520,
+    "reference_rss_bytes_max": 18944000,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_json",
+      "engine": "runtime",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.052432682,
+    "reference_call_seconds_median": 0.052990079,
+    "reference_call_seconds_max": 0.054176346,
+    "reference_batch_p95_ms": 11.036844,
+    "reference_batch_max_ms": 11.149942,
+    "reference_rss_bytes_min": 18083840,
+    "reference_rss_bytes_median": 18083840,
+    "reference_rss_bytes_max": 18083840,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_json",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.043668016,
+    "reference_call_seconds_median": 0.044152964,
+    "reference_call_seconds_max": 0.044424906,
+    "reference_batch_p95_ms": 9.062508,
+    "reference_batch_max_ms": 9.147504,
+    "reference_rss_bytes_min": 19795968,
+    "reference_rss_bytes_median": 19824640,
+    "reference_rss_bytes_max": 19845120,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_json",
+      "engine": "native",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.07304929,
+    "reference_call_seconds_median": 0.074458658,
+    "reference_call_seconds_max": 0.076711909,
+    "reference_batch_p95_ms": 16.717662,
+    "reference_batch_max_ms": 17.727098,
+    "reference_rss_bytes_min": 19759104,
+    "reference_rss_bytes_median": 19791872,
+    "reference_rss_bytes_max": 19820544,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_json",
+      "engine": "tcore",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.054490232,
+    "reference_call_seconds_median": 0.056294874,
+    "reference_call_seconds_max": 0.058733444,
+    "reference_batch_p95_ms": 12.891712,
+    "reference_batch_max_ms": 13.482533,
+    "reference_rss_bytes_min": 18870272,
+    "reference_rss_bytes_median": 18870272,
+    "reference_rss_bytes_max": 18931712,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_json",
+      "engine": "tcore",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.040545529,
+    "reference_call_seconds_median": 0.04097817,
+    "reference_call_seconds_max": 0.042279819,
+    "reference_batch_p95_ms": 8.782135,
+    "reference_batch_max_ms": 8.912108,
+    "reference_rss_bytes_min": 18173952,
+    "reference_rss_bytes_median": 18173952,
+    "reference_rss_bytes_max": 18173952,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_json",
+      "engine": "native",
+      "input": "bytes",
+      "records": 256,
+      "batch_size": 64
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.002276703,
+    "reference_call_seconds_median": 0.002334979,
+    "reference_call_seconds_max": 0.003350525,
+    "reference_batch_p95_ms": 0.695471,
+    "reference_batch_max_ms": 1.62616,
+    "reference_rss_bytes_min": 17580032,
+    "reference_rss_bytes_median": 17600512,
+    "reference_rss_bytes_max": 17604608,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "plain",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.136084912,
+    "reference_call_seconds_median": 0.142863698,
+    "reference_call_seconds_max": 0.144198775,
+    "reference_batch_p95_ms": 30.601372,
+    "reference_batch_max_ms": 31.476419,
+    "reference_rss_bytes_min": 20942848,
+    "reference_rss_bytes_median": 21037056,
+    "reference_rss_bytes_max": 21041152,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "plain",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.118443953,
+    "reference_call_seconds_median": 0.124114817,
+    "reference_call_seconds_max": 0.126451159,
+    "reference_batch_p95_ms": 28.056415,
+    "reference_batch_max_ms": 28.688191,
+    "reference_rss_bytes_min": 22073344,
+    "reference_rss_bytes_median": 23035904,
+    "reference_rss_bytes_max": 23040000,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "runtime",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.162165475,
+    "reference_call_seconds_median": 0.168067124,
+    "reference_call_seconds_max": 0.173206596,
+    "reference_batch_p95_ms": 36.954891,
+    "reference_batch_max_ms": 38.308489,
+    "reference_rss_bytes_min": 23040000,
+    "reference_rss_bytes_median": 23072768,
+    "reference_rss_bytes_max": 23072768,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "runtime",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.140377344,
+    "reference_call_seconds_median": 0.143484662,
+    "reference_call_seconds_max": 0.160931459,
+    "reference_batch_p95_ms": 33.486229,
+    "reference_batch_max_ms": 37.602923,
+    "reference_rss_bytes_min": 22212608,
+    "reference_rss_bytes_median": 22216704,
+    "reference_rss_bytes_max": 23007232,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.16778501,
+    "reference_call_seconds_median": 0.168289306,
+    "reference_call_seconds_max": 0.169775009,
+    "reference_batch_p95_ms": 35.158354,
+    "reference_batch_max_ms": 37.649566,
+    "reference_rss_bytes_min": 21864448,
+    "reference_rss_bytes_median": 21889024,
+    "reference_rss_bytes_max": 21897216,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "native",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.248822822,
+    "reference_call_seconds_median": 0.25231664,
+    "reference_call_seconds_max": 0.266218009,
+    "reference_batch_p95_ms": 56.023311,
+    "reference_batch_max_ms": 63.395945,
+    "reference_rss_bytes_min": 23965696,
+    "reference_rss_bytes_median": 23998464,
+    "reference_rss_bytes_max": 24068096,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "tcore",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.150649973,
+    "reference_call_seconds_median": 0.154151782,
+    "reference_call_seconds_max": 0.157031656,
+    "reference_batch_p95_ms": 33.506203,
+    "reference_batch_max_ms": 33.522667,
+    "reference_rss_bytes_min": 23064576,
+    "reference_rss_bytes_median": 23138304,
+    "reference_rss_bytes_max": 23142400,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "tcore",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.129802923,
+    "reference_call_seconds_median": 0.131136178,
+    "reference_call_seconds_max": 0.133026508,
+    "reference_batch_p95_ms": 30.092042,
+    "reference_batch_max_ms": 30.426097,
+    "reference_rss_bytes_min": 22220800,
+    "reference_rss_bytes_median": 22999040,
+    "reference_rss_bytes_max": 23048192,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "native",
+      "input": "bytes",
+      "records": 256,
+      "batch_size": 64
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.008451014,
+    "reference_call_seconds_median": 0.008519765,
+    "reference_call_seconds_max": 0.008752662,
+    "reference_batch_p95_ms": 2.242013,
+    "reference_batch_max_ms": 2.259899,
+    "reference_rss_bytes_min": 17698816,
+    "reference_rss_bytes_median": 17711104,
+    "reference_rss_bytes_max": 17731584,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "multiple_derives",
+      "engine": "plain",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.035316786,
+    "reference_call_seconds_median": 0.035858751,
+    "reference_call_seconds_max": 0.036508744,
+    "reference_batch_p95_ms": 7.460967,
+    "reference_batch_max_ms": 7.63892,
+    "reference_rss_bytes_min": 17498112,
+    "reference_rss_bytes_median": 17506304,
+    "reference_rss_bytes_max": 17510400,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "multiple_derives",
+      "engine": "plain",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.026501042,
+    "reference_call_seconds_median": 0.026693689,
+    "reference_call_seconds_max": 0.027631228,
+    "reference_batch_p95_ms": 5.965361,
+    "reference_batch_max_ms": 5.985891,
+    "reference_rss_bytes_min": 17481728,
+    "reference_rss_bytes_median": 17481728,
+    "reference_rss_bytes_max": 17481728,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "multiple_derives",
+      "engine": "runtime",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.055902526,
+    "reference_call_seconds_median": 0.057169073,
+    "reference_call_seconds_max": 0.058771068,
+    "reference_batch_p95_ms": 11.949894,
+    "reference_batch_max_ms": 12.397552,
+    "reference_rss_bytes_min": 17858560,
+    "reference_rss_bytes_median": 17858560,
+    "reference_rss_bytes_max": 17870848,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "multiple_derives",
+      "engine": "runtime",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.045442587,
+    "reference_call_seconds_median": 0.047249357,
+    "reference_call_seconds_max": 0.055180735,
+    "reference_batch_p95_ms": 13.275093,
+    "reference_batch_max_ms": 15.124325,
+    "reference_rss_bytes_min": 17702912,
+    "reference_rss_bytes_median": 17707008,
+    "reference_rss_bytes_max": 17707008,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "multiple_derives",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.041800421,
+    "reference_call_seconds_median": 0.042700967,
+    "reference_call_seconds_max": 0.044709652,
+    "reference_batch_p95_ms": 9.168964,
+    "reference_batch_max_ms": 10.358407,
+    "reference_rss_bytes_min": 18898944,
+    "reference_rss_bytes_median": 18911232,
+    "reference_rss_bytes_max": 18931712,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "multiple_derives",
+      "engine": "native",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.057959083,
+    "reference_call_seconds_median": 0.058165004,
+    "reference_call_seconds_max": 0.059381522,
+    "reference_batch_p95_ms": 11.982474,
+    "reference_batch_max_ms": 12.224152,
+    "reference_rss_bytes_min": 19283968,
+    "reference_rss_bytes_median": 19292160,
+    "reference_rss_bytes_max": 19910656,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "multiple_derives",
+      "engine": "tcore",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.043504528,
+    "reference_call_seconds_median": 0.044749053,
+    "reference_call_seconds_max": 0.04803912,
+    "reference_batch_p95_ms": 9.868364,
+    "reference_batch_max_ms": 12.667112,
+    "reference_rss_bytes_min": 17891328,
+    "reference_rss_bytes_median": 17915904,
+    "reference_rss_bytes_max": 17915904,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "multiple_derives",
+      "engine": "tcore",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.034148024,
+    "reference_call_seconds_median": 0.035057993,
+    "reference_call_seconds_max": 0.04369392,
+    "reference_batch_p95_ms": 8.095737,
+    "reference_batch_max_ms": 15.408564,
+    "reference_rss_bytes_min": 17657856,
+    "reference_rss_bytes_median": 17657856,
+    "reference_rss_bytes_max": 17657856,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "multiple_derives",
+      "engine": "native",
+      "input": "bytes",
+      "records": 256,
+      "batch_size": 64
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.0021459,
+    "reference_call_seconds_median": 0.002224216,
+    "reference_call_seconds_max": 0.002249484,
+    "reference_batch_p95_ms": 0.58086,
+    "reference_batch_max_ms": 0.62758,
+    "reference_rss_bytes_min": 17588224,
+    "reference_rss_bytes_median": 17645568,
+    "reference_rss_bytes_max": 17666048,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "validation_heavy",
+      "engine": "plain",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.043996007,
+    "reference_call_seconds_median": 0.045086575,
+    "reference_call_seconds_max": 0.049148784,
+    "reference_batch_p95_ms": 10.257786,
+    "reference_batch_max_ms": 12.388444,
+    "reference_rss_bytes_min": 17616896,
+    "reference_rss_bytes_median": 17616896,
+    "reference_rss_bytes_max": 17616896,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "validation_heavy",
+      "engine": "plain",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.028929303,
+    "reference_call_seconds_median": 0.029118995,
+    "reference_call_seconds_max": 0.029925308,
+    "reference_batch_p95_ms": 6.312157,
+    "reference_batch_max_ms": 6.339136,
+    "reference_rss_bytes_min": 17354752,
+    "reference_rss_bytes_median": 17362944,
+    "reference_rss_bytes_max": 17367040,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "validation_heavy",
+      "engine": "runtime",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.059075134,
+    "reference_call_seconds_median": 0.059488684,
+    "reference_call_seconds_max": 0.061753701,
+    "reference_batch_p95_ms": 12.713141,
+    "reference_batch_max_ms": 12.726822,
+    "reference_rss_bytes_min": 18087936,
+    "reference_rss_bytes_median": 18087936,
+    "reference_rss_bytes_max": 18092032,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "validation_heavy",
+      "engine": "runtime",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.046519266,
+    "reference_call_seconds_median": 0.0470014,
+    "reference_call_seconds_max": 0.049066812,
+    "reference_batch_p95_ms": 10.124965,
+    "reference_batch_max_ms": 11.85658,
+    "reference_rss_bytes_min": 17555456,
+    "reference_rss_bytes_median": 17559552,
+    "reference_rss_bytes_max": 17559552,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "validation_heavy",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.039586291,
+    "reference_call_seconds_median": 0.040659741,
+    "reference_call_seconds_max": 0.044795331,
+    "reference_batch_p95_ms": 8.877105,
+    "reference_batch_max_ms": 11.55961,
+    "reference_rss_bytes_min": 18796544,
+    "reference_rss_bytes_median": 18812928,
+    "reference_rss_bytes_max": 18825216,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "validation_heavy",
+      "engine": "native",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.059790092,
+    "reference_call_seconds_median": 0.060789132,
+    "reference_call_seconds_max": 0.061708225,
+    "reference_batch_p95_ms": 12.814529,
+    "reference_batch_max_ms": 12.840528,
+    "reference_rss_bytes_min": 19107840,
+    "reference_rss_bytes_median": 19111936,
+    "reference_rss_bytes_max": 19111936,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "validation_heavy",
+      "engine": "tcore",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.048253853,
+    "reference_call_seconds_median": 0.049206956,
+    "reference_call_seconds_max": 0.05072999,
+    "reference_batch_p95_ms": 10.36408,
+    "reference_batch_max_ms": 10.661983,
+    "reference_rss_bytes_min": 18128896,
+    "reference_rss_bytes_median": 18128896,
+    "reference_rss_bytes_max": 18132992,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "validation_heavy",
+      "engine": "tcore",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.035647589,
+    "reference_call_seconds_median": 0.036269941,
+    "reference_call_seconds_max": 0.043413823,
+    "reference_batch_p95_ms": 9.421845,
+    "reference_batch_max_ms": 12.455489,
+    "reference_rss_bytes_min": 17555456,
+    "reference_rss_bytes_median": 17559552,
+    "reference_rss_bytes_max": 17559552,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "validation_heavy",
+      "engine": "native",
+      "input": "bytes",
+      "records": 256,
+      "batch_size": 64
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.002053593,
+    "reference_call_seconds_median": 0.002123956,
+    "reference_call_seconds_max": 0.002490121,
+    "reference_batch_p95_ms": 0.680548,
+    "reference_batch_max_ms": 0.680849,
+    "reference_rss_bytes_min": 17567744,
+    "reference_rss_bytes_median": 17653760,
+    "reference_rss_bytes_max": 17661952,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "mixed_rejects",
+      "engine": "plain",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.025117673,
+    "reference_call_seconds_median": 0.025753475,
+    "reference_call_seconds_max": 0.028052893,
+    "reference_batch_p95_ms": 5.449456,
+    "reference_batch_max_ms": 7.472815,
+    "reference_rss_bytes_min": 17215488,
+    "reference_rss_bytes_median": 17215488,
+    "reference_rss_bytes_max": 17215488,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "mixed_rejects",
+      "engine": "plain",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.018180783,
+    "reference_call_seconds_median": 0.019257189,
+    "reference_call_seconds_max": 0.019734664,
+    "reference_batch_p95_ms": 4.058762,
+    "reference_batch_max_ms": 4.328482,
+    "reference_rss_bytes_min": 17129472,
+    "reference_rss_bytes_median": 17129472,
+    "reference_rss_bytes_max": 17133568,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "mixed_rejects",
+      "engine": "runtime",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.045784412,
+    "reference_call_seconds_median": 0.046429508,
+    "reference_call_seconds_max": 0.048264587,
+    "reference_batch_p95_ms": 9.772988,
+    "reference_batch_max_ms": 10.56442,
+    "reference_rss_bytes_min": 17534976,
+    "reference_rss_bytes_median": 17547264,
+    "reference_rss_bytes_max": 17551360,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "mixed_rejects",
+      "engine": "runtime",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.037028582,
+    "reference_call_seconds_median": 0.038442607,
+    "reference_call_seconds_max": 0.039106141,
+    "reference_batch_p95_ms": 8.072639,
+    "reference_batch_max_ms": 8.250121,
+    "reference_rss_bytes_min": 17326080,
+    "reference_rss_bytes_median": 17330176,
+    "reference_rss_bytes_max": 17330176,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "mixed_rejects",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.027210511,
+    "reference_call_seconds_median": 0.027849799,
+    "reference_call_seconds_max": 0.02857257,
+    "reference_batch_p95_ms": 5.880254,
+    "reference_batch_max_ms": 6.324071,
+    "reference_rss_bytes_min": 18317312,
+    "reference_rss_bytes_median": 18354176,
+    "reference_rss_bytes_max": 18354176,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "mixed_rejects",
+      "engine": "native",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.040064201,
+    "reference_call_seconds_median": 0.040432406,
+    "reference_call_seconds_max": 0.042140298,
+    "reference_batch_p95_ms": 8.627575,
+    "reference_batch_max_ms": 9.478125,
+    "reference_rss_bytes_min": 18481152,
+    "reference_rss_bytes_median": 18509824,
+    "reference_rss_bytes_max": 18513920,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "mixed_rejects",
+      "engine": "tcore",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.032751144,
+    "reference_call_seconds_median": 0.033348799,
+    "reference_call_seconds_max": 0.033924253,
+    "reference_batch_p95_ms": 7.087854,
+    "reference_batch_max_ms": 7.26792,
+    "reference_rss_bytes_min": 17530880,
+    "reference_rss_bytes_median": 17534976,
+    "reference_rss_bytes_max": 17534976,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "mixed_rejects",
+      "engine": "tcore",
+      "input": "dict",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.024776145,
+    "reference_call_seconds_median": 0.025127667,
+    "reference_call_seconds_max": 0.027416237,
+    "reference_batch_p95_ms": 5.413192,
+    "reference_batch_max_ms": 6.337071,
+    "reference_rss_bytes_min": 17305600,
+    "reference_rss_bytes_median": 17313792,
+    "reference_rss_bytes_max": 17313792,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "mixed_rejects",
+      "engine": "native",
+      "input": "bytes",
+      "records": 256,
+      "batch_size": 64
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.001527154,
+    "reference_call_seconds_median": 0.001675964,
+    "reference_call_seconds_max": 0.001764024,
+    "reference_batch_p95_ms": 0.535954,
+    "reference_batch_max_ms": 0.575754,
+    "reference_rss_bytes_min": 17571840,
+    "reference_rss_bytes_median": 17580032,
+    "reference_rss_bytes_max": 17645568,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.039637714,
+    "reference_call_seconds_median": 0.040376991,
+    "reference_call_seconds_max": 0.040677973,
+    "reference_batch_p95_ms": 0.008112,
+    "reference_batch_max_ms": 2.155855,
+    "reference_rss_bytes_min": 17559552,
+    "reference_rss_bytes_median": 17604608,
+    "reference_rss_bytes_max": 17604608,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 64
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.026711081,
+    "reference_call_seconds_median": 0.026971942,
+    "reference_call_seconds_max": 0.027462978,
+    "reference_batch_p95_ms": 0.396107,
+    "reference_batch_max_ms": 0.598727,
+    "reference_rss_bytes_min": 17620992,
+    "reference_rss_bytes_median": 17620992,
+    "reference_rss_bytes_max": 17645568,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "arithmetic",
+      "engine": "native_off",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.024755613,
+    "reference_call_seconds_median": 0.024786249,
+    "reference_call_seconds_max": 0.025180442,
+    "reference_batch_p95_ms": 5.094209,
+    "reference_batch_max_ms": 5.210551,
+    "reference_rss_bytes_min": 18243584,
+    "reference_rss_bytes_median": 18337792,
+    "reference_rss_bytes_max": 18337792,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.181407378,
+    "reference_call_seconds_median": 0.190350402,
+    "reference_call_seconds_max": 0.19507789,
+    "reference_batch_p95_ms": 0.05376,
+    "reference_batch_max_ms": 2.116157,
+    "reference_rss_bytes_min": 17604608,
+    "reference_rss_bytes_median": 17608704,
+    "reference_rss_bytes_max": 17645568,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "native",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 64
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.171685326,
+    "reference_call_seconds_median": 0.173887699,
+    "reference_call_seconds_max": 0.174068297,
+    "reference_batch_p95_ms": 2.41519,
+    "reference_batch_max_ms": 5.054015,
+    "reference_rss_bytes_min": 17666048,
+    "reference_rss_bytes_median": 17719296,
+    "reference_rss_bytes_max": 17735680,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  },
+  {
+    "case": {
+      "workload": "nested_sums",
+      "engine": "native_off",
+      "input": "bytes",
+      "records": 5000,
+      "batch_size": 1000
+    },
+    "approved": false,
+    "reference_call_seconds_min": 0.163017967,
+    "reference_call_seconds_median": 0.167914922,
+    "reference_call_seconds_max": 0.172126024,
+    "reference_batch_p95_ms": 34.95118,
+    "reference_batch_max_ms": 40.005712,
+    "reference_rss_bytes_min": 21884928,
+    "reference_rss_bytes_median": 21884928,
+    "reference_rss_bytes_max": 21897216,
+    "source_timing": "baseline",
+    "source_memory": "baseline-memory-corrected"
+  }
+]

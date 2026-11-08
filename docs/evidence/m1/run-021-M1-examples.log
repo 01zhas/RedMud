@@ -1,0 +1,126 @@
+$ python examples/native_cart.py && python examples/cart.py && python examples/cpu_profiling.py
+{'cart_id': 5001, 'cart_total': 3500, 'orders': [{'items': [{'price': 1000, 'quantity': 2, 'total': 2000}, {'price': 500, 'quantity': 3, 'total': 1500}], 'order_total': 3500}]}
+status=ok index=0 value={'cart_id': 5001, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+status=ok index=1 value={'cart_id': 5002, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+status=error index=2 value=None
+error: parse JSONDecodeError
+status=ok index=3 value={'cart_id': 5003, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+{
+  "metrics": {
+    "processed": 4,
+    "errors_by_code": {
+      "callback_error": 1
+    },
+    "batch_sizes": {},
+    "statuses": {
+      "ok": 3,
+      "error": 1
+    },
+    "batch_fallbacks": 0,
+    "elapsed_seconds": 0.000334145,
+    "throughput_per_second": 11970.85097786889,
+    "stages": {
+      "parse": {
+        "samples": 4,
+        "mean_ms": 0.03988375,
+        "max_ms": 0.1147,
+        "total_seconds": 0.000159535
+      },
+      "input_quality": {
+        "samples": 3,
+        "mean_ms": 0.003399,
+        "max_ms": 0.005489,
+        "total_seconds": 1.0197e-05
+      },
+      "transform": {
+        "samples": 3,
+        "mean_ms": 0.0034856666666666664,
+        "max_ms": 0.005689,
+        "total_seconds": 1.0457e-05
+      },
+      "output_quality": {
+        "samples": 3,
+        "mean_ms": 0.0007513333333333333,
+        "max_ms": 0.001082,
+        "total_seconds": 2.254e-06
+      }
+    },
+    "rule_failures": []
+  },
+  "quality": {
+    "fields": {
+      "total_minor": {
+        "observed": 3,
+        "missing": 0,
+        "nulls": 0,
+        "types": {
+          "int": 3
+        },
+        "numeric_count": 3,
+        "mean": 357000.0,
+        "stddev_population": 0.0,
+        "min": 357000.0,
+        "max": 357000.0
+      },
+      "subtotal_minor": {
+        "observed": 3,
+        "missing": 0,
+        "nulls": 0,
+        "types": {
+          "int": 3
+        },
+        "numeric_count": 3,
+        "mean": 395000.0,
+        "stddev_population": 0.0,
+        "min": 395000.0,
+        "max": 395000.0
+      }
+    },
+    "profiling_errors": 0
+  }
+}
+# TYPE redmud_records_total counter
+redmud_records_total{status="ok"} 3
+redmud_records_total{status="rejected"} 0
+redmud_records_total{status="error"} 1
+# TYPE redmud_batch_fallbacks_total counter
+redmud_batch_fallbacks_total 0
+# TYPE redmud_stage_duration_seconds summary
+redmud_stage_duration_seconds_sum{stage="input_quality"} 1.0197e-05
+redmud_stage_duration_seconds_count{stage="input_quality"} 3
+redmud_stage_duration_seconds_sum{stage="output_quality"} 2.254e-06
+redmud_stage_duration_seconds_count{stage="output_quality"} 3
+redmud_stage_duration_seconds_sum{stage="parse"} 0.000159535
+redmud_stage_duration_seconds_count{stage="parse"} 4
+redmud_stage_duration_seconds_sum{stage="transform"} 1.0457e-05
+redmud_stage_duration_seconds_count{stage="transform"} 3
+# TYPE redmud_quality_failures_total counter
+
+profiled=500, elapsed=89.1ms, peak_traced_bytes=113761
+         144033 function calls (144027 primitive calls) in 0.085 seconds
+
+   Ordered by: cumulative time
+   List reduced from 54 to 15 due to restriction <15>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      501    0.000    0.000    0.089    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:293(process_iter)
+        4    0.012    0.003    0.088    0.022 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:195(process_batch)
+        4    0.001    0.000    0.048    0.012 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:225(scalar_transform)
+     2000    0.002    0.000    0.048    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:143(_measured)
+      500    0.000    0.000    0.037    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:229(<lambda>)
+      500    0.001    0.000    0.037    0.000 /workspace/redmud/examples/cpu_profiling.py:6(transform)
+      500    0.012    0.000    0.036    0.000 {built-in method builtins.sum}
+   100500    0.025    0.000    0.025    0.000 /workspace/redmud/examples/cpu_profiling.py:7(<genexpr>)
+      500    0.006    0.000    0.010    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/dataclasses.py:1540(replace)
+      500    0.001    0.000    0.008    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/quality.py:121(observe)
+      500    0.002    0.000    0.007    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:180(_finalize)
+      500    0.004    0.000    0.006    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/quality.py:75(observe)
+     2000    0.002    0.000    0.006    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/metrics.py:59(timing)
+     2000    0.001    0.000    0.002    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/metrics.py:21(observe)
+     4000    0.002    0.000    0.002    0.000 {built-in method builtins.getattr}
+
+
+
+{'metrics': {'processed': 500, 'errors_by_code': {}, 'batch_sizes': {}, 'statuses': {'ok': 500}, 'batch_fallbacks': 0, 'elapsed_seconds': 0.090590656, 'throughput_per_second': 5519.333031433175, 'stages': {'parse': {'samples': 500, 'mean_ms': 0.0011877980000000001, 'max_ms': 0.00693, 'total_seconds': 0.000593899}, 'input_quality': {'samples': 500, 'mean_ms': 0.0013987639999999998, 'max_ms': 0.035573, 'total_seconds': 0.000699382}, 'transform': {'samples': 500, 'mean_ms': 0.075370622, 'max_ms': 0.231674, 'total_seconds': 0.037685311}, 'output_quality': {'samples': 500, 'mean_ms': 0.001396434, 'max_ms': 0.004888, 'total_seconds': 0.000698217}}, 'rule_failures': []}, 'quality': {'fields': {'value': {'observed': 500, 'missing': 0, 'nulls': 0, 'types': {'int': 500}, 'numeric_count': 500, 'mean': 2646700.0, 'stddev_population': 0.0, 'min': 2646700.0, 'max': 2646700.0}}, 'profiling_errors': 0}}
+
+EXIT_CODE=0

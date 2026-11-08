@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/redmud-core", "crates/redmud-python"]
+resolver = "2"

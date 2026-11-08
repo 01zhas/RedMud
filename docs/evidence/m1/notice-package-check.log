@@ -1,0 +1,1 @@
+PASS: wheel and sdist each contain exact THIRD_PARTY_NOTICES.md bytes.

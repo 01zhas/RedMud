@@ -1,0 +1,8 @@
+UTC: 2026-11-08T02:44:17.755508+00:00
+CWD: /Users/im01zhas/Documents/ChatGPT/RedMud
+COMMAND: ["curl", "--fail", "--location", "--output", "target/t205-tools/rustup-init.sh", "https://sh.rustup.rs"]
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 29915  100 29915    0     0  36782      0 --:--:-- --:--:-- --:--:-- 36750
+
+EXIT: 0

@@ -1,0 +1,39 @@
+[
+  {
+    "name": "serde",
+    "version": "1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "license_files": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "serde_json",
+    "version": "1.0.154",
+    "license": "MIT OR Apache-2.0",
+    "license_files": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "pyo3",
+    "version": "0.23.5",
+    "license": "MIT OR Apache-2.0",
+    "license_files": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "maturin",
+    "version": "1.16.0",
+    "license_expression": "MIT OR Apache-2.0",
+    "license": null,
+    "license_files": [
+      "maturin-1.16.0.dist-info/licenses/license-apache",
+      "maturin-1.16.0.dist-info/licenses/license-mit"
+    ]
+  }
+]

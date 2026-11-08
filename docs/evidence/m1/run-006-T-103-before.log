@@ -1,0 +1,36 @@
+$ python -m unittest tests.test_inputs -v
+test_ac103_exact_integer_domain (tests.test_inputs.TestInputs.test_ac103_exact_integer_domain) ... FAIL
+test_ac103_invalid_literals_are_config_errors (tests.test_inputs.TestInputs.test_ac103_invalid_literals_are_config_errors) ... FAIL
+test_ac103_reject_unsupported_without_mutation (tests.test_inputs.TestInputs.test_ac103_reject_unsupported_without_mutation) ... FAIL
+
+======================================================================
+FAIL: test_ac103_exact_integer_domain (tests.test_inputs.TestInputs.test_ac103_exact_integer_domain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_inputs.py", line 18, in test_ac103_exact_integer_domain
+    self.assertFalse(r.ok)
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_ac103_invalid_literals_are_config_errors (tests.test_inputs.TestInputs.test_ac103_invalid_literals_are_config_errors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_inputs.py", line 36, in test_ac103_invalid_literals_are_config_errors
+    with self.assertRaises(ValueError): Pipeline().derive('v',value).prepare()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac103_reject_unsupported_without_mutation (tests.test_inputs.TestInputs.test_ac103_reject_unsupported_without_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_inputs.py", line 28, in test_ac103_reject_unsupported_without_mutation
+    self.assertTrue(all(not r.ok for r in out[:-1]))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+FAILED (failures=3)
+
+EXIT_CODE=1

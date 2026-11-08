@@ -1,0 +1,2 @@
+# Isolated verification tool only; never a RedMud runtime dependency.
+pip-audit==2.10.1

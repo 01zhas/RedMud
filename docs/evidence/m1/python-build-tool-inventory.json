@@ -1,0 +1,25 @@
+[
+  {
+    "name": "maturin",
+    "version": "1.16.0",
+    "license_expression": "MIT OR Apache-2.0",
+    "license_files": {
+      "maturin-1.16.0.dist-info/licenses/license-apache": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "maturin-1.16.0.dist-info/licenses/license-mit": "ea7882c559733766ad08343bde1d1ec80a4967c03a738fb8e0058ef6289f7b7c"
+    },
+    "requirements": [
+      "tomli>=1.1.0 ; python_full_version < '3.11'",
+      "patchelf ; extra == 'patchelf'",
+      "ziglang>=0.10.0 ; extra == 'zig'"
+    ]
+  },
+  {
+    "name": "ruff",
+    "version": "0.17.4",
+    "license_expression": "MIT",
+    "license_files": {
+      "ruff-0.17.4.dist-info/licenses/LICENSE": "2597d854122b77ddc71971564ca2350a37608575ce324adc5650a2b2051c8f18"
+    },
+    "requirements": []
+  }
+]

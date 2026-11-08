@@ -1,0 +1,4 @@
+Command: venv python inline probe, Pipeline().run_one for n=2**64+1
+bytes ok= True output= {'n': 1.8446744073709552e+19} exact= False
+dict ok= True output= {'n': 1.8446744073709552e+19} exact= False
+EXIT_CODE=0 (probe execution; correctness defect remains)

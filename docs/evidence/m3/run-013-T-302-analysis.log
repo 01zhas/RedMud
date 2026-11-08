@@ -1,0 +1,30 @@
+$ python docs/evidence/m3/analyze.py
+arithmetic plain 189216 5.662 5.9 16.41 615.6
+arithmetic runtime 110260 9.239 3.8 16.79 925.5
+arithmetic native 187997 5.676 5.9 17.45 784.4
+arithmetic tcore 143833 7.36 3.4 16.77 823.3
+nested_json plain 109613 9.63 2.2 18.03 1423.1
+nested_json runtime 75110 14.295 3.6 18.05 1732.8
+nested_json native 113243 9.063 1.7 18.91 1608.1
+nested_json tcore 88818 12.892 7.5 18.0 1630.6
+nested_sums plain 34998 30.601 5.7 20.06 3387.9
+nested_sums runtime 29750 36.955 6.6 22.0 5818.0
+nested_sums native 29711 35.158 1.2 20.88 3860.6
+nested_sums tcore 32436 33.506 4.1 22.07 5701.7
+multiple_derives plain 139436 7.461 3.3 16.7 938.9
+multiple_derives runtime 87460 11.95 5.0 17.03 1258.0
+multiple_derives native 117093 9.169 6.8 18.04 1357.4
+multiple_derives tcore 111734 9.868 10.1 17.09 1155.8
+validation_heavy plain 110898 10.258 11.4 16.8 998.7
+validation_heavy runtime 84050 12.713 4.5 17.25 1394.3
+validation_heavy native 122972 8.877 12.8 17.94 1217.2
+validation_heavy tcore 101612 10.364 5.0 17.29 1292.1
+mixed_rejects plain 194149 5.449 11.4 16.42 586.6
+mixed_rejects runtime 107690 9.773 5.3 16.73 837.5
+mixed_rejects native 179535 5.88 4.9 17.5 769.4
+mixed_rejects tcore 149930 7.088 3.5 16.72 716.1
+arithmetic native_off 201725 5.094 1.7 17.49 784.2
+nested_sums native_off 29777 34.951 5.4 20.87 3860.4
+PASS: 60 cases joined by identity and equivalent digest; corrected Linux memory source verified
+
+EXIT_CODE=0

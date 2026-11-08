@@ -1,0 +1,8 @@
+Linux-6.18.57-x86_64-with-glibc2.41 3.12.14
+python: 0.016925s 590843 records/s Python_peak=3465377 bytes
+fallback: 0.071096s 140655 records/s Python_peak=4813204 bytes
+native: 0.049481s 202097 records/s Python_peak=5281592 bytes
+native_single: 0.071134s 140580 records/s Python_peak=5151719 bytes
+native_dict: 0.078835s 126847 records/s Python_peak=8492576 bytes
+native_metrics_off: 0.045826s 218217 records/s
+native_predecoded: 0.064773s 154386 records/s

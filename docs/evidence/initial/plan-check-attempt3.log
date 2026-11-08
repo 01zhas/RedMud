@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/redmud/docs/evidence/initial/plan-check.py", line 20, in <module>
+    for tid in re.findall(r'\bT-\d{3}\b',text): assert tid in rows,(name,tid)
+                                                       ^^^^^^^^^^^
+AssertionError: ('EVIDENCE.md', 'T-110')

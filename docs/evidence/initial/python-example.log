@@ -1,0 +1,99 @@
+$ python examples/cart.py
+status=ok index=0 value={'cart_id': 5001, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+status=ok index=1 value={'cart_id': 5002, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+status=error index=2 value=None
+error: parse JSONDecodeError
+status=ok index=3 value={'cart_id': 5003, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+{
+  "metrics": {
+    "processed": 4,
+    "errors_by_code": {
+      "callback_error": 1
+    },
+    "batch_sizes": {},
+    "statuses": {
+      "ok": 3,
+      "error": 1
+    },
+    "batch_fallbacks": 0,
+    "elapsed_seconds": 0.000305733,
+    "throughput_per_second": 13083.311255245591,
+    "stages": {
+      "parse": {
+        "samples": 4,
+        "mean_ms": 0.0389455,
+        "max_ms": 0.11475,
+        "total_seconds": 0.000155782
+      },
+      "input_quality": {
+        "samples": 3,
+        "mean_ms": 0.0032813333333333336,
+        "max_ms": 0.004887,
+        "total_seconds": 9.844e-06
+      },
+      "transform": {
+        "samples": 3,
+        "mean_ms": 0.0032183333333333335,
+        "max_ms": 0.005068,
+        "total_seconds": 9.655e-06
+      },
+      "output_quality": {
+        "samples": 3,
+        "mean_ms": 0.0007313333333333334,
+        "max_ms": 0.000812,
+        "total_seconds": 2.194e-06
+      }
+    },
+    "rule_failures": []
+  },
+  "quality": {
+    "fields": {
+      "total_minor": {
+        "observed": 3,
+        "missing": 0,
+        "nulls": 0,
+        "types": {
+          "int": 3
+        },
+        "numeric_count": 3,
+        "mean": 357000.0,
+        "stddev_population": 0.0,
+        "min": 357000.0,
+        "max": 357000.0
+      },
+      "subtotal_minor": {
+        "observed": 3,
+        "missing": 0,
+        "nulls": 0,
+        "types": {
+          "int": 3
+        },
+        "numeric_count": 3,
+        "mean": 395000.0,
+        "stddev_population": 0.0,
+        "min": 395000.0,
+        "max": 395000.0
+      }
+    },
+    "profiling_errors": 0
+  }
+}
+# TYPE redmud_records_total counter
+redmud_records_total{status="ok"} 3
+redmud_records_total{status="rejected"} 0
+redmud_records_total{status="error"} 1
+# TYPE redmud_batch_fallbacks_total counter
+redmud_batch_fallbacks_total 0
+# TYPE redmud_stage_duration_seconds summary
+redmud_stage_duration_seconds_sum{stage="input_quality"} 9.844e-06
+redmud_stage_duration_seconds_count{stage="input_quality"} 3
+redmud_stage_duration_seconds_sum{stage="output_quality"} 2.194e-06
+redmud_stage_duration_seconds_count{stage="output_quality"} 3
+redmud_stage_duration_seconds_sum{stage="parse"} 0.000155782
+redmud_stage_duration_seconds_count{stage="parse"} 4
+redmud_stage_duration_seconds_sum{stage="transform"} 9.655e-06
+redmud_stage_duration_seconds_count{stage="transform"} 3
+# TYPE redmud_quality_failures_total counter
+
+
+EXIT_CODE=0

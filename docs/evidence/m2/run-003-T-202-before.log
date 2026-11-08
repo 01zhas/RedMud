@@ -1,0 +1,36 @@
+$ python -m unittest tests.test_limits.TestLimits.test_data_boundary -v
+test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) ... 
+  test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) (depth=65, kind='dict') ... FAIL
+  test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) (depth=65, kind='str') ... FAIL
+  test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) (depth=65, kind='bytes') ... FAIL
+
+======================================================================
+FAIL: test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) (depth=65, kind='dict')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_limits.py", line 28, in test_data_boundary
+    self.assertEqual(r.ok,depth<=64)
+AssertionError: True != False
+
+======================================================================
+FAIL: test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) (depth=65, kind='str')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_limits.py", line 28, in test_data_boundary
+    self.assertEqual(r.ok,depth<=64)
+AssertionError: True != False
+
+======================================================================
+FAIL: test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) (depth=65, kind='bytes')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_limits.py", line 28, in test_data_boundary
+    self.assertEqual(r.ok,depth<=64)
+AssertionError: True != False
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+FAILED (failures=3)
+
+EXIT_CODE=1

@@ -1,0 +1,9 @@
+[package]
+name = "redmud-core"
+version = "0.2.0"
+edition = "2021"
+license = "MIT"
+description = "RedMud transform engine"
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["raw_value"] }

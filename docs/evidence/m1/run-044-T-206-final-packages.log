@@ -1,0 +1,23 @@
+$ maturin build --release --locked --out target/security-wheels && maturin sdist --out target/security-wheels
+📦 Including license file `LICENSE`
+🍹 Building a mixed python/rust project
+🐍 Found CPython 3.12 at /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3
+🔗 Found pyo3 bindings
+    Finished `release` profile [optimized] target(s) in 0.01s
+📦 Including files matching "THIRD_PARTY_NOTICES.md"
+📦 Built wheel for CPython 3.12 to target/security-wheels/redmud-0.2.0-cp312-cp312-manylinux_2_34_x86_64.whl
+📦 Including license file `LICENSE`
+🍹 Building a mixed python/rust project
+🔗 Found pyo3 bindings
+From `cargo package --list --allow-dirty --manifest-path /workspace/redmud/crates/redmud-core/Cargo.toml`:
+warning: manifest has no documentation, homepage or repository
+  |
+  = note: see https://doc.rust-lang.org/cargo/reference/manifest.html#package-metadata for more info
+From `cargo package --list --allow-dirty --manifest-path /workspace/redmud/crates/redmud-python/Cargo.toml`:
+warning: manifest has no documentation, homepage or repository
+  |
+  = note: see https://doc.rust-lang.org/cargo/reference/manifest.html#package-metadata for more info
+📦 Including files matching "THIRD_PARTY_NOTICES.md"
+📦 Built source distribution to /workspace/redmud/target/security-wheels/redmud-0.2.0.tar.gz
+
+EXIT_CODE=0

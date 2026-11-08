@@ -1,0 +1,8 @@
+Observed terminal output from matrix.sh during package-311 completion:
+  docs/evidence/t205-macos/matrix.sh: line 9: ackage: command not found
+Exit status of stray shell command: 127 (bash command-not-found).
+Cause: env.sh source path in running matrix.sh was edited while bash read script.
+This was an orchestration error, not a product/test failure. Sequential loop
+continued; each actual verification subprocess has its own command, exit status
+and full log in runs.jsonl. package-311 and check-312 both exited 0.
+Final matrix.sh is retained; no running shell script is edited further.

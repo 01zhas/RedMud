@@ -1,0 +1,49 @@
+UTC: 2026-11-08T02:44:16.484231+00:00
+CWD: /Users/im01zhas/Documents/ChatGPT/RedMud
+COMMAND: ["bash", "-c", "uname -a; sw_vers; arch; xcode-select -p; clang --version; uv --version; uv python list --only-installed; git status --short; git remote -v"]
+Darwin 192.168.0.25 25.6.0 Darwin Kernel Version 25.6.0: Fri May 15 01:59:07 PDT 2026; root:xnu-12377.160.49.0.1~42/RELEASE_ARM64_T6030 arm64
+ProductName:		macOS
+ProductVersion:		26.6
+BuildVersion:		25G5028f
+arm64/Library/Developer/CommandLineTools
+Apple clang version 21.0.0 (clang-2100.1.1.101)
+Target: arm64-apple-darwin25.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+uv 0.11.14 (Homebrew 2026-05-12 aarch64-apple-darwin)
+cpython-3.14.5-macos-aarch64-none     /opt/homebrew/bin/python3.14 -> ../Cellar/python@3.14/3.14.5/bin/python3.14
+cpython-3.14.5-macos-aarch64-none     /opt/homebrew/bin/python3 -> ../Cellar/python@3.14/3.14.5/bin/python3
+cpython-3.13.3-macos-aarch64-none     /opt/homebrew/bin/python3.13 -> ../Cellar/python@3.13/3.13.3/bin/python3.13
+cpython-3.13.2-macos-x86_64-none      /usr/local/bin/python3.13 -> ../Cellar/python@3.13/3.13.2/bin/python3.13
+cpython-3.13.2-macos-x86_64-none      /usr/local/bin/python3 -> ../Cellar/python@3.13/3.13.2/bin/python3
+cpython-3.12.13-macos-aarch64-none    /Users/im01zhas/.local/share/uv/python/cpython-3.12-macos-aarch64-none/bin/python3.12
+cpython-3.11.15-macos-aarch64-none    /opt/homebrew/bin/python3.11 -> ../Cellar/python@3.11/3.11.15_1/bin/python3.11
+cpython-3.11.15-macos-aarch64-none    /Users/im01zhas/.local/bin/python3.11 -> /Users/im01zhas/.local/share/uv/python/cpython-3.11-macos-aarch64-none/bin/python3.11
+cpython-3.11.15-macos-aarch64-none    /Users/im01zhas/.local/share/uv/python/cpython-3.11-macos-aarch64-none/bin/python3.11
+cpython-3.9.6-macos-aarch64-none      /usr/bin/python3
+pypy-3.10.14-macos-aarch64-none       /opt/homebrew/bin/pypy3 -> ../Cellar/pypy3.10/7.3.17/bin/pypy3
+?? .github/
+?? .gitignore
+?? AGENTS.md
+?? Cargo.lock
+?? Cargo.toml
+?? EVIDENCE.md
+?? LICENSE
+?? README.md
+?? README.ru.md
+?? ROADMAP.md
+?? SPEC.md
+?? TASKS.md
+?? THIRD_PARTY_NOTICES.md
+?? benchmarks/
+?? crates/
+?? docs/
+?? examples/
+?? pyproject.toml
+?? python/
+?? requirements-dev.txt
+?? requirements-security.txt
+?? scripts/
+?? tests/
+
+EXIT: 0

@@ -1,0 +1,1 @@
+{"phase": "timing", "setup_ns": 115019, "warmup_records": 128, "call_ns": 695350, "wall_ns": 1532377, "batch_ns": [363784, 331566], "counts": {"ok": 128, "rejected": 0, "error": 0}, "digest": "3f7b5c89671646e55d2dfba3e957c8160eee2ba3cf86f02edafdb53b1da6a20a", "rss_before_bytes": 18694144, "rss_peak_bytes": 18694144, "python_traced_peak_bytes": null, "affinity": [0]}

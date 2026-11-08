@@ -1,0 +1,14 @@
+$ python -m unittest tests.test_benchmark_fixtures -v && python -m ruff check --select E9,F63,F7,F82 benchmarks
+test_all_modes_have_equal_values_validation_and_errors (tests.test_benchmark_fixtures.TestBenchmarkFixtures.test_all_modes_have_equal_values_validation_and_errors) ... ok
+test_fixture_seed_and_repeated_batches_are_deterministic (tests.test_benchmark_fixtures.TestBenchmarkFixtures.test_fixture_seed_and_repeated_batches_are_deterministic) ... ok
+test_linux_memory_meter_uses_post_exec_high_water (tests.test_benchmark_fixtures.TestBenchmarkFixtures.test_linux_memory_meter_uses_post_exec_high_water) ... ok
+test_measurement_summary_units_and_percentiles (tests.test_benchmark_fixtures.TestBenchmarkFixtures.test_measurement_summary_units_and_percentiles) ... ok
+test_mixed_fixture_contains_success_rule_reject_and_parse_failure (tests.test_benchmark_fixtures.TestBenchmarkFixtures.test_mixed_fixture_contains_success_rule_reject_and_parse_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.083s
+
+OK
+All checks passed!
+
+EXIT_CODE=0

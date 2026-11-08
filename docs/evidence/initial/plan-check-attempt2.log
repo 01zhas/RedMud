@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/redmud/docs/evidence/initial/plan-check.py", line 35, in <module>
+    assert 'T-'+ac[3:] in rows,ac
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: AC-204

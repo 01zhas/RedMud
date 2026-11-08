@@ -1,0 +1,18 @@
+$ python -m unittest tests.test_limits.TestLimits.test_schema_and_literal_depth -v
+test_schema_and_literal_depth (tests.test_limits.TestLimits.test_schema_and_literal_depth) ... FAIL
+
+======================================================================
+FAIL: test_schema_and_literal_depth (tests.test_limits.TestLimits.test_schema_and_literal_depth)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_limits.py", line 51, in test_schema_and_literal_depth
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+FAILED (failures=1)
+
+EXIT_CODE=1

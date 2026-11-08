@@ -1,0 +1,6 @@
+$ python docs/evidence/m1/plan-check.py
+PASS: requirement/task/AC/gate references, local links, task-dependency DAG.
+PASS: M1 mandatory safety gate is explicitly BLOCKED; unavailable scan is not PASS; M2 not started.
+LIMIT: original task-only DAG does not resolve milestone-level T-206 safety-gate conflict; amendment is pending.
+
+EXIT_CODE=0

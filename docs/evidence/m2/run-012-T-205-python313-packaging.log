@@ -1,0 +1,471 @@
+$ python scripts/package_check.py --python "$(uv python find 3.13)"
++ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m maturin build --release --locked --interpreter /home/agent/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/bin/python3.13 --out /workspace/redmud/target/package-check/Linux-x86_64-3.13.17/wheel
+📦 Including license file `LICENSE`
+🍹 Building a mixed python/rust project
+🐍 Found CPython 3.13 at /home/agent/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/bin/python3.13
+🔗 Found pyo3 bindings
+   Compiling pyo3-ffi v0.29.3
+   Compiling pyo3 v0.29.3
+   Compiling redmud-python v0.2.0 (/workspace/redmud/crates/redmud-python)
+    Finished `release` profile [optimized] target(s) in 5.91s
+📦 Including files matching "THIRD_PARTY_NOTICES.md"
+📦 Built wheel for CPython 3.13 to /workspace/redmud/target/package-check/Linux-x86_64-3.13.17/wheel/redmud-0.2.0-cp313-cp313-manylinux_2_34_x86_64.whl
++ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m maturin sdist --out /workspace/redmud/target/package-check/Linux-x86_64-3.13.17/sdist
+📦 Including license file `LICENSE`
+🍹 Building a mixed python/rust project
+🔗 Found pyo3 bindings
+From `cargo package --list --allow-dirty --manifest-path /workspace/redmud/crates/redmud-core/Cargo.toml`:
+warning: manifest has no documentation, homepage or repository
+  |
+  = note: see https://doc.rust-lang.org/cargo/reference/manifest.html#package-metadata for more info
+From `cargo package --list --allow-dirty --manifest-path /workspace/redmud/crates/redmud-python/Cargo.toml`:
+warning: manifest has no documentation, homepage or repository
+  |
+  = note: see https://doc.rust-lang.org/cargo/reference/manifest.html#package-metadata for more info
+📦 Including files matching "THIRD_PARTY_NOTICES.md"
+📦 Built source distribution to /workspace/redmud/target/package-check/Linux-x86_64-3.13.17/sdist/redmud-0.2.0.tar.gz
++ /home/agent/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/bin/python3.13 -m venv /tmp/redmud-install-hqiubnfe/venv
++ /tmp/redmud-install-hqiubnfe/venv/bin/python -m pip install --no-deps --no-build-isolation /workspace/redmud/target/package-check/Linux-x86_64-3.13.17/wheel/redmud-0.2.0-cp313-cp313-manylinux_2_34_x86_64.whl
+Processing /workspace/redmud/target/package-check/Linux-x86_64-3.13.17/wheel/redmud-0.2.0-cp313-cp313-manylinux_2_34_x86_64.whl
+Installing collected packages: redmud
+Successfully installed redmud-0.2.0
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: /tmp/redmud-install-hqiubnfe/venv/bin/python -m pip install --upgrade pip
++ /tmp/redmud-install-hqiubnfe/venv/bin/python -I -c import pathlib,sys,redmud,redmud._native; p=pathlib.Path(sys.prefix).resolve(); assert pathlib.Path(redmud.__file__).resolve().is_relative_to(p); assert pathlib.Path(redmud._native.__file__).resolve().is_relative_to(p); print(redmud.__file__);print(redmud._native.__file__)
+/tmp/redmud-install-hqiubnfe/venv/lib/python3.13/site-packages/redmud/__init__.py
+/tmp/redmud-install-hqiubnfe/venv/lib/python3.13/site-packages/redmud/_native.cpython-313-x86_64-linux-gnu.so
++ /tmp/redmud-install-hqiubnfe/venv/bin/python -I -m unittest discover -s /workspace/redmud/tests -t /workspace/redmud -v
+test_ac107_custom_parser_is_callback (tests.test_errors.TestErrors.test_ac107_custom_parser_is_callback) ... ok
+test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) ... ok
+test_ac107_python_stages_and_safe_exception (tests.test_errors.TestErrors.test_ac107_python_stages_and_safe_exception) ... ok
+test_example_cart_malformed_json (tests.test_examples.TestExamples.test_example_cart_malformed_json) ... ok
+test_sources_produce_compatible_results (tests.test_examples.TestExamples.test_sources_produce_compatible_results) ... ok
+test_ac104_arithmetic_and_order (tests.test_expressions.TestExpressions.test_ac104_arithmetic_and_order) ... ok
+test_ac104_nested_collection_errors (tests.test_expressions.TestExpressions.test_ac104_nested_collection_errors) ... ok
+test_ac104_paths_and_laziness (tests.test_expressions.TestExpressions.test_ac104_paths_and_laziness) ... ok
+test_ac104_structural_equality (tests.test_expressions.TestExpressions.test_ac104_structural_equality) ... ok
+test_ac103_exact_integer_domain (tests.test_inputs.TestInputs.test_ac103_exact_integer_domain) ... ok
+test_ac103_invalid_literals_are_config_errors (tests.test_inputs.TestInputs.test_ac103_invalid_literals_are_config_errors) ... ok
+test_ac103_reject_unsupported_without_mutation (tests.test_inputs.TestInputs.test_ac103_reject_unsupported_without_mutation) ... ok
+test_generated_callback_batch_fallback_and_length (tests.test_invariants.TestInvariants.test_generated_callback_batch_fallback_and_length) ... ok
+test_generated_numeric_edges (tests.test_invariants.TestInvariants.test_generated_numeric_edges) ... ok
+test_python_fallback_matches_independent_valid_values (tests.test_invariants.TestInvariants.test_python_fallback_matches_independent_valid_values) ... ok
+test_seeded_nested_scalar_batch_stream_replay (tests.test_invariants.TestInvariants.test_seeded_nested_scalar_batch_stream_replay) ... ok
+test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) ... ok
+test_malicious_depth_in_bounded_subprocess (tests.test_limits.TestLimits.test_malicious_depth_in_bounded_subprocess) ... ok
+test_plan_expression_and_combined_boundary (tests.test_limits.TestLimits.test_plan_expression_and_combined_boundary) ... ok
+test_schema_and_literal_depth (tests.test_limits.TestLimits.test_schema_and_literal_depth) ... ok
+test_unbounded_source_lookahead (tests.test_limits.TestLimits.test_unbounded_source_lookahead) ... ok
+test_both_modes_batch_summary_and_error_policies (tests.test_metrics_bounds.TestMetricBounds.test_both_modes_batch_summary_and_error_policies) ... ok
+test_disabled_metrics_still_profiles_and_idle_clock (tests.test_metrics_bounds.TestMetricBounds.test_disabled_metrics_still_profiles_and_idle_clock) ... ok
+test_dynamic_types_are_other_and_not_retained (tests.test_metrics_bounds.TestMetricBounds.test_dynamic_types_are_other_and_not_retained) ... ok
+test_histogram_has_fixed_cardinality (tests.test_metrics_bounds.TestMetricBounds.test_histogram_has_fixed_cardinality) ... ok
+test_arithmetic_inputs (tests.test_native.TestNative.test_arithmetic_inputs) ... ok
+test_condition_and_snapshot (tests.test_native.TestNative.test_condition_and_snapshot) ... ok
+test_nested (tests.test_native.TestNative.test_nested) ... ok
+test_overflow (tests.test_native.TestNative.test_overflow) ... ok
+test_policies (tests.test_native.TestNative.test_policies) ... ok
+test_stream_and_metrics (tests.test_native.TestNative.test_stream_and_metrics) ... ok
+test_ac105_mixed_batches_account_before_raise (tests.test_policies.TestPolicies.test_ac105_mixed_batches_account_before_raise) ... ok
+test_ac105_scalar_and_iter_policies (tests.test_policies.TestPolicies.test_ac105_scalar_and_iter_policies) ... ok
+test_ac105_source_failure_and_bad_sizes (tests.test_policies.TestPolicies.test_ac105_source_failure_and_bad_sizes) ... ok
+test_ac101_cached_independent_builders (tests.test_prepare.TestPrepare.test_ac101_cached_independent_builders) ... ok
+test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) ... ok
+test_ac101_prepare_before_consumption (tests.test_prepare.TestPrepare.test_ac101_prepare_before_consumption) ... ok
+test_ac106_arguments_and_no_retention (tests.test_profiling.TestProfiling.test_ac106_arguments_and_no_retention) ... ok
+test_ac106_cleanup_and_existing_trace (tests.test_profiling.TestProfiling.test_ac106_cleanup_and_existing_trace) ... ok
+test_ac106_input_count_and_bounded_sample (tests.test_profiling.TestProfiling.test_ac106_input_count_and_bounded_sample) ... ok
+test_bad_rule_name_rejected (tests.test_quality.TestQuality.test_bad_rule_name_rejected) ... ok
+test_decimal_profile_is_descriptive_not_exact (tests.test_quality.TestQuality.test_decimal_profile_is_descriptive_not_exact) ... ok
+test_invalid_paths_rejected (tests.test_quality.TestQuality.test_invalid_paths_rejected) ... ok
+test_paths_support_mappings_and_dataclasses (tests.test_quality.TestQuality.test_paths_support_mappings_and_dataclasses) ... ok
+test_profile_none_missing_and_types (tests.test_quality.TestQuality.test_profile_none_missing_and_types) ... ok
+test_batch_fallback_to_scalar (tests.test_runtime.TestRuntime.test_batch_fallback_to_scalar) ... ok
+test_batch_mismatch_fallback_disabled (tests.test_runtime.TestRuntime.test_batch_mismatch_fallback_disabled) ... ok
+test_batch_mismatch_fallback_enabled (tests.test_runtime.TestRuntime.test_batch_mismatch_fallback_enabled) ... ok
+test_batch_vectorized_preserves_order_after_reject (tests.test_runtime.TestRuntime.test_batch_vectorized_preserves_order_after_reject) ... ok
+test_default_batch_sequence_has_no_custom_batch (tests.test_runtime.TestRuntime.test_default_batch_sequence_has_no_custom_batch) ... ok
+test_elapsed_time_includes_calculation (tests.test_runtime.TestRuntime.test_elapsed_time_includes_calculation) ... ok
+test_empty_batch_and_empty_iterator (tests.test_runtime.TestRuntime.test_empty_batch_and_empty_iterator) ... ok
+test_fail_fast (tests.test_runtime.TestRuntime.test_fail_fast) ... ok
+test_field_sampling (tests.test_runtime.TestRuntime.test_field_sampling) ... ok
+test_input_rules_duplicate_name (tests.test_runtime.TestRuntime.test_input_rules_duplicate_name) ... ok
+test_invalid_prometheus_prefix (tests.test_runtime.TestRuntime.test_invalid_prometheus_prefix) ... ok
+test_iterator_lazy_and_bounded (tests.test_runtime.TestRuntime.test_iterator_lazy_and_bounded) ... ok
+test_json_and_identity_input (tests.test_runtime.TestRuntime.test_json_and_identity_input) ... ok
+test_many_mixed_records_never_drop_or_reorder (tests.test_runtime.TestRuntime.test_many_mixed_records_never_drop_or_reorder) ... ok
+test_nested_custom_parser (tests.test_runtime.TestRuntime.test_nested_custom_parser) ... ok
+test_none_as_successful_value (tests.test_runtime.TestRuntime.test_none_as_successful_value) ... ok
+test_one_engine_monotonic_index_across_calls (tests.test_runtime.TestRuntime.test_one_engine_monotonic_index_across_calls) ... ok
+test_opt_in_error_message (tests.test_runtime.TestRuntime.test_opt_in_error_message) ... ok
+test_output_quality_profiles (tests.test_runtime.TestRuntime.test_output_quality_profiles) ... ok
+test_output_rule_exception_isolated (tests.test_runtime.TestRuntime.test_output_rule_exception_isolated) ... ok
+test_output_warning_is_success (tests.test_runtime.TestRuntime.test_output_warning_is_success) ... ok
+test_parse_failure_is_isolated (tests.test_runtime.TestRuntime.test_parse_failure_is_isolated) ... ok
+test_profile_reports_and_bounded_input (tests.test_runtime.TestRuntime.test_profile_reports_and_bounded_input) ... ok
+test_prometheus_metrics (tests.test_runtime.TestRuntime.test_prometheus_metrics) ... ok
+test_rule_exception_isolated (tests.test_runtime.TestRuntime.test_rule_exception_isolated) ... ok
+test_rule_warning_and_reject_and_output (tests.test_runtime.TestRuntime.test_rule_warning_and_reject_and_output) ... ok
+test_settings_validation (tests.test_runtime.TestRuntime.test_settings_validation) ... ok
+test_transform_failure_is_isolated (tests.test_runtime.TestRuntime.test_transform_failure_is_isolated) ... ok
+test_ac102_bounds_and_allowed (tests.test_schema.TestSchema.test_ac102_bounds_and_allowed) ... ok
+test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) ... ok
+test_ac102_valid_nested_schema (tests.test_schema.TestSchema.test_ac102_valid_nested_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 76 tests in 0.197s
+
+OK
++ /tmp/redmud-install-hqiubnfe/venv/bin/python -I /workspace/redmud/examples/native_cart.py
+{'cart_id': 5001, 'cart_total': 3500, 'orders': [{'items': [{'price': 1000, 'quantity': 2, 'total': 2000}, {'price': 500, 'quantity': 3, 'total': 1500}], 'order_total': 3500}]}
++ /tmp/redmud-install-hqiubnfe/venv/bin/python -I /workspace/redmud/examples/cart.py
+status=ok index=0 value={'cart_id': 5001, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+status=ok index=1 value={'cart_id': 5002, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+status=error index=2 value=None
+error: parse JSONDecodeError
+status=ok index=3 value={'cart_id': 5003, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+{
+  "metrics": {
+    "processed": 4,
+    "errors_by_code": {
+      "callback_error": 1
+    },
+    "batch_sizes": {
+      "2-63": 1
+    },
+    "batch_size_summary": {
+      "count": 1,
+      "sum": 4,
+      "min": 4,
+      "max": 4
+    },
+    "statuses": {
+      "ok": 3,
+      "error": 1
+    },
+    "batch_fallbacks": 0,
+    "elapsed_seconds": 0.000228068,
+    "throughput_per_second": 17538.62882999807,
+    "stages": {
+      "parse": {
+        "samples": 4,
+        "mean_ms": 0.01952675,
+        "max_ms": 0.035062,
+        "total_seconds": 7.8107e-05
+      },
+      "input_quality": {
+        "samples": 3,
+        "mean_ms": 0.003342,
+        "max_ms": 0.004878,
+        "total_seconds": 1.0026e-05
+      },
+      "transform": {
+        "samples": 3,
+        "mean_ms": 0.0036053333333333337,
+        "max_ms": 0.005908,
+        "total_seconds": 1.0816e-05
+      },
+      "output_quality": {
+        "samples": 3,
+        "mean_ms": 0.0008446666666666666,
+        "max_ms": 0.001141,
+        "total_seconds": 2.534e-06
+      },
+      "batch": {
+        "samples": 1,
+        "mean_ms": 0.203982,
+        "max_ms": 0.203982,
+        "total_seconds": 0.000203982
+      }
+    },
+    "rule_failures": []
+  },
+  "quality": {
+    "fields": {
+      "total_minor": {
+        "observed": 3,
+        "missing": 0,
+        "nulls": 0,
+        "types": {
+          "int": 3
+        },
+        "numeric_count": 3,
+        "mean": 357000.0,
+        "stddev_population": 0.0,
+        "min": 357000.0,
+        "max": 357000.0
+      },
+      "subtotal_minor": {
+        "observed": 3,
+        "missing": 0,
+        "nulls": 0,
+        "types": {
+          "int": 3
+        },
+        "numeric_count": 3,
+        "mean": 395000.0,
+        "stddev_population": 0.0,
+        "min": 395000.0,
+        "max": 395000.0
+      }
+    },
+    "profiling_errors": 0
+  }
+}
+# TYPE redmud_records_total counter
+redmud_records_total{status="ok"} 3
+redmud_records_total{status="rejected"} 0
+redmud_records_total{status="error"} 1
+# TYPE redmud_batch_fallbacks_total counter
+redmud_batch_fallbacks_total 0
+# TYPE redmud_stage_duration_seconds summary
+redmud_stage_duration_seconds_sum{stage="batch"} 0.000203982
+redmud_stage_duration_seconds_count{stage="batch"} 1
+redmud_stage_duration_seconds_sum{stage="input_quality"} 1.0026e-05
+redmud_stage_duration_seconds_count{stage="input_quality"} 3
+redmud_stage_duration_seconds_sum{stage="output_quality"} 2.534e-06
+redmud_stage_duration_seconds_count{stage="output_quality"} 3
+redmud_stage_duration_seconds_sum{stage="parse"} 7.8107e-05
+redmud_stage_duration_seconds_count{stage="parse"} 4
+redmud_stage_duration_seconds_sum{stage="transform"} 1.0816e-05
+redmud_stage_duration_seconds_count{stage="transform"} 3
+# TYPE redmud_quality_failures_total counter
+
++ /home/agent/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/bin/python3.13 -m venv /tmp/redmud-install-46s67j4e/venv
++ /tmp/redmud-install-46s67j4e/venv/bin/python -m pip install maturin==1.16.0
+Collecting maturin==1.16.0
+  Using cached maturin-1.16.0-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.musllinux_1_1_x86_64.whl.metadata (17 kB)
+Using cached maturin-1.16.0-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.musllinux_1_1_x86_64.whl (10.8 MB)
+Installing collected packages: maturin
+Successfully installed maturin-1.16.0
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: /tmp/redmud-install-46s67j4e/venv/bin/python -m pip install --upgrade pip
++ /tmp/redmud-install-46s67j4e/venv/bin/python -m pip install --no-deps --no-build-isolation /workspace/redmud/target/package-check/Linux-x86_64-3.13.17/sdist/redmud-0.2.0.tar.gz
+Processing /workspace/redmud/target/package-check/Linux-x86_64-3.13.17/sdist/redmud-0.2.0.tar.gz
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: redmud
+  Building wheel for redmud (pyproject.toml): started
+  Building wheel for redmud (pyproject.toml): finished with status 'done'
+  Created wheel for redmud: filename=redmud-0.2.0-cp313-cp313-linux_x86_64.whl size=485616 sha256=ebee6a48716bd94a138b1eb8e5aa9a9f1483d842a2a2bba2edb7a8e368a68a12
+  Stored in directory: /home/agent/.cache/pip/wheels/9d/b2/fc/d641644b2fbeaa70183727b730c77f59d9fc54634ba2f2544c
+Successfully built redmud
+Installing collected packages: redmud
+Successfully installed redmud-0.2.0
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: /tmp/redmud-install-46s67j4e/venv/bin/python -m pip install --upgrade pip
++ /tmp/redmud-install-46s67j4e/venv/bin/python -I -c import pathlib,sys,redmud,redmud._native; p=pathlib.Path(sys.prefix).resolve(); assert pathlib.Path(redmud.__file__).resolve().is_relative_to(p); assert pathlib.Path(redmud._native.__file__).resolve().is_relative_to(p); print(redmud.__file__);print(redmud._native.__file__)
+/tmp/redmud-install-46s67j4e/venv/lib/python3.13/site-packages/redmud/__init__.py
+/tmp/redmud-install-46s67j4e/venv/lib/python3.13/site-packages/redmud/_native.cpython-313-x86_64-linux-gnu.so
++ /tmp/redmud-install-46s67j4e/venv/bin/python -I -m unittest discover -s /workspace/redmud/tests -t /workspace/redmud -v
+test_ac107_custom_parser_is_callback (tests.test_errors.TestErrors.test_ac107_custom_parser_is_callback) ... ok
+test_ac107_native_classification_and_redaction (tests.test_errors.TestErrors.test_ac107_native_classification_and_redaction) ... ok
+test_ac107_python_stages_and_safe_exception (tests.test_errors.TestErrors.test_ac107_python_stages_and_safe_exception) ... ok
+test_example_cart_malformed_json (tests.test_examples.TestExamples.test_example_cart_malformed_json) ... ok
+test_sources_produce_compatible_results (tests.test_examples.TestExamples.test_sources_produce_compatible_results) ... ok
+test_ac104_arithmetic_and_order (tests.test_expressions.TestExpressions.test_ac104_arithmetic_and_order) ... ok
+test_ac104_nested_collection_errors (tests.test_expressions.TestExpressions.test_ac104_nested_collection_errors) ... ok
+test_ac104_paths_and_laziness (tests.test_expressions.TestExpressions.test_ac104_paths_and_laziness) ... ok
+test_ac104_structural_equality (tests.test_expressions.TestExpressions.test_ac104_structural_equality) ... ok
+test_ac103_exact_integer_domain (tests.test_inputs.TestInputs.test_ac103_exact_integer_domain) ... ok
+test_ac103_invalid_literals_are_config_errors (tests.test_inputs.TestInputs.test_ac103_invalid_literals_are_config_errors) ... ok
+test_ac103_reject_unsupported_without_mutation (tests.test_inputs.TestInputs.test_ac103_reject_unsupported_without_mutation) ... ok
+test_generated_callback_batch_fallback_and_length (tests.test_invariants.TestInvariants.test_generated_callback_batch_fallback_and_length) ... ok
+test_generated_numeric_edges (tests.test_invariants.TestInvariants.test_generated_numeric_edges) ... ok
+test_python_fallback_matches_independent_valid_values (tests.test_invariants.TestInvariants.test_python_fallback_matches_independent_valid_values) ... ok
+test_seeded_nested_scalar_batch_stream_replay (tests.test_invariants.TestInvariants.test_seeded_nested_scalar_batch_stream_replay) ... ok
+test_data_boundary (tests.test_limits.TestLimits.test_data_boundary) ... ok
+test_malicious_depth_in_bounded_subprocess (tests.test_limits.TestLimits.test_malicious_depth_in_bounded_subprocess) ... ok
+test_plan_expression_and_combined_boundary (tests.test_limits.TestLimits.test_plan_expression_and_combined_boundary) ... ok
+test_schema_and_literal_depth (tests.test_limits.TestLimits.test_schema_and_literal_depth) ... ok
+test_unbounded_source_lookahead (tests.test_limits.TestLimits.test_unbounded_source_lookahead) ... ok
+test_both_modes_batch_summary_and_error_policies (tests.test_metrics_bounds.TestMetricBounds.test_both_modes_batch_summary_and_error_policies) ... ok
+test_disabled_metrics_still_profiles_and_idle_clock (tests.test_metrics_bounds.TestMetricBounds.test_disabled_metrics_still_profiles_and_idle_clock) ... ok
+test_dynamic_types_are_other_and_not_retained (tests.test_metrics_bounds.TestMetricBounds.test_dynamic_types_are_other_and_not_retained) ... ok
+test_histogram_has_fixed_cardinality (tests.test_metrics_bounds.TestMetricBounds.test_histogram_has_fixed_cardinality) ... ok
+test_arithmetic_inputs (tests.test_native.TestNative.test_arithmetic_inputs) ... ok
+test_condition_and_snapshot (tests.test_native.TestNative.test_condition_and_snapshot) ... ok
+test_nested (tests.test_native.TestNative.test_nested) ... ok
+test_overflow (tests.test_native.TestNative.test_overflow) ... ok
+test_policies (tests.test_native.TestNative.test_policies) ... ok
+test_stream_and_metrics (tests.test_native.TestNative.test_stream_and_metrics) ... ok
+test_ac105_mixed_batches_account_before_raise (tests.test_policies.TestPolicies.test_ac105_mixed_batches_account_before_raise) ... ok
+test_ac105_scalar_and_iter_policies (tests.test_policies.TestPolicies.test_ac105_scalar_and_iter_policies) ... ok
+test_ac105_source_failure_and_bad_sizes (tests.test_policies.TestPolicies.test_ac105_source_failure_and_bad_sizes) ... ok
+test_ac101_cached_independent_builders (tests.test_prepare.TestPrepare.test_ac101_cached_independent_builders) ... ok
+test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) ... ok
+test_ac101_prepare_before_consumption (tests.test_prepare.TestPrepare.test_ac101_prepare_before_consumption) ... ok
+test_ac106_arguments_and_no_retention (tests.test_profiling.TestProfiling.test_ac106_arguments_and_no_retention) ... ok
+test_ac106_cleanup_and_existing_trace (tests.test_profiling.TestProfiling.test_ac106_cleanup_and_existing_trace) ... ok
+test_ac106_input_count_and_bounded_sample (tests.test_profiling.TestProfiling.test_ac106_input_count_and_bounded_sample) ... ok
+test_bad_rule_name_rejected (tests.test_quality.TestQuality.test_bad_rule_name_rejected) ... ok
+test_decimal_profile_is_descriptive_not_exact (tests.test_quality.TestQuality.test_decimal_profile_is_descriptive_not_exact) ... ok
+test_invalid_paths_rejected (tests.test_quality.TestQuality.test_invalid_paths_rejected) ... ok
+test_paths_support_mappings_and_dataclasses (tests.test_quality.TestQuality.test_paths_support_mappings_and_dataclasses) ... ok
+test_profile_none_missing_and_types (tests.test_quality.TestQuality.test_profile_none_missing_and_types) ... ok
+test_batch_fallback_to_scalar (tests.test_runtime.TestRuntime.test_batch_fallback_to_scalar) ... ok
+test_batch_mismatch_fallback_disabled (tests.test_runtime.TestRuntime.test_batch_mismatch_fallback_disabled) ... ok
+test_batch_mismatch_fallback_enabled (tests.test_runtime.TestRuntime.test_batch_mismatch_fallback_enabled) ... ok
+test_batch_vectorized_preserves_order_after_reject (tests.test_runtime.TestRuntime.test_batch_vectorized_preserves_order_after_reject) ... ok
+test_default_batch_sequence_has_no_custom_batch (tests.test_runtime.TestRuntime.test_default_batch_sequence_has_no_custom_batch) ... ok
+test_elapsed_time_includes_calculation (tests.test_runtime.TestRuntime.test_elapsed_time_includes_calculation) ... ok
+test_empty_batch_and_empty_iterator (tests.test_runtime.TestRuntime.test_empty_batch_and_empty_iterator) ... ok
+test_fail_fast (tests.test_runtime.TestRuntime.test_fail_fast) ... ok
+test_field_sampling (tests.test_runtime.TestRuntime.test_field_sampling) ... ok
+test_input_rules_duplicate_name (tests.test_runtime.TestRuntime.test_input_rules_duplicate_name) ... ok
+test_invalid_prometheus_prefix (tests.test_runtime.TestRuntime.test_invalid_prometheus_prefix) ... ok
+test_iterator_lazy_and_bounded (tests.test_runtime.TestRuntime.test_iterator_lazy_and_bounded) ... ok
+test_json_and_identity_input (tests.test_runtime.TestRuntime.test_json_and_identity_input) ... ok
+test_many_mixed_records_never_drop_or_reorder (tests.test_runtime.TestRuntime.test_many_mixed_records_never_drop_or_reorder) ... ok
+test_nested_custom_parser (tests.test_runtime.TestRuntime.test_nested_custom_parser) ... ok
+test_none_as_successful_value (tests.test_runtime.TestRuntime.test_none_as_successful_value) ... ok
+test_one_engine_monotonic_index_across_calls (tests.test_runtime.TestRuntime.test_one_engine_monotonic_index_across_calls) ... ok
+test_opt_in_error_message (tests.test_runtime.TestRuntime.test_opt_in_error_message) ... ok
+test_output_quality_profiles (tests.test_runtime.TestRuntime.test_output_quality_profiles) ... ok
+test_output_rule_exception_isolated (tests.test_runtime.TestRuntime.test_output_rule_exception_isolated) ... ok
+test_output_warning_is_success (tests.test_runtime.TestRuntime.test_output_warning_is_success) ... ok
+test_parse_failure_is_isolated (tests.test_runtime.TestRuntime.test_parse_failure_is_isolated) ... ok
+test_profile_reports_and_bounded_input (tests.test_runtime.TestRuntime.test_profile_reports_and_bounded_input) ... ok
+test_prometheus_metrics (tests.test_runtime.TestRuntime.test_prometheus_metrics) ... ok
+test_rule_exception_isolated (tests.test_runtime.TestRuntime.test_rule_exception_isolated) ... ok
+test_rule_warning_and_reject_and_output (tests.test_runtime.TestRuntime.test_rule_warning_and_reject_and_output) ... ok
+test_settings_validation (tests.test_runtime.TestRuntime.test_settings_validation) ... ok
+test_transform_failure_is_isolated (tests.test_runtime.TestRuntime.test_transform_failure_is_isolated) ... ok
+test_ac102_bounds_and_allowed (tests.test_schema.TestSchema.test_ac102_bounds_and_allowed) ... ok
+test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) ... ok
+test_ac102_valid_nested_schema (tests.test_schema.TestSchema.test_ac102_valid_nested_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 76 tests in 0.206s
+
+OK
++ /tmp/redmud-install-46s67j4e/venv/bin/python -I /workspace/redmud/examples/native_cart.py
+{'cart_id': 5001, 'cart_total': 3500, 'orders': [{'items': [{'price': 1000, 'quantity': 2, 'total': 2000}, {'price': 500, 'quantity': 3, 'total': 1500}], 'order_total': 3500}]}
++ /tmp/redmud-install-46s67j4e/venv/bin/python -I /workspace/redmud/examples/cart.py
+status=ok index=0 value={'cart_id': 5001, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+status=ok index=1 value={'cart_id': 5002, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+status=error index=2 value=None
+error: parse JSONDecodeError
+status=ok index=3 value={'cart_id': 5003, 'customer_id': 777, 'subtotal_minor': 395000, 'promo_minor': 39500, 'total_minor': 357000, 'order_totals': [{'order_id': 101, 'total_minor': 305000}, {'order_id': 102, 'total_minor': 90000}]}
+{
+  "metrics": {
+    "processed": 4,
+    "errors_by_code": {
+      "callback_error": 1
+    },
+    "batch_sizes": {
+      "2-63": 1
+    },
+    "batch_size_summary": {
+      "count": 1,
+      "sum": 4,
+      "min": 4,
+      "max": 4
+    },
+    "statuses": {
+      "ok": 3,
+      "error": 1
+    },
+    "batch_fallbacks": 0,
+    "elapsed_seconds": 0.000260316,
+    "throughput_per_second": 15365.939857711395,
+    "stages": {
+      "parse": {
+        "samples": 4,
+        "mean_ms": 0.01925125,
+        "max_ms": 0.029694,
+        "total_seconds": 7.7005e-05
+      },
+      "input_quality": {
+        "samples": 3,
+        "mean_ms": 0.0035686666666666666,
+        "max_ms": 0.005238,
+        "total_seconds": 1.0706e-05
+      },
+      "transform": {
+        "samples": 3,
+        "mean_ms": 0.0035656666666666666,
+        "max_ms": 0.005679,
+        "total_seconds": 1.0697e-05
+      },
+      "output_quality": {
+        "samples": 3,
+        "mean_ms": 0.0008046666666666666,
+        "max_ms": 0.001132,
+        "total_seconds": 2.414e-06
+      },
+      "batch": {
+        "samples": 1,
+        "mean_ms": 0.23607,
+        "max_ms": 0.23607,
+        "total_seconds": 0.00023607
+      }
+    },
+    "rule_failures": []
+  },
+  "quality": {
+    "fields": {
+      "total_minor": {
+        "observed": 3,
+        "missing": 0,
+        "nulls": 0,
+        "types": {
+          "int": 3
+        },
+        "numeric_count": 3,
+        "mean": 357000.0,
+        "stddev_population": 0.0,
+        "min": 357000.0,
+        "max": 357000.0
+      },
+      "subtotal_minor": {
+        "observed": 3,
+        "missing": 0,
+        "nulls": 0,
+        "types": {
+          "int": 3
+        },
+        "numeric_count": 3,
+        "mean": 395000.0,
+        "stddev_population": 0.0,
+        "min": 395000.0,
+        "max": 395000.0
+      }
+    },
+    "profiling_errors": 0
+  }
+}
+# TYPE redmud_records_total counter
+redmud_records_total{status="ok"} 3
+redmud_records_total{status="rejected"} 0
+redmud_records_total{status="error"} 1
+# TYPE redmud_batch_fallbacks_total counter
+redmud_batch_fallbacks_total 0
+# TYPE redmud_stage_duration_seconds summary
+redmud_stage_duration_seconds_sum{stage="batch"} 0.00023607
+redmud_stage_duration_seconds_count{stage="batch"} 1
+redmud_stage_duration_seconds_sum{stage="input_quality"} 1.0706e-05
+redmud_stage_duration_seconds_count{stage="input_quality"} 3
+redmud_stage_duration_seconds_sum{stage="output_quality"} 2.414e-06
+redmud_stage_duration_seconds_count{stage="output_quality"} 3
+redmud_stage_duration_seconds_sum{stage="parse"} 7.7005e-05
+redmud_stage_duration_seconds_count{stage="parse"} 4
+redmud_stage_duration_seconds_sum{stage="transform"} 1.0697e-05
+redmud_stage_duration_seconds_count{stage="transform"} 3
+# TYPE redmud_quality_failures_total counter
+
+{
+  "version": "3.13.17",
+  "system": "Linux",
+  "machine": "x86_64",
+  "artifacts": [
+    "target/package-check/Linux-x86_64-3.13.17/wheel/redmud-0.2.0-cp313-cp313-manylinux_2_34_x86_64.whl",
+    "target/package-check/Linux-x86_64-3.13.17/sdist/redmud-0.2.0.tar.gz"
+  ],
+  "result": "PASS: wheel and sdist installs, installed imports, full Python suite and examples"
+}
+
+EXIT_CODE=0

@@ -1,0 +1,5 @@
+UTC: 2026-11-08T02:48:22.171137+00:00
+CWD: /Users/im01zhas/Documents/ChatGPT/RedMud
+COMMAND: ["bash", "-n", "docs/evidence/t205-macos/matrix.sh", "docs/evidence/t205-macos/env.sh"]
+
+EXIT: 0

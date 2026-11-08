@@ -1,0 +1,4 @@
+PASS: 20 requirement IDs, 24 task IDs, AC/gate references and local artifact links resolve; task DAG acyclic.
+PASS: all 10 M1 tasks and their dependencies VERIFIED; A-01 removes the milestone safety dependency conflict.
+PASS: mandatory advisory reports exist with no findings/skips/ignores; M2 tasks remain TODO.
+Scope: local M1 acceptance only; platform/depth/cardinality/performance work remains as approved.

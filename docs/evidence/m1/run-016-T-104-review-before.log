@@ -1,0 +1,29 @@
+$ python -m unittest tests.test_expressions -v
+test_ac104_arithmetic_and_order (tests.test_expressions.TestExpressions.test_ac104_arithmetic_and_order) ... ok
+test_ac104_nested_collection_errors (tests.test_expressions.TestExpressions.test_ac104_nested_collection_errors) ... FAIL
+test_ac104_paths_and_laziness (tests.test_expressions.TestExpressions.test_ac104_paths_and_laziness) ... ok
+test_ac104_structural_equality (tests.test_expressions.TestExpressions.test_ac104_structural_equality) ... ok
+
+======================================================================
+FAIL: test_ac104_nested_collection_errors (tests.test_expressions.TestExpressions.test_ac104_nested_collection_errors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_expressions.py", line 30, in test_ac104_nested_collection_errors
+    self.assertEqual((e.code,e.path),(code,'a'))
+AssertionError: Tuples differ: ('null_value', 'a.b') != ('null_value', 'a')
+
+First differing element 1:
+'a.b'
+'a'
+
+- ('null_value', 'a.b')
+?                  --
+
++ ('null_value', 'a')
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=1)
+
+EXIT_CODE=1

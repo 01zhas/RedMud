@@ -1,0 +1,16 @@
+[build-system]
+requires = ["maturin>=1.7,<2"]
+build-backend = "maturin"
+[project]
+name = "redmud"
+version = "0.2.0"
+requires-python = ">=3.11"
+description = "Transform-only Rust engine with a Python API"
+readme = "README.md"
+license = {text = "MIT"}
+[tool.maturin]
+manifest-path = "crates/redmud-python/Cargo.toml"
+python-source = "python"
+module-name = "redmud._native"
+
+include = [{ path = "THIRD_PARTY_NOTICES.md", format = ["sdist", "wheel"] }]

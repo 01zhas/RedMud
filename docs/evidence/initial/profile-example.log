@@ -1,0 +1,29 @@
+$ python examples/cpu_profiling.py
+profiled=500, elapsed=95.5ms, peak_traced_bytes=113134
+         143532 function calls (143526 primitive calls) in 0.091 seconds
+
+   Ordered by: cumulative time
+   List reduced from 53 to 15 due to restriction <15>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      501    0.000    0.000    0.095    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:290(process_iter)
+        4    0.014    0.003    0.095    0.024 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:191(process_batch)
+        4    0.001    0.000    0.051    0.013 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:221(scalar_transform)
+     2000    0.002    0.000    0.051    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:143(_measured)
+      500    0.000    0.000    0.039    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:225(<lambda>)
+      500    0.001    0.000    0.039    0.000 /workspace/redmud/examples/cpu_profiling.py:6(transform)
+      500    0.012    0.000    0.038    0.000 {built-in method builtins.sum}
+   100500    0.026    0.000    0.026    0.000 /workspace/redmud/examples/cpu_profiling.py:7(<genexpr>)
+      500    0.006    0.000    0.011    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/dataclasses.py:1540(replace)
+      500    0.001    0.000    0.009    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/quality.py:121(observe)
+      500    0.002    0.000    0.008    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/runtime.py:176(_finalize)
+     2000    0.003    0.000    0.007    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/metrics.py:59(timing)
+      500    0.004    0.000    0.006    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/quality.py:75(observe)
+     2000    0.002    0.000    0.003    0.000 /home/agent/.local/lib/python3.12/site-packages/redmud/metrics.py:21(observe)
+     1000    0.002    0.000    0.002    0.000 {method 'append' of 'list' objects}
+
+
+
+{'metrics': {'processed': 500, 'errors_by_code': {}, 'batch_sizes': {}, 'statuses': {'ok': 500}, 'batch_fallbacks': 0, 'elapsed_seconds': 0.097273097, 'throughput_per_second': 5140.167378447917, 'stages': {'parse': {'samples': 500, 'mean_ms': 0.001324838, 'max_ms': 0.032208, 'total_seconds': 0.000662419}, 'input_quality': {'samples': 500, 'mean_ms': 0.001375336, 'max_ms': 0.02665, 'total_seconds': 0.000687668}, 'transform': {'samples': 500, 'mean_ms': 0.079162122, 'max_ms': 0.509825, 'total_seconds': 0.039581061}, 'output_quality': {'samples': 500, 'mean_ms': 0.001514156, 'max_ms': 0.031417, 'total_seconds': 0.000757078}}, 'rule_failures': []}, 'quality': {'fields': {'value': {'observed': 500, 'missing': 0, 'nulls': 0, 'types': {'int': 500}, 'numeric_count': 500, 'mean': 2646700.0, 'stddev_population': 0.0, 'min': 2646700.0, 'max': 2646700.0}}, 'profiling_errors': 0}}
+
+EXIT_CODE=0

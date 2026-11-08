@@ -1,0 +1,219 @@
+$ python -m unittest tests.test_schema -v
+test_ac102_bounds_and_allowed (tests.test_schema.TestSchema.test_ac102_bounds_and_allowed) ... ok
+test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) ... 
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec='unknown') ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec=1) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'mni': 0}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'nullable': 1}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'min': 'x'}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'min': 1.0}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'float', 'min': 1}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'min': 3, 'max': 2}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'number', 'min': 0}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'str', 'max': 3}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'allowed': []}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'allowed': [True]}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'allowed': [None]}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'list', 'fields': {}}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'items': 'str'}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'fields': {}, 'items': 'int'}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'fields': {'x': 'unknown'}}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'items': {'type': 'str', 'allowed': 3}}) ... FAIL
+  test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'object', 'fields': {'a..b': 'int'}}) ... FAIL
+test_ac102_valid_nested_schema (tests.test_schema.TestSchema.test_ac102_valid_nested_schema) ... FAIL
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'mni': 0})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'nullable': 1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'min': 'x'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'min': 1.0})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'float', 'min': 1})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'min': 3, 'max': 2})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'number', 'min': 0})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'str', 'max': 3})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'allowed': []})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'allowed': [True]})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'allowed': [None]})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'list', 'fields': {}})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'int', 'items': 'str'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'fields': {}, 'items': 'int'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'fields': {'x': 'unknown'}})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'items': {'type': 'str', 'allowed': 3}})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_invalid_schema_configuration (tests.test_schema.TestSchema.test_ac102_invalid_schema_configuration) (spec={'type': 'object', 'fields': {'a..b': 'int'}})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 16, in test_ac102_invalid_schema_configuration
+    with self.subTest(spec=spec), self.assertRaises(ValueError):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac102_valid_nested_schema (tests.test_schema.TestSchema.test_ac102_valid_nested_schema)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_schema.py", line 20, in test_ac102_valid_nested_schema
+    self.assertTrue(p.run_one({'x':[{'n':1}],'extra':1}).ok)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+FAILED (failures=21)
+
+EXIT_CODE=1

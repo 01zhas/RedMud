@@ -1,0 +1,104 @@
+[
+  {
+    "workload": "arithmetic",
+    "records": 1000,
+    "samples": 5,
+    "median_ns_per_record": {
+      "binding_ns": 2044.791,
+      "decode_ns": 1445.382,
+      "dict_validate_encode_ns": 2870.705,
+      "public_bytes_ns": 5355.568,
+      "public_dict_ns": 8159.243,
+      "core_full_ns": 2036.007,
+      "core_parse_ns": 478.153,
+      "core_evaluate_ns": 569.602,
+      "core_serialize_ns": 840.443
+    },
+    "parity": true
+  },
+  {
+    "workload": "nested_json",
+    "records": 1000,
+    "samples": 5,
+    "median_ns_per_record": {
+      "binding_ns": 5080.23,
+      "decode_ns": 1843.953,
+      "dict_validate_encode_ns": 5576.576,
+      "public_bytes_ns": 9192.516,
+      "public_dict_ns": 15257.475,
+      "core_full_ns": 5273.276,
+      "core_parse_ns": 1874.641,
+      "core_evaluate_ns": 1601.292,
+      "core_serialize_ns": 1605.487
+    },
+    "parity": true
+  },
+  {
+    "workload": "nested_sums",
+    "records": 1000,
+    "samples": 5,
+    "median_ns_per_record": {
+      "binding_ns": 26591.355,
+      "decode_ns": 5292.644,
+      "dict_validate_encode_ns": 16630.96,
+      "public_bytes_ns": 34209.466,
+      "public_dict_ns": 51131.94,
+      "core_full_ns": 27755.65,
+      "core_parse_ns": 6631.126,
+      "core_evaluate_ns": 14916.82,
+      "core_serialize_ns": 5325.73
+    },
+    "parity": true
+  },
+  {
+    "workload": "multiple_derives",
+    "records": 1000,
+    "samples": 5,
+    "median_ns_per_record": {
+      "binding_ns": 4356.407,
+      "decode_ns": 2178.91,
+      "dict_validate_encode_ns": 3286.922,
+      "public_bytes_ns": 8600.928,
+      "public_dict_ns": 11787.051,
+      "core_full_ns": 4319.092,
+      "core_parse_ns": 733.063,
+      "core_evaluate_ns": 1673.258,
+      "core_serialize_ns": 1753.567
+    },
+    "parity": true
+  },
+  {
+    "workload": "validation_heavy",
+    "records": 1000,
+    "samples": 5,
+    "median_ns_per_record": {
+      "binding_ns": 4184.202,
+      "decode_ns": 1951.022,
+      "dict_validate_encode_ns": 3820.382,
+      "public_bytes_ns": 8046.858,
+      "public_dict_ns": 11714.093,
+      "core_full_ns": 4225.393,
+      "core_parse_ns": 1097.901,
+      "core_evaluate_ns": 1546.916,
+      "core_serialize_ns": 1348.832
+    },
+    "parity": true
+  },
+  {
+    "workload": "mixed_rejects",
+    "records": 1000,
+    "samples": 5,
+    "median_ns_per_record": {
+      "binding_ns": 1921.889,
+      "decode_ns": 1537.108,
+      "dict_validate_encode_ns": 2593.925,
+      "public_bytes_ns": 5280.266,
+      "public_dict_ns": 7785.841,
+      "core_full_ns": 1940.967,
+      "core_parse_ns": 429.898,
+      "core_evaluate_ns": 511.368,
+      "core_serialize_ns": 841.257
+    },
+    "parity": true
+  }
+]

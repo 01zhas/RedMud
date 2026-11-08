@@ -1,0 +1,3 @@
+$ cargo metadata --locked --offline --format-version 1 > docs/evidence/m1/final-cargo-metadata.json
+
+EXIT_CODE=0

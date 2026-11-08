@@ -1,0 +1,51 @@
+redmud-core v0.2.0 (/workspace/redmud/crates/redmud-core)
+serde v1.0.229
+serde_core v1.0.229
+serde_derive v1.0.229 (proc-macro)
+proc-macro2 v1.0.107
+unicode-ident v1.0.27
+quote v1.0.47
+proc-macro2 v1.0.107 (*)
+syn v3.0.9
+proc-macro2 v1.0.107 (*)
+quote v1.0.47 (*)
+unicode-ident v1.0.27
+serde_json v1.0.154
+itoa v1.0.18
+memchr v2.8.3
+serde_core v1.0.229
+zmij v1.0.23
+
+redmud-python v0.2.0 (/workspace/redmud/crates/redmud-python)
+pyo3 v0.23.5
+cfg-if v1.0.5
+indoc v2.0.8 (proc-macro)
+rustversion v1.0.23 (proc-macro)
+libc v0.2.191
+memoffset v0.9.1
+autocfg v1.5.1
+once_cell v1.21.4
+pyo3-ffi v0.23.5
+libc v0.2.191
+pyo3-build-config v0.23.5
+once_cell v1.21.4
+target-lexicon v0.12.16
+target-lexicon v0.12.16
+pyo3-macros v0.23.5 (proc-macro)
+proc-macro2 v1.0.107 (*)
+pyo3-macros-backend v0.23.5
+heck v0.5.0
+proc-macro2 v1.0.107 (*)
+pyo3-build-config v0.23.5 (*)
+quote v1.0.47 (*)
+syn v2.0.119
+proc-macro2 v1.0.107 (*)
+quote v1.0.47 (*)
+unicode-ident v1.0.27
+pyo3-build-config v0.23.5 (*)
+quote v1.0.47 (*)
+syn v2.0.119 (*)
+unindent v0.2.4
+pyo3-build-config v0.23.5 (*)
+redmud-core v0.2.0 (/workspace/redmud/crates/redmud-core) (*)
+serde_json v1.0.154 (*)

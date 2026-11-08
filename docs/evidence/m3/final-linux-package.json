@@ -1,0 +1,14 @@
+{
+  "version": "3.12.14",
+  "system": "Linux",
+  "machine": "x86_64",
+  "artifacts": [
+    "target/m3-package-check/Linux-x86_64-3.12.14/wheel/redmud-0.2.0-cp312-cp312-manylinux_2_34_x86_64.whl",
+    "target/m3-package-check/Linux-x86_64-3.12.14/sdist/redmud-0.2.0.tar.gz"
+  ],
+  "result": "PASS: wheel and sdist installs, installed imports, full Python suite and examples",
+  "artifact_sha256": {
+    "target/m3-package-check/Linux-x86_64-3.12.14/wheel/redmud-0.2.0-cp312-cp312-manylinux_2_34_x86_64.whl": "2c89c66cc27de3522d985935c388569fc040c2c087150e15a1d99b9beeb3a6e8",
+    "target/m3-package-check/Linux-x86_64-3.12.14/sdist/redmud-0.2.0.tar.gz": "62d2a40abf7961b4fec861491cc341efffb3b5005759e99324ff8d0ba3c5b29e"
+  }
+}

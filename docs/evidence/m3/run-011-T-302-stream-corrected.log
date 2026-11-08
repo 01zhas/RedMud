@@ -1,0 +1,8 @@
+$ python -m benchmarks.run --profile stream --repeat 5 --rss-repeat 3 --pin-cpu --output docs/evidence/m3/stream-corrected
+1/4 arithmetic-runtime-bytes-n2000-b64: None records/s
+2/4 arithmetic-native-bytes-n2000-b64: None records/s
+3/4 arithmetic-runtime-bytes-n100000-b64: None records/s
+4/4 arithmetic-native-bytes-n100000-b64: None records/s
+Measured data: /workspace/redmud/docs/evidence/m3/stream-corrected
+
+EXIT_CODE=0

@@ -1,0 +1,18 @@
+UTC: 2026-11-08T02:46:55.505665+00:00
+CWD: /Users/im01zhas/Documents/ChatGPT/RedMud
+COMMAND: ["bash", "-c", "python -VV; python -m pip list; rustc -Vv"]
+Python 3.13.3 (main, Apr  8 2025, 13:54:08) [Clang 16.0.0 (clang-1600.0.26.6)]
+Package Version
+------- -------
+maturin 1.16.0
+pip     25.0.1
+ruff    0.17.4
+rustc 1.99.1 (58cf8f9c3 2026-10-13)
+binary: rustc
+commit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67
+commit-date: 2026-10-13
+host: aarch64-apple-darwin
+release: 1.99.1
+LLVM version: 23.1.1
+
+EXIT: 0

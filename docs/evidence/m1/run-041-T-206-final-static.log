@@ -1,0 +1,5 @@
+$ bash -n scripts/security.sh && python -m ruff check --select E9,F63,F7,F82 scripts/update_notices.py && python -m compileall -q scripts/update_notices.py && python scripts/update_notices.py --check --inventory docs/evidence/m1/license-inventory-final.json
+All checks passed!
+PASS: 22 external locked packages, copied legal texts and inventory verified.
+
+EXIT_CODE=0

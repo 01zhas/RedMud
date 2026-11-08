@@ -1,0 +1,8 @@
+$ python docs/evidence/m1/final-safety.py
+depth probe 64: process survived
+depth probe 256: process survived
+depth probe 1000: process survived
+range, malformed, cycle and record isolation probes passed
+PASS: scoped subprocess safety/source checks; no claim of adversarial fuzz/depth-64 enforcement (M2).
+
+EXIT_CODE=0

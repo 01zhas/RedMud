@@ -1,0 +1,5 @@
+$ python scripts/update_notices.py --inventory docs/evidence/m1/license-inventory-final.json && python scripts/update_notices.py --check --inventory docs/evidence/m1/license-inventory-final.json
+PASS: 22 external locked packages, copied legal texts and inventory verified.
+PASS: 22 external locked packages, copied legal texts and inventory verified.
+
+EXIT_CODE=0

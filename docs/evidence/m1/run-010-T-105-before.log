@@ -1,0 +1,37 @@
+$ python -m unittest tests.test_policies -v
+test_ac105_mixed_batches_account_before_raise (tests.test_policies.TestPolicies.test_ac105_mixed_batches_account_before_raise) ... 
+  test_ac105_mixed_batches_account_before_raise (tests.test_policies.TestPolicies.test_ac105_mixed_batches_account_before_raise) (policy='raise', mode='process') ... FAIL
+test_ac105_scalar_and_iter_policies (tests.test_policies.TestPolicies.test_ac105_scalar_and_iter_policies) ... FAIL
+test_ac105_source_failure_and_bad_sizes (tests.test_policies.TestPolicies.test_ac105_source_failure_and_bad_sizes) ... FAIL
+
+======================================================================
+FAIL: test_ac105_mixed_batches_account_before_raise (tests.test_policies.TestPolicies.test_ac105_mixed_batches_account_before_raise) (policy='raise', mode='process')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_policies.py", line 25, in test_ac105_mixed_batches_account_before_raise
+    self.assertEqual(e.metrics.processed,3)
+AssertionError: 1 != 3
+
+======================================================================
+FAIL: test_ac105_scalar_and_iter_policies (tests.test_policies.TestPolicies.test_ac105_scalar_and_iter_policies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_policies.py", line 42, in test_ac105_scalar_and_iter_policies
+    self.assertEqual(e.metrics.processed,5)
+AssertionError: 4 != 5
+
+======================================================================
+FAIL: test_ac105_source_failure_and_bad_sizes (tests.test_policies.TestPolicies.test_ac105_source_failure_and_bad_sizes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_policies.py", line 51, in test_ac105_source_failure_and_bad_sizes
+    with self.assertRaises(ValueError):Settings(batch_size=n)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+FAILED (failures=3)
+
+EXIT_CODE=1

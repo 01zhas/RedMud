@@ -1,0 +1,19 @@
+$ cargo info cargo-audit
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded cargo-audit v0.22.2
+cargo-audit #cargo-subcommand #security #audit #vulnerability
+Audit Cargo.lock for crates with security vulnerabilities
+version: 0.22.2
+license: Apache-2.0 OR MIT
+rust-version: 1.88
+documentation: https://docs.rs/cargo-audit/0.22.2
+homepage: https://rustsec.org
+repository: https://github.com/rustsec/rustsec
+crates.io: https://crates.io/crates/cargo-audit/0.22.2
+features:
+ +default         = [binary-scanning]
+  binary-scanning = [rustsec/binary-scanning, dep:object, dep:rustc-demangle, dep:syn]
+  fix             = []
+
+EXIT_CODE=0

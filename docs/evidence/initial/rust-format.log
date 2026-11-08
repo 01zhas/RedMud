@@ -1,0 +1,3 @@
+$ . "$HOME/.cargo/env"; cargo fmt --all -- --check
+
+EXIT_CODE=0

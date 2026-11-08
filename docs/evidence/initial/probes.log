@@ -1,0 +1,13 @@
+$ python docs/evidence/initial/probes.py
+config {'x': 'unknown'} prepare=ACCEPTED result RecordResult(index=0, status='rejected', value=None, issues=(), error_stage=None, error_type=None, error_message=None, errors=(Error(code='invalid_type', path='x', stage='validation', message='invalid type'),))
+config {'x': {'type': 'int', 'min': 'bad'}} prepare=ACCEPTED result RecordResult(index=0, status='rejected', value=None, issues=(), error_stage=None, error_type=None, error_message=None, errors=(Error(code='numeric_constraint', path='x', stage='validation', message='numeric constraint'),))
+config {'x': {'type': 'int', 'mni': 1}} prepare=ACCEPTED result RecordResult(index=0, status='ok', value={'x': 0}, issues=(), error_stage=None, error_type=None, error_message=None, errors=())
+Pipeline processed 3 next_index 3
+Runtime processed 1 next_index 3
+large_integer bytes True {'n': 1.8446744073709552e+19}
+large_integer dict True {'n': 1.8446744073709552e+19}
+profile_skip native report_records 1 processed 2
+profile_skip python report_records 1 processed 2
+expression_error (Error(code='null_value', path='', stage='transform', message='null value'),)
+
+EXIT_CODE=0

@@ -1,0 +1,9 @@
+UTC: 2026-11-08T02:48:22.219480+00:00
+CWD: /Users/im01zhas/Documents/ChatGPT/RedMud
+COMMAND: ["python", "docs/evidence/m3/progress-check.py"]
+PASS: 20 requirements / 24 tasks, acyclic links; T-301/302/303 VERIFIED; T-205/304 BLOCKED; M4/M5 TODO.
+PASS: 60 timing/corrected-memory envelopes match, unapproved; six component fixtures have actual parity evidence.
+PASS: exact measured source snapshots match recorded hashes; methodology/proposal/home local links resolve.
+No CI, approval, portable speed or release completion inferred.
+
+EXIT: 0

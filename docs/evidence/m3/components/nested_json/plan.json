@@ -1,0 +1,1 @@
+{"steps": [{"op": "require", "schema": {"id": "int", "customer": {"fields": {"region": "str", "active": "bool"}}, "payload": {"fields": {"score": "int", "tags": {"items": "str"}}}}}, {"op": "derive", "name": "score", "expr": {"op": "add", "left": {"op": "field", "path": "payload.score"}, "right": {"op": "literal", "value": 1}}}]}

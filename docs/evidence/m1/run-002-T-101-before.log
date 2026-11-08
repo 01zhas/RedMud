@@ -1,0 +1,120 @@
+$ python -m unittest tests.test_prepare -v
+test_ac101_cached_independent_builders (tests.test_prepare.TestPrepare.test_ac101_cached_independent_builders) ... ok
+test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) ... 
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': '', 'expr': {'op': 'literal', 'value': 1}},)) ... FAIL
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': 'a.b', 'expr': {'op': 'literal', 'value': 1}},)) ... FAIL
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': 'a[0]', 'expr': {'op': 'literal', 'value': 1}},)) ... FAIL
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': 'v', 'expr': {'op': 'field', 'path': 'a..b'}},)) ... FAIL
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'map', 'path': '', 'plan': {'steps': []}},)) ... FAIL
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'check', 'name': 'bad name', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'message': 'Data quality check failed'},)) ... FAIL
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'check', 'name': 'overflow', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'message': 'Data quality check failed'},)) ... FAIL
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'check', 'name': 'é', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'message': 'Data quality check failed'},)) ... FAIL
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'check', 'name': 'a', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'message': 'Data quality check failed'}, {'op': 'check', 'name': 'a', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 1}}, 'message': 'Data quality check failed'})) ... FAIL
+  test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': 'v', 'expr': {'op': 'if', 'condition': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'yes': {'op': 'literal', 'value': 1}, 'no': {'op': 'field', 'path': 'a..b'}}},)) ... FAIL
+test_ac101_prepare_before_consumption (tests.test_prepare.TestPrepare.test_ac101_prepare_before_consumption) ... FAIL
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': '', 'expr': {'op': 'literal', 'value': 1}},))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': 'a.b', 'expr': {'op': 'literal', 'value': 1}},))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': 'a[0]', 'expr': {'op': 'literal', 'value': 1}},))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': 'v', 'expr': {'op': 'field', 'path': 'a..b'}},))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'map', 'path': '', 'plan': {'steps': []}},))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'check', 'name': 'bad name', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'message': 'Data quality check failed'},))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'check', 'name': 'overflow', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'message': 'Data quality check failed'},))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'check', 'name': 'é', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'message': 'Data quality check failed'},))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'check', 'name': 'a', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'message': 'Data quality check failed'}, {'op': 'check', 'name': 'a', 'expr': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 1}}, 'message': 'Data quality check failed'}))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_invalid_definitions (tests.test_prepare.TestPrepare.test_ac101_invalid_definitions) (steps=({'op': 'derive', 'name': 'v', 'expr': {'op': 'if', 'condition': {'op': 'gt', 'left': {'op': 'field', 'path': 'x'}, 'right': {'op': 'literal', 'value': 0}}, 'yes': {'op': 'literal', 'value': 1}, 'no': {'op': 'field', 'path': 'a..b'}}},))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 15, in test_ac101_invalid_definitions
+    with self.subTest(steps=p._steps), self.assertRaises(ValueError): p.prepare()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ac101_prepare_before_consumption (tests.test_prepare.TestPrepare.test_ac101_prepare_before_consumption)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/redmud/tests/test_prepare.py", line 21, in test_ac101_prepare_before_consumption
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+FAILED (failures=11)
+
+EXIT_CODE=1

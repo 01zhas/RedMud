@@ -1,0 +1,2 @@
+PASS: requirement/task/acceptance/gate references, dependency cycles and local links checked.
+PASS: M0 approval recorded; T-010 TODO, not prematurely VERIFIED; no implementation started.
