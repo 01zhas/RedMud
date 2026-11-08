@@ -878,7 +878,7 @@ against all nine suite logs; [test summary](docs/evidence/t205-macos/test-summar
 retains passed/skipped/ignored distinctions. No local product test failed.
 
 
-## E-23 — T-205 hosted CI execution (2026-11-08; IN_PROGRESS)
+## E-23 — T-205 hosted CI attempt (2026-11-08; BLOCKED)
 
 User supplied `https://github.com/01zhas/RedMud.git` after being asked for the
 repository target to upload current project and execute Verify RedMud. This
@@ -892,3 +892,58 @@ Local macOS results remain E-22. Hosted results will be appended only after
 actual execution; T-205 is IN_PROGRESS, not VERIFIED. Root source snapshot,
 retained historical evidence and current workflow are uploaded together. No
 runtime implementation, lockfile or approved requirement changed.
+
+
+### Actual upload and failed hosted attempt
+
+Source imported as root commit `dcd33bfb7a20d68f221dcfb0638350349aeae9fa`
+(`ci: import RedMud for hosted verification`) on `codex/t205-ci` and pushed to
+`https://github.com/01zhas/RedMud.git`; push exit 0. Existing repository was empty,
+no remote history overwritten, no release or tag created. Local source author
+identity uses GitHub login/noreply address, without changing global Git config.
+Initial whitespace check reported only 14 retained raw evidence files
+([original output](docs/evidence/t205-ci/initial-whitespace.log)); historical
+logs were not rewritten to remove whitespace.
+
+Push triggered actual **Verify RedMud**
+[run 42440898200](https://github.com/01zhas/RedMud/actions/runs/42440898200),
+head SHA exactly matching uploaded source. Run status **completed / failure**.
+All six Linux/macOS × CPython jobs and the security job report failure before
+runner execution. Exact GitHub annotation for every job:
+
+> The job was not started because your account is locked due to a billing issue.
+
+This is an external account/billing failure, not a test/compiler/linter failure.
+No workflow steps ran, tests/installations/security scans are **NOT RUN** on
+hosted runners, and no artifacts were uploaded. The additional macOS arm64
+capacity notice is informational; it does not replace the explicit billing cause.
+No account billing settings or paid usage limits were changed.
+
+### Retained evidence and commands
+
+- `gh api repos/01zhas/RedMud/actions/runs/42440898200`:
+  [run metadata](docs/evidence/t205-ci/run-42440898200.json).
+- GitHub connector `fetch_workflow_run_jobs` plus
+  `gh api repos/01zhas/RedMud/actions/runs/42440898200/jobs`:
+  [seven job records](docs/evidence/t205-ci/jobs-42440898200.json).
+- `gh api <each job.check_run_url>/annotations`:
+  seven `docs/evidence/t205-ci/annotations-<job-id>.json` files retain billing
+  annotations, job path, severity and any macOS capacity notices.
+- `gh run view 42440898200 --repo 01zhas/RedMud`:
+  [run summary](docs/evidence/t205-ci/run-42440898200-summary.log), exit 0.
+- `gh run view 42440898200 --repo 01zhas/RedMud --log-failed`:
+  [failed log lookup](docs/evidence/t205-ci/run-42440898200-failed.log) reports
+  `log not found: 128609700931`; unavailable runner logs are not fabricated.
+- `gh api repos/01zhas/RedMud/actions/runs/42440898200/artifacts`:
+  [artifact listing](docs/evidence/t205-ci/artifacts-42440898200.json), count 0.
+
+T-205 returns to **BLOCKED** with specific external cause. M2 remains partial,
+T-304 remains BLOCKED, M4/M5 remain TODO. Local E-22 package evidence is unchanged;
+no product, test, benchmark, dependency or workflow edits were needed for this
+attempt. Performance delta NOT MEASURED. Required user action: resolve GitHub
+account billing lock; then rerun the failed jobs and inspect their actual gates
+and retained artifacts before declaring AC-205/M2 verified.
+
+Documentation/evidence follow-up commit uses `[skip ci]` to avoid knowingly
+repeating the same blocked run. This is not a skipped acceptance gate or a
+passing CI result; tested source remains the linked initial commit.

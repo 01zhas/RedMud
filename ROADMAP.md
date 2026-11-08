@@ -13,14 +13,15 @@ pass with installed imports, all tests and examples outside the source directory
 T-205 local macOS 26.6 arm64 checks and clean wheel/sdist installations PASS for
 CPython 3.11.15/3.12.13/3.13.3 (E-22): 10 Rust passed / 1 diagnostic ignored;
 80 Python passed / 1 Linux-only skipped per suite. Historical Linux matrix
-remains in E-17. Actual hosted matrix is NOT RUN. Current checkout has
-an empty Git repository without HEAD or remote; no target hosted repository is
-configured. M2 is not VERIFIED. A-02 authorizes independent Linux M3 work without waiving T-205.
+remains in E-17. Hosted run 42440898200 on 01zhas/RedMud failed before all seven jobs started:
+GitHub account locked due to billing (E-23). Hosted test/security execution is
+NOT RUN. Source commit dcd33bfb7a20d68f221dcfb0638350349aeae9fa was pushed to
+origin/codex/t205-ci; no gate waived. M2 is not VERIFIED. A-02 authorizes independent Linux M3 work without waiving T-205.
 M3 local progress: T-301/T-302/T-303 VERIFIED (E-19/E-20); T-304 BLOCKED
 on approval of the [performance proposal](docs/performance-proposal.md).
 [Home checklist](docs/home-verification.ru.md) covers the remaining user-run gates.
-Hosted CI action remains: identify the repository, run the prepared workflow, inspect real
-six-job matrix/security logs and fix any failures. No waiver or scope reduction.
+Hosted CI action remains: resolve the GitHub billing lock, rerun the prepared
+workflow and inspect six matrix jobs plus security logs. No waiver or scope reduction.
 
 ## Milestones
 

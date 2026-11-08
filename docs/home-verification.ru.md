@@ -5,10 +5,14 @@
 
 ## 1. Разблокировать T-205 — реальный CI
 
-Перенесите проект в выбранный вами GitHub-репозиторий, сохранив `.github/`.
-Публикация отсюда не выполнялась. Сейчас есть пустой Git checkout без HEAD и
-remote; целевой GitHub-репозиторий не настроен.
-В Actions запустите workflow **Verify RedMud** через Run workflow или push.
+Проект загружен в [01zhas/RedMud](https://github.com/01zhas/RedMud), ветка
+`codex/t205-ci`, commit `dcd33bfb7a20d68f221dcfb0638350349aeae9fa`.
+[Первый hosted запуск](https://github.com/01zhas/RedMud/actions/runs/42440898200)
+завершился до выполнения всех семи jobs: GitHub сообщил
+“The job was not started because your account is locked due to a billing issue.”
+Сначала устраните billing-блокировку аккаунта GitHub, затем перезапустите
+failed jobs этого запуска. Настройки оплаты агент не менял. Реальные hosted
+тесты/security пока NOT RUN; T-205 остаётся BLOCKED. Релиза не было.
 
 Нужны все шесть сочетаний Ubuntu 24.04 x86_64 / macOS 15 arm64 × CPython
 3.11/3.12/3.13, а также security job. Сохраните URL запуска и артефакты:
